@@ -1,0 +1,279 @@
+[
+  {
+    "file": "facil.pdf",
+    "hash_verified": true,
+    "native_unchanged": true,
+    "headings": [
+      {
+        "page": 1,
+        "id": "C1",
+        "heading_offset": 97
+      },
+      {
+        "page": 1,
+        "id": "C2",
+        "heading_offset": 289
+      },
+      {
+        "page": 1,
+        "id": "C3",
+        "heading_offset": 467
+      },
+      {
+        "page": 1,
+        "id": "C4",
+        "heading_offset": 690
+      },
+      {
+        "page": 1,
+        "id": "C5",
+        "heading_offset": 939
+      },
+      {
+        "page": 1,
+        "id": "C6",
+        "heading_offset": 1209
+      },
+      {
+        "page": 1,
+        "id": "C7",
+        "heading_offset": 1466
+      },
+      {
+        "page": 1,
+        "id": "T1",
+        "heading_offset": 1652
+      }
+    ],
+    "tables": [
+      {
+        "page": 1,
+        "id": "C5",
+        "rows": [
+          {
+            "cells": [
+              "Base",
+              "120 unidades",
+              "8 horas uteis",
+              "R$ 0,00"
+            ],
+            "offsets": [
+              1007,
+              1012,
+              1025,
+              1039
+            ],
+            "present_in_order": true
+          },
+          {
+            "cells": [
+              "Extra",
+              "40 unidades",
+              "4 horas uteis",
+              "R$ 200,00"
+            ],
+            "offsets": [
+              1047,
+              1053,
+              1065,
+              1079
+            ],
+            "present_in_order": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "medio.pdf",
+    "hash_verified": true,
+    "native_unchanged": true,
+    "headings": [
+      {
+        "page": 1,
+        "id": "C1",
+        "heading_offset": 97
+      },
+      {
+        "page": 1,
+        "id": "C2",
+        "heading_offset": 289
+      },
+      {
+        "page": 1,
+        "id": "C3",
+        "heading_offset": 467
+      },
+      {
+        "page": 2,
+        "id": "C4",
+        "heading_offset": 97
+      },
+      {
+        "page": 2,
+        "id": "C5a",
+        "heading_offset": 346
+      },
+      {
+        "page": 3,
+        "id": "C5b",
+        "heading_offset": 97
+      },
+      {
+        "page": 3,
+        "id": "C6",
+        "heading_offset": 342
+      },
+      {
+        "page": 3,
+        "id": "C7",
+        "heading_offset": 599
+      },
+      {
+        "page": 3,
+        "id": "T1",
+        "heading_offset": 785
+      }
+    ],
+    "tables": [
+      {
+        "page": 2,
+        "id": "C5a",
+        "rows": [
+          {
+            "cells": [
+              "Base",
+              "120 unidades",
+              "8 horas uteis",
+              "R$ 0,00"
+            ],
+            "offsets": [
+              424,
+              429,
+              442,
+              456
+            ],
+            "present_in_order": true
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "id": "C5b",
+        "rows": [
+          {
+            "cells": [
+              "Extra",
+              "40 unidades",
+              "4 horas uteis",
+              "R$ 200,00"
+            ],
+            "offsets": [
+              180,
+              186,
+              198,
+              212
+            ],
+            "present_in_order": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "dificil.pdf",
+    "hash_verified": true,
+    "native_unchanged": true,
+    "headings": [
+      {
+        "page": 1,
+        "id": "C1",
+        "heading_offset": 99
+      },
+      {
+        "page": 1,
+        "id": "C2",
+        "heading_offset": 291
+      },
+      {
+        "page": 1,
+        "id": "C3",
+        "heading_offset": 469
+      },
+      {
+        "page": 1,
+        "id": "C4",
+        "heading_offset": 692
+      },
+      {
+        "page": 2,
+        "id": "C5a",
+        "heading_offset": 99
+      },
+      {
+        "page": 3,
+        "id": "C5b",
+        "heading_offset": 55
+      },
+      {
+        "page": 3,
+        "id": "C6",
+        "heading_offset": 213
+      },
+      {
+        "page": 4,
+        "id": "C7",
+        "heading_offset": 99
+      },
+      {
+        "page": 4,
+        "id": "T1",
+        "heading_offset": 285
+      }
+    ],
+    "tables": [
+      {
+        "page": 2,
+        "id": "C5a",
+        "rows": [
+          {
+            "cells": [
+              "Base",
+              "120 unidades",
+              "8 horas uteis",
+              "R$ 0,00"
+            ],
+            "offsets": [
+              177,
+              182,
+              195,
+              209
+            ],
+            "present_in_order": true
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "id": "C5b",
+        "rows": [
+          {
+            "cells": [
+              "Extra",
+              "40 unidades",
+              "4 horas uteis",
+              "R$ 200,00"
+            ],
+            "offsets": [
+              99,
+              -1,
+              -1,
+              -1
+            ],
+            "present_in_order": false
+          }
+        ]
+      }
+    ]
+  }
+]

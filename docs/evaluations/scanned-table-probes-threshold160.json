@@ -1,0 +1,38 @@
+[
+  {
+    "scale": 2,
+    "mode": 3,
+    "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\n| Plano [Limite mensal | Resposta |eusto adicional\n| Extra |ao unidades |a horas uteis las 200,00\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\n\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais\n",
+    "confidence": 92
+  },
+  {
+    "scale": 2,
+    "mode": 6,
+    "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\n| Plano [Limite mensal | Resposta |eusto adicional |\n| Extra |ao unidades |a horas uteis las 200,00 |\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\n\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\n\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais\n",
+    "confidence": 92
+  },
+  {
+    "scale": 2,
+    "mode": 11,
+    "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\n|Plano\n\n| Limite mensal\n\n| Resposta\n\n|eusto adicional\n\n| Extra\n\n|ao unidades\n\n|a horas uteis\n\n| R$ 200,00\n\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\n\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\n\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais\n",
+    "confidence": 92
+  },
+  {
+    "scale": 3,
+    "mode": 3,
+    "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\n| Plano [Limite mensal | Resposta |custo adicional\n| Extra |ao unidades la horas uteis | R$ 200,00\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\n\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais\n",
+    "confidence": 90
+  },
+  {
+    "scale": 3,
+    "mode": 6,
+    "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\n| Plano [Limite mensal | Resposta |custo adicional |\n| Extra |ao unidades la horas uteis | R$ 200,00 |\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\n\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\n\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais\n",
+    "confidence": 90
+  },
+  {
+    "scale": 3,
+    "mode": 11,
+    "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\n| Plano\n\n[Limite mensal\n\n| Resposta\n\n|custo adicional\n\n| Extra\n\n|ao unidades\n\nla horas uteis\n\n| R$ 200,00\n\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\n\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\n\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais\n",
+    "confidence": 89
+  }
+]

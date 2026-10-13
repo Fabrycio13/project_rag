@@ -1,0 +1,18 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "ocr",
+      "text": "NATIVO: pagamento confirmado; cláusula na imagem.\n\nFICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+      "nativeText": "NATIVO: pagamento confirmado; cláusula na imagem.",
+      "ocrText": "FICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+      "ocrPageText": "FICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+      "ocrTableCells": [],
+      "ocrConfidence": 95,
+      "warnings": [
+        "layout_unverified",
+        "mixed_reading_order_unverified"
+      ]
+    }
+  ]
+}

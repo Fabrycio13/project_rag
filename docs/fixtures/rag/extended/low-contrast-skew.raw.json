@@ -1,0 +1,30 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "ocr",
+      "text": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+      "nativeText": "",
+      "ocrText": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+      "ocrPageText": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+      "ocrTableCells": [],
+      "ocrConfidence": 90,
+      "warnings": [
+        "layout_unverified"
+      ]
+    },
+    {
+      "page": 2,
+      "method": "ocr",
+      "text": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+      "nativeText": "",
+      "ocrText": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+      "ocrPageText": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+      "ocrTableCells": [],
+      "ocrConfidence": 91,
+      "warnings": [
+        "layout_unverified"
+      ]
+    }
+  ]
+}

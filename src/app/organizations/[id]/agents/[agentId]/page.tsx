@@ -5,6 +5,7 @@ import { findOrganization } from "@/lib/organization-data";
 import { findAgent } from "@/lib/agent-data";
 import { isUuid, AGENT_READINESS_MESSAGE } from "@/lib/agents";
 import { OrganizationShell } from "../../../organization-shell";
+import { DocumentManager } from "./document-manager";
 
 export default async function AgentPage({ params }: { params: Promise<{ id: string; agentId: string }> }) {
   const access = await getOrganizationAccess();
@@ -25,5 +26,6 @@ export default async function AgentPage({ params }: { params: Promise<{ id: stri
     <p className="mt-6 text-sm font-medium text-blue-600 dark:text-blue-400">Agente</p>
     <h1 className="mt-2 break-words text-2xl font-semibold tracking-tight">{data.name}</h1>
     <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">Agente cadastrado. As instruções foram armazenadas de forma privada e não são exibidas nesta página.</p>
+    <DocumentManager organizationId={id} agentId={agentId} />
   </OrganizationShell>;
 }

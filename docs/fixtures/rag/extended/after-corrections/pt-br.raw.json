@@ -1,0 +1,93 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          800
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "text",
+      "evidenceState": "extracted",
+      "ocrTableStructure": null,
+      "text": "FICTÍCIO TESTE — pt-br Associação fictícia: ação e proteção. Mensalidade: R$ 2.345,67. Desconto: 12,5%. Não há renovação automática. Auditor não pode exportar.",
+      "nativeText": "FICTÍCIO TESTE — pt-br Associação fictícia: ação e proteção. Mensalidade: R$ 2.345,67. Desconto: 12,5%. Não há renovação automática. Auditor não pode exportar.",
+      "nativeRawText": "FICTÍCIO TESTE — pt-br Associação fictícia: ação e proteção. Mensalidade: R$ 2.345,67. Desconto: 12,5%. Não há renovação automática. Auditor não pode exportar.",
+      "nativeSpans": [
+        {
+          "text": "FICTÍCIO TESTE — pt-br",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            30,
+            760
+          ],
+          "width": 159.474,
+          "height": 14,
+          "hasEOL": true
+        },
+        {
+          "text": "Associação fictícia: ação e proteção.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            30,
+            690
+          ],
+          "width": 227.2199999999999,
+          "height": 14,
+          "hasEOL": true
+        },
+        {
+          "text": "Mensalidade: R$ 2.345,67. Desconto: 12,5%.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            30,
+            655
+          ],
+          "width": 281.7079999999999,
+          "height": 14,
+          "hasEOL": true
+        },
+        {
+          "text": "Não há renovação automática. Auditor não pode exportar.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            30,
+            620
+          ],
+          "width": 360.3039999999998,
+          "height": 14,
+          "hasEOL": false
+        }
+      ],
+      "nativeColumnCut": null,
+      "ocrOrientation": null,
+      "ocrText": "",
+      "ocrPageText": "",
+      "ocrTableCells": [],
+      "ocrConfidence": null,
+      "warnings": [
+        "layout_unverified"
+      ]
+    }
+  ],
+  "reviewRequired": false,
+  "indexingEligible": true,
+  "extractorVersion": "pdf-evidence-v2"
+}

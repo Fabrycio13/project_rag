@@ -1,0 +1,755 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          800
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "text": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+      "nativeText": "",
+      "nativeRawText": "",
+      "nativeSpans": [],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 0,
+        "sourceToOcr": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "viewportTransform": [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          1600
+        ],
+        "projection": {
+          "horizontal": 81.90284829188538,
+          "vertical": 22.71758024266414,
+          "ink": 11621
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+            "confidence": 90,
+            "letters": 98,
+            "tokens": 16,
+            "words": [
+              {
+                "text": "low-contrast-skew",
+                "bbox": {
+                  "x0": 322,
+                  "y0": 243,
+                  "x1": 559,
+                  "y1": 265
+                },
+                "confidence": 91
+              },
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 43,
+                  "y0": 238,
+                  "x1": 167,
+                  "y1": 265
+                },
+                "confidence": 96
+              },
+              {
+                "text": "TESTE",
+                "bbox": {
+                  "x0": 177,
+                  "y0": 243,
+                  "x1": 271,
+                  "y1": 265
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Baixo",
+                "bbox": {
+                  "x0": 127,
+                  "y0": 298,
+                  "x1": 199,
+                  "y1": 330
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Contraste",
+                "bbox": {
+                  "x0": 210,
+                  "y0": 318,
+                  "x1": 329,
+                  "y1": 350
+                },
+                "confidence": 93
+              },
+              {
+                "text": "não",
+                "bbox": {
+                  "x0": 340,
+                  "y0": 335,
+                  "x1": 387,
+                  "y1": 359
+                },
+                "confidence": 95
+              },
+              {
+                "text": "altera",
+                "bbox": {
+                  "x0": 397,
+                  "y0": 344,
+                  "x1": 469,
+                  "y1": 373
+                },
+                "confidence": 95
+              },
+              {
+                "text": "a",
+                "bbox": {
+                  "x0": 479,
+                  "y0": 360,
+                  "x1": 494,
+                  "y1": 377
+                },
+                "confidence": 71
+              },
+              {
+                "text": "obrigação.",
+                "bbox": {
+                  "x0": 504,
+                  "y0": 361,
+                  "x1": 638,
+                  "y1": 400
+                },
+                "confidence": 90
+              },
+              {
+                "text": "Retenção:",
+                "bbox": {
+                  "x0": 114,
+                  "y0": 378,
+                  "x1": 246,
+                  "y1": 428
+                },
+                "confidence": 84
+              },
+              {
+                "text": "45",
+                "bbox": {
+                  "x0": 256,
+                  "y0": 406,
+                  "x1": 289,
+                  "y1": 430
+                },
+                "confidence": 96
+              },
+              {
+                "text": "dias;",
+                "bbox": {
+                  "x0": 298,
+                  "y0": 413,
+                  "x1": 358,
+                  "y1": 445
+                },
+                "confidence": 96
+              },
+              {
+                "text": "não",
+                "bbox": {
+                  "x0": 369,
+                  "y0": 426,
+                  "x1": 417,
+                  "y1": 450
+                },
+                "confidence": 94
+              },
+              {
+                "text": "reter",
+                "bbox": {
+                  "x0": 427,
+                  "y0": 437,
+                  "x1": 488,
+                  "y1": 461
+                },
+                "confidence": 96
+              },
+              {
+                "text": "indefinidamente.",
+                "bbox": {
+                  "x0": 496,
+                  "y0": 439,
+                  "x1": 709,
+                  "y1": 501
+                },
+                "confidence": 67
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 180,
+            "text": "au TA 198. oeu “Sep St “OBuGIay\nOBÍEBLGO E Bieye oBu NSEeNUO9Y oxleg\nIH\nMol — F1SHL OI9/LLO\nMOISISENUCO-",
+            "confidence": 27,
+            "letters": 80,
+            "tokens": 18,
+            "words": [
+              {
+                "text": "au",
+                "bbox": {
+                  "x0": 491,
+                  "y0": 1103,
+                  "x1": 577,
+                  "y1": 1131
+                },
+                "confidence": 0
+              },
+              {
+                "text": "TA",
+                "bbox": {
+                  "x0": 618,
+                  "y0": 1117,
+                  "x1": 704,
+                  "y1": 1157
+                },
+                "confidence": 0
+              },
+              {
+                "text": "198.",
+                "bbox": {
+                  "x0": 712,
+                  "y0": 1139,
+                  "x1": 773,
+                  "y1": 1163
+                },
+                "confidence": 34
+              },
+              {
+                "text": "oeu",
+                "bbox": {
+                  "x0": 783,
+                  "y0": 1150,
+                  "x1": 831,
+                  "y1": 1174
+                },
+                "confidence": 37
+              },
+              {
+                "text": "“Sep",
+                "bbox": {
+                  "x0": 842,
+                  "y0": 1155,
+                  "x1": 902,
+                  "y1": 1187
+                },
+                "confidence": 26
+              },
+              {
+                "text": "St",
+                "bbox": {
+                  "x0": 911,
+                  "y0": 1170,
+                  "x1": 944,
+                  "y1": 1194
+                },
+                "confidence": 67
+              },
+              {
+                "text": "“OBuGIay",
+                "bbox": {
+                  "x0": 954,
+                  "y0": 1176,
+                  "x1": 1086,
+                  "y1": 1218
+                },
+                "confidence": 0
+              },
+              {
+                "text": "OBÍEBLGO",
+                "bbox": {
+                  "x0": 562,
+                  "y0": 1200,
+                  "x1": 696,
+                  "y1": 1239
+                },
+                "confidence": 33
+              },
+              {
+                "text": "E",
+                "bbox": {
+                  "x0": 706,
+                  "y0": 1223,
+                  "x1": 721,
+                  "y1": 1240
+                },
+                "confidence": 74
+              },
+              {
+                "text": "Bieye",
+                "bbox": {
+                  "x0": 731,
+                  "y0": 1227,
+                  "x1": 803,
+                  "y1": 1256
+                },
+                "confidence": 0
+              },
+              {
+                "text": "oBu",
+                "bbox": {
+                  "x0": 813,
+                  "y0": 1241,
+                  "x1": 860,
+                  "y1": 1265
+                },
+                "confidence": 71
+              },
+              {
+                "text": "NSEeNUO9Y",
+                "bbox": {
+                  "x0": 871,
+                  "y0": 1246,
+                  "x1": 990,
+                  "y1": 1286
+                },
+                "confidence": 0
+              },
+              {
+                "text": "oxleg",
+                "bbox": {
+                  "x0": 1001,
+                  "y0": 1270,
+                  "x1": 1073,
+                  "y1": 1302
+                },
+                "confidence": 49
+              },
+              {
+                "text": "IH",
+                "bbox": {
+                  "x0": 1136,
+                  "y0": 1335,
+                  "x1": 1157,
+                  "y1": 1357
+                },
+                "confidence": 37
+              },
+              {
+                "text": "Mol",
+                "bbox": {
+                  "x0": 836,
+                  "y0": 1335,
+                  "x1": 878,
+                  "y1": 1357
+                },
+                "confidence": 0
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 889,
+                  "y0": 1342,
+                  "x1": 919,
+                  "y1": 1344
+                },
+                "confidence": 87
+              },
+              {
+                "text": "F1SHL",
+                "bbox": {
+                  "x0": 929,
+                  "y0": 1335,
+                  "x1": 1023,
+                  "y1": 1357
+                },
+                "confidence": 0
+              },
+              {
+                "text": "OI9/LLO",
+                "bbox": {
+                  "x0": 1033,
+                  "y0": 1335,
+                  "x1": 1132,
+                  "y1": 1362
+                },
+                "confidence": 0
+              },
+              {
+                "text": "MOISISENUCO-",
+                "bbox": {
+                  "x0": 641,
+                  "y0": 1335,
+                  "x1": 834,
+                  "y1": 1357
+                },
+                "confidence": 8
+              }
+            ],
+            "sourceToOcr": [
+              -1,
+              0,
+              0,
+              -1,
+              1200,
+              1600
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+      "ocrPageText": "low-contrast-skew\nFICTÍCIO TESTE\nBaixo Contraste não altera a obrigação.\nRetenção: 45 dias; não reter indefinidamente.",
+      "ocrTableCells": [],
+      "ocrConfidence": 90,
+      "warnings": [
+        "layout_unverified",
+        "raster_layout_review_required"
+      ]
+    },
+    {
+      "page": 2,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          700
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "text": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+      "nativeText": "",
+      "nativeRawText": "",
+      "nativeSpans": [],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 0,
+        "sourceToOcr": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "viewportTransform": [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          1400
+        ],
+        "projection": {
+          "horizontal": 0,
+          "vertical": 0,
+          "ink": 0
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+            "confidence": 91,
+            "letters": 46,
+            "tokens": 10,
+            "words": [
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 42,
+                  "y0": 61,
+                  "x1": 176,
+                  "y1": 90
+                },
+                "confidence": 96
+              },
+              {
+                "text": "TESTE",
+                "bbox": {
+                  "x0": 186,
+                  "y0": 67,
+                  "x1": 287,
+                  "y1": 90
+                },
+                "confidence": 93
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 297,
+                  "y0": 80,
+                  "x1": 330,
+                  "y1": 83
+                },
+                "confidence": 92
+              },
+              {
+                "text": "baixo",
+                "bbox": {
+                  "x0": 340,
+                  "y0": 67,
+                  "x1": 414,
+                  "y1": 90
+                },
+                "confidence": 96
+              },
+              {
+                "text": "contraste",
+                "bbox": {
+                  "x0": 425,
+                  "y0": 67,
+                  "x1": 554,
+                  "y1": 90
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Taxa",
+                "bbox": {
+                  "x0": 40,
+                  "y0": 197,
+                  "x1": 106,
+                  "y1": 220
+                },
+                "confidence": 96
+              },
+              {
+                "text": "de",
+                "bbox": {
+                  "x0": 117,
+                  "y0": 197,
+                  "x1": 151,
+                  "y1": 220
+                },
+                "confidence": 96
+              },
+              {
+                "text": "0,75%;",
+                "bbox": {
+                  "x0": 162,
+                  "y0": 197,
+                  "x1": 258,
+                  "y1": 225
+                },
+                "confidence": 96
+              },
+              {
+                "text": "não",
+                "bbox": {
+                  "x0": 271,
+                  "y0": 197,
+                  "x1": 322,
+                  "y1": 220
+                },
+                "confidence": 96
+              },
+              {
+                "text": "há",
+                "bbox": {
+                  "x0": 334,
+                  "y0": 197,
+                  "x1": 366,
+                  "y1": 220
+                },
+                "confidence": 96
+              },
+              {
+                "text": "multa.",
+                "bbox": {
+                  "x0": 378,
+                  "y0": 197,
+                  "x1": 461,
+                  "y1": 220
+                },
+                "confidence": 57
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 180,
+            "text": "\"eynuw ey oeu “o,6/'Q op exe\ne)senuoo oxIeq — 31831 OIloLLOIA",
+            "confidence": 50,
+            "letters": 44,
+            "tokens": 9,
+            "words": [
+              {
+                "text": "\"eynuw",
+                "bbox": {
+                  "x0": 739,
+                  "y0": 1180,
+                  "x1": 822,
+                  "y1": 1203
+                },
+                "confidence": 57
+              },
+              {
+                "text": "ey",
+                "bbox": {
+                  "x0": 834,
+                  "y0": 1180,
+                  "x1": 866,
+                  "y1": 1203
+                },
+                "confidence": 92
+              },
+              {
+                "text": "oeu",
+                "bbox": {
+                  "x0": 878,
+                  "y0": 1180,
+                  "x1": 929,
+                  "y1": 1203
+                },
+                "confidence": 72
+              },
+              {
+                "text": "“o,6/'Q",
+                "bbox": {
+                  "x0": 942,
+                  "y0": 1175,
+                  "x1": 1038,
+                  "y1": 1203
+                },
+                "confidence": 20
+              },
+              {
+                "text": "op",
+                "bbox": {
+                  "x0": 1049,
+                  "y0": 1180,
+                  "x1": 1083,
+                  "y1": 1203
+                },
+                "confidence": 69
+              },
+              {
+                "text": "exe",
+                "bbox": {
+                  "x0": 1094,
+                  "y0": 1180,
+                  "x1": 1160,
+                  "y1": 1203
+                },
+                "confidence": 77
+              },
+              {
+                "text": "e)senuoo",
+                "bbox": {
+                  "x0": 646,
+                  "y0": 1310,
+                  "x1": 775,
+                  "y1": 1333
+                },
+                "confidence": 29
+              },
+              {
+                "text": "oxIeq",
+                "bbox": {
+                  "x0": 786,
+                  "y0": 1310,
+                  "x1": 860,
+                  "y1": 1333
+                },
+                "confidence": 6
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 870,
+                  "y0": 1317,
+                  "x1": 903,
+                  "y1": 1320
+                },
+                "confidence": 85
+              },
+              {
+                "text": "31831",
+                "bbox": {
+                  "x0": 913,
+                  "y0": 1310,
+                  "x1": 1014,
+                  "y1": 1333
+                },
+                "confidence": 48
+              },
+              {
+                "text": "OIloLLOIA",
+                "bbox": {
+                  "x0": 1024,
+                  "y0": 1310,
+                  "x1": 1158,
+                  "y1": 1339
+                },
+                "confidence": 4
+              }
+            ],
+            "sourceToOcr": [
+              -1,
+              0,
+              0,
+              -1,
+              1200,
+              1400
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+      "ocrPageText": "FICTÍCIO TESTE — baixo contraste\nTaxa de 0,75%; não há multa.",
+      "ocrTableCells": [],
+      "ocrConfidence": 91,
+      "warnings": [
+        "layout_unverified",
+        "raster_layout_review_required"
+      ]
+    }
+  ],
+  "reviewRequired": true,
+  "indexingEligible": false,
+  "extractorVersion": "pdf-evidence-v2"
+}

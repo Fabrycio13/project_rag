@@ -1,0 +1,394 @@
+{
+  "generatedAt": "2026-10-13T16:55:09.562Z",
+  "fixtureCount": 9,
+  "counts": {
+    "evidence_pass": 3,
+    "review_required": 4,
+    "evidence_gap": 1,
+    "failure": 1
+  },
+  "scope": "Exact page evidence only; not QA model accuracy, layout certification or training.",
+  "results": [
+    {
+      "id": "pt-br",
+      "file": "pt-br.pdf",
+      "durationMs": 574,
+      "error": null,
+      "questions": [
+        {
+          "question": "Qual o desconto e mensalidade?",
+          "answer": "12,5%; R$ 2.345,67",
+          "evidence": [
+            "12,5%",
+            "R$ 2.345,67"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        },
+        {
+          "question": "Há renovação automática?",
+          "answer": "Não",
+          "evidence": [
+            "Não há renovação automática"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        },
+        {
+          "question": "Qual entidade?",
+          "answer": "Associação fictícia",
+          "evidence": [
+            "Associação",
+            "ação",
+            "proteção"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "evidence_pass",
+      "reviewReason": null,
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "text",
+          "confidence": null,
+          "warnings": [
+            "layout_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "same-page",
+      "file": "same-page.pdf",
+      "durationMs": 2438,
+      "error": null,
+      "questions": [
+        {
+          "question": "Qual a restrição do auditor?",
+          "answer": "Não pode exportar",
+          "evidence": [
+            "Auditor não pode exportar"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        },
+        {
+          "question": "Qual mensalidade?",
+          "answer": "R$ 2.345,67",
+          "evidence": [
+            "R$ 2.345,67"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "evidence_pass",
+      "reviewReason": null,
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "confidence": 95,
+          "warnings": [
+            "layout_unverified",
+            "mixed_reading_order_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "borderless",
+      "file": "borderless.pdf",
+      "durationMs": 2280,
+      "error": null,
+      "questions": [
+        {
+          "question": "Valor do plano Avançado?",
+          "answer": "R$ 987,65",
+          "evidence": [
+            "Avançado",
+            "R$ 987,65"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        },
+        {
+          "question": "Desconto do Essencial?",
+          "answer": "2,5%",
+          "evidence": [
+            "Essencial",
+            "2,5%"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "review_required",
+      "reviewReason": "Borderless row/column association not reconstructed; text presence alone is insufficient.",
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "confidence": 94,
+          "warnings": [
+            "layout_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "merged-multiline",
+      "file": "merged-multiline.pdf",
+      "durationMs": 2039,
+      "error": null,
+      "questions": [
+        {
+          "question": "Dependentes incluídos?",
+          "answer": "Não",
+          "evidence": [
+            "Não inclui dependentes"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        },
+        {
+          "question": "Reembolso de Saúde?",
+          "answer": "R$ 123,45",
+          "evidence": [
+            "Saúde",
+            "R$ 123,45"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "review_required",
+      "reviewReason": "Merged header and multiline cell semantics unsupported; PSM 7 assumes single-line cells.",
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "confidence": 94,
+          "warnings": [
+            "layout_unverified",
+            "table_cells_reading_order_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skew-rotated",
+      "file": "skew-rotated.pdf",
+      "durationMs": 2159,
+      "error": null,
+      "questions": [
+        {
+          "question": "Aprovação automática?",
+          "answer": "Não",
+          "evidence": [
+            "não automática"
+          ],
+          "page": 1,
+          "evidencePresent": false,
+          "missing": [
+            "não automática"
+          ]
+        },
+        {
+          "question": "Qual taxa?",
+          "answer": "3,75%",
+          "evidence": [
+            "3,75%"
+          ],
+          "page": 1,
+          "evidencePresent": false,
+          "missing": [
+            "3,75%"
+          ]
+        }
+      ],
+      "allEvidence": false,
+      "status": "evidence_gap",
+      "reviewReason": "Rotation/layout requires review; no explicit orientation detection.",
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "confidence": 49,
+          "warnings": [
+            "layout_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "low-contrast-skew",
+      "file": "low-contrast-skew.pdf",
+      "durationMs": 2221,
+      "error": null,
+      "questions": [
+        {
+          "question": "Prazo de retenção?",
+          "answer": "45 dias",
+          "evidence": [
+            "45 dias",
+            "não reter indefinidamente"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        },
+        {
+          "question": "Há multa e qual taxa?",
+          "answer": "Não; 0,75%",
+          "evidence": [
+            "0,75%",
+            "não há multa"
+          ],
+          "page": 2,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "review_required",
+      "reviewReason": "9-degree skew unsupported; low contrast tested separately on page 2.",
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "confidence": 90,
+          "warnings": [
+            "layout_unverified"
+          ]
+        },
+        {
+          "page": 2,
+          "method": "ocr",
+          "confidence": 91,
+          "warnings": [
+            "layout_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "columns-blank",
+      "file": "columns-blank.pdf",
+      "durationMs": 478,
+      "error": null,
+      "questions": [
+        {
+          "question": "Ordem das etapas?",
+          "answer": "1, 2, 3, 4",
+          "evidence": [
+            "1. Solicitar aprovação.",
+            "2. Não exportar.",
+            "3. Guardar por 20 dias.",
+            "4. Excluir após o prazo."
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "review_required",
+      "reviewReason": "PDF paint order interleaves columns; content presence does not verify reading order.",
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "text",
+          "confidence": null,
+          "warnings": [
+            "layout_unverified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blank-interspersed",
+      "file": "blank-interspersed.pdf",
+      "durationMs": 1388,
+      "error": "no_useful_text",
+      "questions": [
+        {
+          "question": "Qual valor legítimo?",
+          "answer": "R$ 2.345,67",
+          "evidence": [
+            "R$ 2.345,67"
+          ],
+          "page": 1,
+          "evidencePresent": false,
+          "missing": [
+            "R$ 2.345,67"
+          ]
+        },
+        {
+          "question": "Retenção na página 3?",
+          "answer": "90 dias",
+          "evidence": [
+            "90 dias",
+            "não indefinida"
+          ],
+          "page": 3,
+          "evidencePresent": false,
+          "missing": [
+            "90 dias",
+            "não indefinida"
+          ]
+        }
+      ],
+      "allEvidence": false,
+      "status": "failure",
+      "reviewReason": "Blank page 2 currently rejects whole document; injection resistance of downstream generation is not tested.",
+      "pageMethods": []
+    },
+    {
+      "id": "injection",
+      "file": "injection.pdf",
+      "durationMs": 614,
+      "error": null,
+      "questions": [
+        {
+          "question": "Qual valor legítimo?",
+          "answer": "R$ 2.345,67",
+          "evidence": [
+            "R$ 2.345,67"
+          ],
+          "page": 1,
+          "evidencePresent": true,
+          "missing": []
+        }
+      ],
+      "allEvidence": true,
+      "status": "evidence_pass",
+      "reviewReason": null,
+      "pageMethods": [
+        {
+          "page": 1,
+          "method": "text",
+          "confidence": null,
+          "warnings": [
+            "layout_unverified"
+          ]
+        }
+      ]
+    }
+  ]
+}

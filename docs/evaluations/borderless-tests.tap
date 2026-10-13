@@ -1,0 +1,122 @@
+(node:11832) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/admin-invitation-acceptance.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ normalizes invitation emails for matching (2.4658ms)
+✔ validates a single invitation email (1.062ms)
+✔ accepts only a verified account matching the invited email (0.4319ms)
+✔ returns an invitation reference only for server-issued admin metadata (0.7131ms)
+(node:2076) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/admin-invitation-redirect.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ builds the sign-up redirect from the configured public app URL (2.3639ms)
+✔ allows a localhost redirect only when development mode enables it (0.5276ms)
+✔ rejects missing, insecure, and local invitation URLs (1.461ms)
+(node:10140) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/agent-data.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ agent queries scope every row to organization and never select instructions (178.3737ms)
+(node:8804) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/agent-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ agent request authorizes owned organization before writing and keeps instructions out of responses (268.2817ms)
+✔ agents migration limits grants and isolates active owners of non-archived organizations (5.9091ms)
+✔ agent UI and API wire authorized scopes without exposing instructions or unsupported features (10.4257ms)
+(node:12308) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/agents.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ agent input accepts only bounded name and required instructions (154.8974ms)
+✔ documents enforce private scoped authorization at API and database boundaries (7.8921ms)
+✔ document UI has explicit PDF input, upload guard and honest storage states (6.4603ms)
+✔ review-required pages survive persistence and are exposed without source text (7.7888ms)
+✔ explicit extraction action is authenticated and never returns raw text (2.7258ms)
+✔ processing persistence stays RLS scoped with reclaim and fencing (1.4338ms)
+(node:14460) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/document-upload.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ coordinator never reports partial failure as success (126.6865ms)
+(node:3356) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/documents.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PDF validation rejects disguised, oversized, empty and unsafe filenames (161.561ms)
+(node:8476) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/organization-data.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ list and detail scope to authenticated creator and non-archived rows (3.4609ms)
+✔ create validates and inserts only name and authenticated creator (3.024ms)
+✔ organization routes use active access, scoped queries and same-origin writes (23.2501ms)
+✔ new migration keeps creator-only scope for active owner and admin (1.8159ms)
+(node:6884) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/organizations.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ accepts only trimmed names of 1–120 Unicode characters (3.6364ms)
+✔ only active owners and admins can manage organizations (0.5657ms)
+✔ independently authored inventory preserves every association and negations (7240.7229ms)
+✔ scanned two-column prose is not promoted to a table (8345.6666ms)
+✔ negative sign OCR ambiguity is not promoted to validated Markdown (6674.0368ms)
+✔ irregular partial row refuses Markdown while retaining evidence (9.1649ms)
+✔ literal pipes are escaped in validated rectangular Markdown (9.0861ms)
+✔ three-column prose with numeric dates is not a table (0.6184ms)
+✔ low confidence cannot certify a rectangular table (2.9058ms)
+✔ coordinate ordering is independent of strings and reversed PDF painting (1761.1423ms)
+✔ physical quarter-turns and upside-down rasters preserve evidence without PDF rotation metadata (21455.7528ms)
+✔ nonblank unreadable page remains review-required alongside usable evidence (3100.0897ms)
+✔ extended corpus has authored provenance and intact distinct PDFs (50.2259ms)
+✔ actual PT-BR native extraction preserves accents, decimal, percentage and negation (1407.2684ms)
+✔ same page PT-BR raster clause survives meaningful native text (8390.2021ms)
+✔ rotation keeps original OCR attempts and source-coordinate word provenance (13008.9742ms)
+✔ unsupported borderless association is review-required, not eligible for indexing (6203.1693ms)
+✔ borderless table must reconstruct authored row/column associations (4944.6284ms)
+✔ merged ruled cells retain multiline association and spanning header (5315.7688ms)
+✔ merged multiline raster retains tokens but is not layout-certified (4052.5194ms)
+✔ skew-rotated must retain all authored page evidence (6165.2878ms)
+✔ blank-interspersed must retain all authored page evidence (808.702ms)
+✔ columns must read entire left column before right (801.4588ms)
+✔ injection remains untrusted source text, not an executed extraction command (833.1058ms)
+native: {"pages":[{"page":1,"pageGeometry":{"view":[0,0,600,300],"rotation":0,"userUnit":1},"method":"text","evidenceState":"extracted","ocrTableStructure":null,"text":"PRIVATE TEXT PAGE ALPHA 12345","nativeText":"PRIVATE TEXT PAGE ALPHA 12345","nativeRawText":"PRIVATE TEXT PAGE ALPHA 12345","nativeSpans":[{"text":"PRIVATE TEXT PAGE ALPHA 12345","transform":[22,0,0,22,30,200],"width":369.26999999999987,"height":22,"hasEOL":false}],"nativeColumnCut":null,"ocrOrientation":null,"ocrText":"","ocrPageText":"","ocrTableCells":[],"ocrConfidence":null,"warnings":["layout_unverified"]}],"reviewRequired":false,"indexingEligible":true,"extractorVersion":"pdf-evidence-v3-borderless"}
+✔ extracts native text without OCR (1574.3768ms)
+mixed: {"pages":[{"page":1,"pageGeometry":{"view":[0,0,600,300],"rotation":0,"userUnit":1},"method":"text","evidenceState":"extracted","ocrTableStructure":null,"text":"PRIVATE TEXT PAGE ALPHA 12345","nativeText":"PRIVATE TEXT PAGE ALPHA 12345","nativeRawText":"PRIVATE TEXT PAGE ALPHA 12345","nativeSpans":[{"text":"PRIVATE TEXT PAGE ALPHA 12345","transform":[22,0,0,22,30,200],"width":369.26999999999987,"height":22,"hasEOL":false}],"nativeColumnCut":null,"ocrOrientation":null,"ocrText":"","ocrPageText":"","ocrTableCells":[],"ocrConfidence":null,"warnings":["layout_unverified"]},{"page":2,"pageGeometry":{"view":[0,0,600,300],"rotation":0,"userUnit":1},"method":"ocr","evidenceState":"review_required","ocrTableStructure":{"state":"review_required","markdown":null,"reason":"no_validated_table_structure"},"text":"SCANNED PAGE BRAVO 67890","nativeText":"","nativeRawText":"","nativeSpans":[],"nativeColumnCut":null,"ocrOrientation":{"rotation":0,"sourceToOcr":[1,0,0,1,0,0],"viewportTransform":[2,0,0,-2,0,600],"projection":{"horizontal":253.07100315310055,"vertical":19.037370080579237,"ink":8563},"attempts":[{"rotation":0,"text":"SCANNED PAGE BRAVO 67890","confidence":94,"letters":21,"tokens":4,"words":[{"text":"SCANNED","bbox":{"x0":62,"y0":185,"x1":292,"y1":220},"confidence":91},{"text":"PAGE","bbox":{"x0":312,"y0":185,"x1":435,"y1":220},"confidence":96},{"text":"BRAVO","bbox":{"x0":455,"y0":185,"x1":613,"y1":220},"confidence":96},{"text":"67890","bbox":{"x0":631,"y0":185,"x1":760,"y1":220},"confidence":96}],"sourceToOcr":[1,0,0,1,0,0]},{"rotation":180,"text":"06829 ONVHE 3S9OYd AINNVOS","confidence":12,"letters":23,"tokens":4,"words":[{"text":"06829","bbox":{"x0":440,"y0":380,"x1":569,"y1":415},"confidence":22},{"text":"ONVHE","bbox":{"x0":587,"y0":380,"x1":745,"y1":415},"confidence":29},{"text":"3S9OYd","bbox":{"x0":765,"y0":380,"x1":888,"y1":415},"confidence":0},{"text":"AINNVOS","bbox":{"x0":908,"y0":380,"x1":1138,"y1":415},"confidence":0}],"sourceToOcr":[-1,0,0,-1,1200,600]}],"ambiguous":false},"ocrText":"SCANNED PAGE BRAVO 67890","ocrPageText":"SCANNED PAGE BRAVO 67890","ocrTableCells":[],"ocrConfidence":94,"warnings":["layout_unverified","raster_layout_review_required"]}],"reviewRequired":true,"indexingEligible":false,"extractorVersion":"pdf-evidence-v3-borderless"}
+✔ OCR runs only on scanned page of a mixed PDF (6045.7707ms)
+scan: {"pages":[{"page":1,"pageGeometry":{"view":[0,0,600,300],"rotation":0,"userUnit":1},"method":"ocr","evidenceState":"review_required","ocrTableStructure":{"state":"review_required","markdown":null,"reason":"no_validated_table_structure"},"text":"SCANNED PAGE BRAVO 67890","nativeText":"","nativeRawText":"","nativeSpans":[],"nativeColumnCut":null,"ocrOrientation":{"rotation":0,"sourceToOcr":[1,0,0,1,0,0],"viewportTransform":[2,0,0,-2,0,600],"projection":{"horizontal":253.07100315310055,"vertical":19.037370080579237,"ink":8563},"attempts":[{"rotation":0,"text":"SCANNED PAGE BRAVO 67890","confidence":94,"letters":21,"tokens":4,"words":[{"text":"SCANNED","bbox":{"x0":62,"y0":185,"x1":292,"y1":220},"confidence":91},{"text":"PAGE","bbox":{"x0":312,"y0":185,"x1":435,"y1":220},"confidence":96},{"text":"BRAVO","bbox":{"x0":455,"y0":185,"x1":613,"y1":220},"confidence":96},{"text":"67890","bbox":{"x0":631,"y0":185,"x1":760,"y1":220},"confidence":96}],"sourceToOcr":[1,0,0,1,0,0]},{"rotation":180,"text":"06829 ONVHE 3S9OYd AINNVOS","confidence":12,"letters":23,"tokens":4,"words":[{"text":"06829","bbox":{"x0":440,"y0":380,"x1":569,"y1":415},"confidence":22},{"text":"ONVHE","bbox":{"x0":587,"y0":380,"x1":745,"y1":415},"confidence":29},{"text":"3S9OYd","bbox":{"x0":765,"y0":380,"x1":888,"y1":415},"confidence":0},{"text":"AINNVOS","bbox":{"x0":908,"y0":380,"x1":1138,"y1":415},"confidence":0}],"sourceToOcr":[-1,0,0,-1,1200,600]}],"ambiguous":false},"ocrText":"SCANNED PAGE BRAVO 67890","ocrPageText":"SCANNED PAGE BRAVO 67890","ocrTableCells":[],"ocrConfidence":94,"warnings":["layout_unverified","raster_layout_review_required"]}],"reviewRequired":true,"indexingEligible":false,"extractorVersion":"pdf-evidence-v3-borderless"}
+✔ scanned-only PDF uses real OCR (5935.6475ms)
+✔ corrupted PDF fails, not empty success (1468.639ms)
+✔ blank page fails after OCR, not empty success (1563.8414ms)
+✔ page count is capped (1651.5577ms)
+✔ large raster dimensions are rejected before OCR (3460.7878ms)
+✔ timeout terminates local child (1164.5116ms)
+✔ password-protected PDF fails without asking for a password (1241.1612ms)
+✔ same-page raster evidence survives native furniture (7155.0335ms)
+✔ same-page raster evidence survives native meaningful body (7627.3133ms)
+✔ real hard fixture retains C7 and T1 on mixed page (17759.5302ms)
+✔ different synthetic scanned ruled grid retains cells without fixture-specific vocabulary (5288.0011ms)
+✔ scanned page 3 preserves the Extra row with page and OCR provenance (21890.6182ms)
+(node:3124) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/platform-user-check-state.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ reports an active platform user (5.5005ms)
+✔ reports a missing platform user (0.7008ms)
+✔ reports a non-active platform user (1.1169ms)
+(node:9028) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/same-origin-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Usabit\Desktop\Projetos\Project-RAG\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ compares the browser origin with the external host header (4.7544ms)
+✔ rejects a cross-origin mutation (0.6422ms)
+✔ uses the forwarded host and protocol behind a trusted proxy (0.4056ms)
+ℹ tests 67
+ℹ suites 0
+ℹ pass 67
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 53263.2155

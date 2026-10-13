@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "text",
+      "text": "FICTICIO TESTE | CENARIO-ZETA | dificil  FICTICIO TESTE - pagina 1 - sem dados reais  FICTICIO TESTE [C1] Contrato e escopo  As unidades imaginarias UNIDADE-A e UNIDADE-B usam o pacote CENARIO-ZETA. Vigencia: 01/02/2030 a 31/01/2031. Este material nao e aconselhamento juridico.  FICTICIO TESTE [C2] Preco e pagamento  Mensalidade: R$ 1.250,00. Pagamento em 15 dias corridos apos recebimento. Nao ha renovacao automatica. Atraso nao gera multa neste cenario.  FICTICIO TESTE [C3] Cancelamento  Cancelamento exige aviso de 30 dias corridos. Excecao: indisponibilidade superior a 48 horas consecutivas permite cancelamento sem aviso e sem taxa. Exatamente 48 horas nao ativa a excecao.  FICTICIO TESTE [C4] Politica de acesso  1. Acesso permitido somente a membros aprovados da UNIDADE-A. 2. Nao compartilhar arquivos externamente. 3. Excecao: auditor interno aprovado pode consultar copia somente leitura por 7 dias; nao pode exportar."
+    },
+    {
+      "page": 2,
+      "method": "text",
+      "text": "FICTICIO TESTE | CENARIO-ZETA | dificil  FICTICIO TESTE - pagina 2 - sem dados reais  FICTICIO TESTE [C5a] Limites e suporte (inicio)  Plano   Limite mensal   Resposta   Custo adicional Base   120 unidades   8 horas uteis   R$ 0,00 Tabela continua na pagina seguinte."
+    },
+    {
+      "page": 3,
+      "method": "ocr",
+      "text": "FICTICIO TESTE | CENARIO-ZETA | difícil\n\nFICTICIO TESTE [C5b] Limites e suporte (continuacao)\n\nNota: Extra exige aprovacao previa; nao e incluido automaticamente. Limites nao se acumulam entre\nmeses.\n\nFICTICIO TESTE [C6] Retencao e excecoes\n\nExcluir copias operacionais em 20 dias corridos apos termino. Excecao: copia de auditoria fica por\n90 dias corridos, somente leitura. Nao reter indefinidamente. O prazo de 90 dias nao se aplica a\ncopias operacionais.\n\nFICTICIO TESTE - pagina 3 - sem dados reais"
+    },
+    {
+      "page": 4,
+      "method": "text",
+      "text": "FICTICIO TESTE | CENARIO-ZETA | dificil  FICTICIO TESTE - pagina 4 - sem dados reais"
+    }
+  ]
+}

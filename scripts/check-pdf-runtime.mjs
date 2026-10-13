@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFile,mkdtemp,mkdir,copyFile,rm} from 'node:fs/promises';
+import {execFile} from 'node:child_process';
+import path from 'node:path';
+const manifest='.next/server/app/api/organizations/[id]/agents/[agentId]/documents/[documentId]/process/route.js.nft.json';
+const files=JSON.parse(await readFile(manifest,'utf8')).files.map(p=>path.resolve(path.dirname(manifest),p).replaceAll('\\','/'));
+for(const suffix of ['scripts/pdf-extract.mjs','scripts/pdf-native-layout.mjs','scripts/ocr-table-cells.mjs','scripts/ocr-orientation.mjs','node_modules/tesseract.js/src/worker-script/node/index.js'])assert.ok(files.some(p=>p.endsWith(suffix)),suffix);
+assert.ok(files.some(p=>p.includes('/tesseract.js-core/')&&p.endsWith('.wasm')),'local OCR core');
+assert.ok(files.some(p=>p.includes('/@tesseract.js-data/por/')&&p.endsWith('.traineddata.gz')),'local Portuguese language');
+assert.ok(files.some(p=>p.includes('/@napi-rs/')&&p.endsWith('.node')),'platform canvas');
+console.log(JSON.stringify({tracedFileCount:files.length,requiredPdfAssets:true}));

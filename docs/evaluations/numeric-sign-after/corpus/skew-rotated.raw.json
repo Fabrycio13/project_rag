@@ -1,0 +1,1038 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          800
+        ],
+        "rotation": 90,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "text": "FICTÍCIO TESTE — skew-rotated\nPágina digitalizada rotacionada em 90 graus.\nAprovação: não automática; taxa de 3,75%.",
+      "nativeText": "",
+      "nativeRawText": "",
+      "nativeSpans": [],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 270,
+        "sourceToOcr": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          1600
+        ],
+        "viewportTransform": [
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "projection": {
+          "horizontal": 25.664120149318517,
+          "vertical": 205.8948693462974,
+          "ink": 11519
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "E -.\n\ndg e =\n\n2 Ss =,\n\n3 3\n\n& &\n\n= = =\n\nFS &\no &\n\nfe) Ns po\n\nMm [on m\n\nCc Mm\n\nSS |\n\nFN &\n\nÉ o, 2\n\nO\n\n8 S X\n\nTo Mm Oo\n\ne. o o.\n\nÉ &\n\n(o)\n\nfel 3 o\n\nP o\n\nww 8\n\nSd\n\nE\n\nS -\n\n' 6",
+            "confidence": 49,
+            "letters": 64,
+            "tokens": 18,
+            "words": [
+              {
+                "text": "E",
+                "bbox": {
+                  "x0": 1109,
+                  "y0": 40,
+                  "x1": 1137,
+                  "y1": 75
+                },
+                "confidence": 39
+              },
+              {
+                "text": "-.",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 43,
+                  "x1": 1357,
+                  "y1": 64
+                },
+                "confidence": 0
+              },
+              {
+                "text": "dg",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 79,
+                  "x1": 1131,
+                  "y1": 102
+                },
+                "confidence": 44
+              },
+              {
+                "text": "e",
+                "bbox": {
+                  "x0": 1194,
+                  "y0": 67,
+                  "x1": 1222,
+                  "y1": 98
+                },
+                "confidence": 66
+              },
+              {
+                "text": "=",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 68,
+                  "x1": 1357,
+                  "y1": 87
+                },
+                "confidence": 73
+              },
+              {
+                "text": "2",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 104,
+                  "x1": 1131,
+                  "y1": 118
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Ss",
+                "bbox": {
+                  "x0": 1196,
+                  "y0": 85,
+                  "x1": 1216,
+                  "y1": 121
+                },
+                "confidence": 26
+              },
+              {
+                "text": "=,",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 89,
+                  "x1": 1362,
+                  "y1": 114
+                },
+                "confidence": 92
+              },
+              {
+                "text": "3",
+                "bbox": {
+                  "x0": 1109,
+                  "y0": 119,
+                  "x1": 1131,
+                  "y1": 149
+                },
+                "confidence": 52
+              },
+              {
+                "text": "3",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 118,
+                  "x1": 1216,
+                  "y1": 132
+                },
+                "confidence": 71
+              },
+              {
+                "text": "&",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 151,
+                  "x1": 1136,
+                  "y1": 182
+                },
+                "confidence": 33
+              },
+              {
+                "text": "&",
+                "bbox": {
+                  "x0": 1194,
+                  "y0": 143,
+                  "x1": 1222,
+                  "y1": 180
+                },
+                "confidence": 72
+              },
+              {
+                "text": "=",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 186,
+                  "x1": 1131,
+                  "y1": 189
+                },
+                "confidence": 94
+              },
+              {
+                "text": "=",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 184,
+                  "x1": 1222,
+                  "y1": 196
+                },
+                "confidence": 95
+              },
+              {
+                "text": "=",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 177,
+                  "x1": 1357,
+                  "y1": 194
+                },
+                "confidence": 91
+              },
+              {
+                "text": "FS",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 198,
+                  "x1": 1222,
+                  "y1": 232
+                },
+                "confidence": 8
+              },
+              {
+                "text": "&",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 197,
+                  "x1": 1357,
+                  "y1": 233
+                },
+                "confidence": 3
+              },
+              {
+                "text": "o",
+                "bbox": {
+                  "x0": 1133,
+                  "y0": 220,
+                  "x1": 1136,
+                  "y1": 230
+                },
+                "confidence": 0
+              },
+              {
+                "text": "&",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 222,
+                  "x1": 1222,
+                  "y1": 225
+                },
+                "confidence": 0
+              },
+              {
+                "text": "fe)",
+                "bbox": {
+                  "x0": 1111,
+                  "y0": 223,
+                  "x1": 1136,
+                  "y1": 258
+                },
+                "confidence": 89
+              },
+              {
+                "text": "Ns",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 223,
+                  "x1": 1220,
+                  "y1": 261
+                },
+                "confidence": 34
+              },
+              {
+                "text": "po",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 235,
+                  "x1": 1357,
+                  "y1": 252
+                },
+                "confidence": 35
+              },
+              {
+                "text": "Mm",
+                "bbox": {
+                  "x0": 1111,
+                  "y0": 255,
+                  "x1": 1131,
+                  "y1": 282
+                },
+                "confidence": 52
+              },
+              {
+                "text": "[on",
+                "bbox": {
+                  "x0": 1196,
+                  "y0": 253,
+                  "x1": 1226,
+                  "y1": 281
+                },
+                "confidence": 27
+              },
+              {
+                "text": "m",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 255,
+                  "x1": 1357,
+                  "y1": 271
+                },
+                "confidence": 89
+              },
+              {
+                "text": "Cc",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 272,
+                  "x1": 1135,
+                  "y1": 297
+                },
+                "confidence": 35
+              },
+              {
+                "text": "Mm",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 276,
+                  "x1": 1216,
+                  "y1": 290
+                },
+                "confidence": 84
+              },
+              {
+                "text": "SS",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 292,
+                  "x1": 1136,
+                  "y1": 316
+                },
+                "confidence": 0
+              },
+              {
+                "text": "|",
+                "bbox": {
+                  "x0": 1342,
+                  "y0": 281,
+                  "x1": 1344,
+                  "y1": 311
+                },
+                "confidence": 93
+              },
+              {
+                "text": "FN",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 311,
+                  "x1": 1221,
+                  "y1": 350
+                },
+                "confidence": 0
+              },
+              {
+                "text": "&",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 321,
+                  "x1": 1357,
+                  "y1": 349
+                },
+                "confidence": 0
+              },
+              {
+                "text": "É",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 343,
+                  "x1": 1137,
+                  "y1": 372
+                },
+                "confidence": 13
+              },
+              {
+                "text": "o,",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 353,
+                  "x1": 1222,
+                  "y1": 372
+                },
+                "confidence": 68
+              },
+              {
+                "text": "2",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 351,
+                  "x1": 1351,
+                  "y1": 387
+                },
+                "confidence": 94
+              },
+              {
+                "text": "O",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 375,
+                  "x1": 1131,
+                  "y1": 388
+                },
+                "confidence": 86
+              },
+              {
+                "text": "8",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 390,
+                  "x1": 1131,
+                  "y1": 404
+                },
+                "confidence": 73
+              },
+              {
+                "text": "S",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 375,
+                  "x1": 1216,
+                  "y1": 405
+                },
+                "confidence": 64
+              },
+              {
+                "text": "X",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 389,
+                  "x1": 1351,
+                  "y1": 408
+                },
+                "confidence": 52
+              },
+              {
+                "text": "To",
+                "bbox": {
+                  "x0": 1111,
+                  "y0": 408,
+                  "x1": 1131,
+                  "y1": 411
+                },
+                "confidence": 39
+              },
+              {
+                "text": "Mm",
+                "bbox": {
+                  "x0": 1196,
+                  "y0": 404,
+                  "x1": 1216,
+                  "y1": 429
+                },
+                "confidence": 84
+              },
+              {
+                "text": "Oo",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 409,
+                  "x1": 1351,
+                  "y1": 423
+                },
+                "confidence": 71
+              },
+              {
+                "text": "e.",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 419,
+                  "x1": 1140,
+                  "y1": 454
+                },
+                "confidence": 22
+              },
+              {
+                "text": "o",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 425,
+                  "x1": 1222,
+                  "y1": 438
+                },
+                "confidence": 84
+              },
+              {
+                "text": "o.",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 425,
+                  "x1": 1356,
+                  "y1": 448
+                },
+                "confidence": 3
+              },
+              {
+                "text": "É",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 448,
+                  "x1": 1131,
+                  "y1": 477
+                },
+                "confidence": 79
+              },
+              {
+                "text": "&",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 450,
+                  "x1": 1356,
+                  "y1": 473
+                },
+                "confidence": 56
+              },
+              {
+                "text": "(o)",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 466,
+                  "x1": 1216,
+                  "y1": 481
+                },
+                "confidence": 62
+              },
+              {
+                "text": "fel",
+                "bbox": {
+                  "x0": 1111,
+                  "y0": 480,
+                  "x1": 1140,
+                  "y1": 509
+                },
+                "confidence": 12
+              },
+              {
+                "text": "3",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 484,
+                  "x1": 1216,
+                  "y1": 505
+                },
+                "confidence": 96
+              },
+              {
+                "text": "o",
+                "bbox": {
+                  "x0": 1335,
+                  "y0": 476,
+                  "x1": 1357,
+                  "y1": 489
+                },
+                "confidence": 81
+              },
+              {
+                "text": "P",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 505,
+                  "x1": 1131,
+                  "y1": 519
+                },
+                "confidence": 0
+              },
+              {
+                "text": "o",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 517,
+                  "x1": 1222,
+                  "y1": 530
+                },
+                "confidence": 84
+              },
+              {
+                "text": "ww",
+                "bbox": {
+                  "x0": 1111,
+                  "y0": 530,
+                  "x1": 1137,
+                  "y1": 551
+                },
+                "confidence": 0
+              },
+              {
+                "text": "8",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 533,
+                  "x1": 1222,
+                  "y1": 547
+                },
+                "confidence": 62
+              },
+              {
+                "text": "Sd",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 555,
+                  "x1": 1137,
+                  "y1": 569
+                },
+                "confidence": 2
+              },
+              {
+                "text": "E",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 572,
+                  "x1": 1137,
+                  "y1": 598
+                },
+                "confidence": 46
+              },
+              {
+                "text": "S",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 594,
+                  "x1": 1137,
+                  "y1": 612
+                },
+                "confidence": 75
+              },
+              {
+                "text": "-",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 603,
+                  "x1": 1216,
+                  "y1": 615
+                },
+                "confidence": 44
+              },
+              {
+                "text": "'",
+                "bbox": {
+                  "x0": 1115,
+                  "y0": 617,
+                  "x1": 1118,
+                  "y1": 619
+                },
+                "confidence": 26
+              },
+              {
+                "text": "6",
+                "bbox": {
+                  "x0": 1200,
+                  "y0": 618,
+                  "x1": 1216,
+                  "y1": 638
+                },
+                "confidence": 26
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 270,
+            "text": "FICTÍCIO TESTE — skew-rotated\nPágina digitalizada rotacionada em 90 graus.\nAprovação: não automática; taxa de 3,75%.",
+            "confidence": 94,
+            "letters": 93,
+            "tokens": 16,
+            "words": [
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 43,
+                  "y0": 238,
+                  "x1": 167,
+                  "y1": 265
+                },
+                "confidence": 96
+              },
+              {
+                "text": "TESTE",
+                "bbox": {
+                  "x0": 177,
+                  "y0": 243,
+                  "x1": 271,
+                  "y1": 265
+                },
+                "confidence": 92
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 281,
+                  "y0": 256,
+                  "x1": 311,
+                  "y1": 258
+                },
+                "confidence": 92
+              },
+              {
+                "text": "skew-rotated",
+                "bbox": {
+                  "x0": 321,
+                  "y0": 243,
+                  "x1": 489,
+                  "y1": 265
+                },
+                "confidence": 90
+              },
+              {
+                "text": "Página",
+                "bbox": {
+                  "x0": 42,
+                  "y0": 378,
+                  "x1": 132,
+                  "y1": 406
+                },
+                "confidence": 96
+              },
+              {
+                "text": "digitalizada",
+                "bbox": {
+                  "x0": 143,
+                  "y0": 378,
+                  "x1": 290,
+                  "y1": 406
+                },
+                "confidence": 93
+              },
+              {
+                "text": "rotacionada",
+                "bbox": {
+                  "x0": 302,
+                  "y0": 378,
+                  "x1": 455,
+                  "y1": 400
+                },
+                "confidence": 90
+              },
+              {
+                "text": "em",
+                "bbox": {
+                  "x0": 466,
+                  "y0": 384,
+                  "x1": 505,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "90",
+                "bbox": {
+                  "x0": 517,
+                  "y0": 378,
+                  "x1": 547,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "graus.",
+                "bbox": {
+                  "x0": 558,
+                  "y0": 384,
+                  "x1": 638,
+                  "y1": 406
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Aprovação:",
+                "bbox": {
+                  "x0": 40,
+                  "y0": 463,
+                  "x1": 189,
+                  "y1": 491
+                },
+                "confidence": 96
+              },
+              {
+                "text": "não",
+                "bbox": {
+                  "x0": 202,
+                  "y0": 464,
+                  "x1": 249,
+                  "y1": 485
+                },
+                "confidence": 96
+              },
+              {
+                "text": "automática;",
+                "bbox": {
+                  "x0": 260,
+                  "y0": 463,
+                  "x1": 411,
+                  "y1": 489
+                },
+                "confidence": 96
+              },
+              {
+                "text": "taxa",
+                "bbox": {
+                  "x0": 423,
+                  "y0": 464,
+                  "x1": 477,
+                  "y1": 485
+                },
+                "confidence": 96
+              },
+              {
+                "text": "de",
+                "bbox": {
+                  "x0": 488,
+                  "y0": 463,
+                  "x1": 519,
+                  "y1": 485
+                },
+                "confidence": 96
+              },
+              {
+                "text": "3,75%.",
+                "bbox": {
+                  "x0": 530,
+                  "y0": 463,
+                  "x1": 619,
+                  "y1": 489
+                },
+                "confidence": 96
+              }
+            ],
+            "sourceToOcr": [
+              0,
+              -1,
+              1,
+              0,
+              0,
+              1600
+            ]
+          },
+          {
+            "rotation": 90,
+            "text": "\"9/,6/'E ep exe) :eonewone oeu :ogóercidy\n'SNBJlb 96 we epeuoioejo epezijenbip eurbeg\npajeror-mays — 31SH1 OIO/LOIA",
+            "confidence": 37,
+            "letters": 88,
+            "tokens": 16,
+            "words": [
+              {
+                "text": "\"9/,6/'E",
+                "bbox": {
+                  "x0": 581,
+                  "y0": 1111,
+                  "x1": 670,
+                  "y1": 1137
+                },
+                "confidence": 37
+              },
+              {
+                "text": "ep",
+                "bbox": {
+                  "x0": 681,
+                  "y0": 1115,
+                  "x1": 712,
+                  "y1": 1137
+                },
+                "confidence": 80
+              },
+              {
+                "text": "exe)",
+                "bbox": {
+                  "x0": 723,
+                  "y0": 1115,
+                  "x1": 777,
+                  "y1": 1136
+                },
+                "confidence": 0
+              },
+              {
+                "text": ":eonewone",
+                "bbox": {
+                  "x0": 789,
+                  "y0": 1111,
+                  "x1": 940,
+                  "y1": 1137
+                },
+                "confidence": 54
+              },
+              {
+                "text": "oeu",
+                "bbox": {
+                  "x0": 951,
+                  "y0": 1115,
+                  "x1": 998,
+                  "y1": 1136
+                },
+                "confidence": 86
+              },
+              {
+                "text": ":ogóercidy",
+                "bbox": {
+                  "x0": 1011,
+                  "y0": 1109,
+                  "x1": 1160,
+                  "y1": 1137
+                },
+                "confidence": 48
+              },
+              {
+                "text": "'SNBJlb",
+                "bbox": {
+                  "x0": 562,
+                  "y0": 1194,
+                  "x1": 642,
+                  "y1": 1216
+                },
+                "confidence": 0
+              },
+              {
+                "text": "96",
+                "bbox": {
+                  "x0": 653,
+                  "y0": 1200,
+                  "x1": 683,
+                  "y1": 1222
+                },
+                "confidence": 48
+              },
+              {
+                "text": "we",
+                "bbox": {
+                  "x0": 695,
+                  "y0": 1200,
+                  "x1": 734,
+                  "y1": 1216
+                },
+                "confidence": 82
+              },
+              {
+                "text": "epeuoioejo",
+                "bbox": {
+                  "x0": 745,
+                  "y0": 1200,
+                  "x1": 898,
+                  "y1": 1222
+                },
+                "confidence": 27
+              },
+              {
+                "text": "epezijenbip",
+                "bbox": {
+                  "x0": 910,
+                  "y0": 1194,
+                  "x1": 1057,
+                  "y1": 1222
+                },
+                "confidence": 12
+              },
+              {
+                "text": "eurbeg",
+                "bbox": {
+                  "x0": 1068,
+                  "y0": 1194,
+                  "x1": 1158,
+                  "y1": 1222
+                },
+                "confidence": 15
+              },
+              {
+                "text": "pajeror-mays",
+                "bbox": {
+                  "x0": 711,
+                  "y0": 1335,
+                  "x1": 879,
+                  "y1": 1357
+                },
+                "confidence": 0
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 889,
+                  "y0": 1342,
+                  "x1": 919,
+                  "y1": 1344
+                },
+                "confidence": 84
+              },
+              {
+                "text": "31SH1",
+                "bbox": {
+                  "x0": 929,
+                  "y0": 1335,
+                  "x1": 1023,
+                  "y1": 1357
+                },
+                "confidence": 21
+              },
+              {
+                "text": "OIO/LOIA",
+                "bbox": {
+                  "x0": 1033,
+                  "y0": 1335,
+                  "x1": 1157,
+                  "y1": 1362
+                },
+                "confidence": 5
+              }
+            ],
+            "sourceToOcr": [
+              0,
+              1,
+              -1,
+              0,
+              1200,
+              0
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "FICTÍCIO TESTE — skew-rotated\nPágina digitalizada rotacionada em 90 graus.\nAprovação: não automática; taxa de 3,75%.",
+      "ocrPageText": "FICTÍCIO TESTE — skew-rotated\nPágina digitalizada rotacionada em 90 graus.\nAprovação: não automática; taxa de 3,75%.",
+      "ocrTableCells": [],
+      "ocrConfidence": 94,
+      "warnings": [
+        "layout_unverified",
+        "raster_layout_review_required"
+      ]
+    }
+  ],
+  "reviewRequired": true,
+  "indexingEligible": false,
+  "extractorVersion": "pdf-evidence-v4-numeric-crop"
+}

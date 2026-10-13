@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "text",
+      "text": "FICTÍCIO TESTE — pt-br Associação fictícia: ação e proteção. Mensalidade: R$ 2.345,67. Desconto: 12,5%. Não há renovação automática. Auditor não pode exportar.",
+      "nativeText": "FICTÍCIO TESTE — pt-br Associação fictícia: ação e proteção. Mensalidade: R$ 2.345,67. Desconto: 12,5%. Não há renovação automática. Auditor não pode exportar.",
+      "ocrText": "",
+      "ocrPageText": "",
+      "ocrTableCells": [],
+      "ocrConfidence": null,
+      "warnings": [
+        "layout_unverified"
+      ]
+    }
+  ]
+}

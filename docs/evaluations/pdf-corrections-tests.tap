@@ -1,0 +1,393 @@
+TAP version 13
+# (node:15824) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/admin-invitation-acceptance.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: normalizes invitation emails for matching
+ok 1 - normalizes invitation emails for matching
+  ---
+  duration_ms: 2.4323
+  type: 'test'
+  ...
+# Subtest: validates a single invitation email
+ok 2 - validates a single invitation email
+  ---
+  duration_ms: 0.5526
+  type: 'test'
+  ...
+# Subtest: accepts only a verified account matching the invited email
+ok 3 - accepts only a verified account matching the invited email
+  ---
+  duration_ms: 0.2594
+  type: 'test'
+  ...
+# Subtest: returns an invitation reference only for server-issued admin metadata
+ok 4 - returns an invitation reference only for server-issued admin metadata
+  ---
+  duration_ms: 0.8521
+  type: 'test'
+  ...
+# (node:12600) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/admin-invitation-redirect.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: builds the sign-up redirect from the configured public app URL
+ok 5 - builds the sign-up redirect from the configured public app URL
+  ---
+  duration_ms: 1.9124
+  type: 'test'
+  ...
+# Subtest: allows a localhost redirect only when development mode enables it
+ok 6 - allows a localhost redirect only when development mode enables it
+  ---
+  duration_ms: 0.3225
+  type: 'test'
+  ...
+# Subtest: rejects missing, insecure, and local invitation URLs
+ok 7 - rejects missing, insecure, and local invitation URLs
+  ---
+  duration_ms: 0.433
+  type: 'test'
+  ...
+# (node:10148) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/agent-data.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: agent queries scope every row to organization and never select instructions
+ok 8 - agent queries scope every row to organization and never select instructions
+  ---
+  duration_ms: 96.0488
+  type: 'test'
+  ...
+# (node:4840) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/agent-request.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: agent request authorizes owned organization before writing and keeps instructions out of responses
+ok 9 - agent request authorizes owned organization before writing and keeps instructions out of responses
+  ---
+  duration_ms: 195.6938
+  type: 'test'
+  ...
+# Subtest: agents migration limits grants and isolates active owners of non-archived organizations
+ok 10 - agents migration limits grants and isolates active owners of non-archived organizations
+  ---
+  duration_ms: 4.2885
+  type: 'test'
+  ...
+# Subtest: agent UI and API wire authorized scopes without exposing instructions or unsupported features
+ok 11 - agent UI and API wire authorized scopes without exposing instructions or unsupported features
+  ---
+  duration_ms: 5.2036
+  type: 'test'
+  ...
+# (node:12624) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/agents.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: agent input accepts only bounded name and required instructions
+ok 12 - agent input accepts only bounded name and required instructions
+  ---
+  duration_ms: 76.3318
+  type: 'test'
+  ...
+# Subtest: documents enforce private scoped authorization at API and database boundaries
+ok 13 - documents enforce private scoped authorization at API and database boundaries
+  ---
+  duration_ms: 3.9263
+  type: 'test'
+  ...
+# Subtest: document UI has explicit PDF input, upload guard and honest storage states
+ok 14 - document UI has explicit PDF input, upload guard and honest storage states
+  ---
+  duration_ms: 4.0452
+  type: 'test'
+  ...
+# Subtest: review-required pages survive persistence and are exposed without source text
+ok 15 - review-required pages survive persistence and are exposed without source text
+  ---
+  duration_ms: 2.4111
+  type: 'test'
+  ...
+# Subtest: explicit extraction action is authenticated and never returns raw text
+ok 16 - explicit extraction action is authenticated and never returns raw text
+  ---
+  duration_ms: 2.2532
+  type: 'test'
+  ...
+# Subtest: processing persistence stays RLS scoped with reclaim and fencing
+ok 17 - processing persistence stays RLS scoped with reclaim and fencing
+  ---
+  duration_ms: 1.971
+  type: 'test'
+  ...
+# (node:11572) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/document-upload.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: coordinator never reports partial failure as success
+ok 18 - coordinator never reports partial failure as success
+  ---
+  duration_ms: 87.5348
+  type: 'test'
+  ...
+# (node:10132) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/documents.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: PDF validation rejects disguised, oversized, empty and unsafe filenames
+ok 19 - PDF validation rejects disguised, oversized, empty and unsafe filenames
+  ---
+  duration_ms: 93.4932
+  type: 'test'
+  ...
+# (node:14732) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/organization-data.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: list and detail scope to authenticated creator and non-archived rows
+ok 20 - list and detail scope to authenticated creator and non-archived rows
+  ---
+  duration_ms: 2.6203
+  type: 'test'
+  ...
+# Subtest: create validates and inserts only name and authenticated creator
+ok 21 - create validates and inserts only name and authenticated creator
+  ---
+  duration_ms: 2.9215
+  type: 'test'
+  ...
+# Subtest: organization routes use active access, scoped queries and same-origin writes
+ok 22 - organization routes use active access, scoped queries and same-origin writes
+  ---
+  duration_ms: 4.4219
+  type: 'test'
+  ...
+# Subtest: new migration keeps creator-only scope for active owner and admin
+ok 23 - new migration keeps creator-only scope for active owner and admin
+  ---
+  duration_ms: 1.4233
+  type: 'test'
+  ...
+# (node:2632) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/organizations.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: accepts only trimmed names of 1–120 Unicode characters
+ok 24 - accepts only trimmed names of 1–120 Unicode characters
+  ---
+  duration_ms: 2.6069
+  type: 'test'
+  ...
+# Subtest: only active owners and admins can manage organizations
+ok 25 - only active owners and admins can manage organizations
+  ---
+  duration_ms: 0.7781
+  type: 'test'
+  ...
+# Subtest: extended corpus has authored provenance and intact distinct PDFs
+ok 26 - extended corpus has authored provenance and intact distinct PDFs
+  ---
+  duration_ms: 19.5764
+  type: 'test'
+  ...
+# Subtest: actual PT-BR native extraction preserves accents, decimal, percentage and negation
+ok 27 - actual PT-BR native extraction preserves accents, decimal, percentage and negation
+  ---
+  duration_ms: 874.4886
+  type: 'test'
+  ...
+# Subtest: same page PT-BR raster clause survives meaningful native text
+ok 28 - same page PT-BR raster clause survives meaningful native text
+  ---
+  duration_ms: 3348.1633
+  type: 'test'
+  ...
+# Subtest: rotation keeps original OCR attempts and source-coordinate word provenance
+ok 29 - rotation keeps original OCR attempts and source-coordinate word provenance
+  ---
+  duration_ms: 4157.6549
+  type: 'test'
+  ...
+# Subtest: unsupported borderless association is review-required, not eligible for indexing
+ok 30 - unsupported borderless association is review-required, not eligible for indexing
+  ---
+  duration_ms: 2637.3534
+  type: 'test'
+  ...
+# Subtest: merged ruled cells retain multiline association and spanning header
+ok 31 - merged ruled cells retain multiline association and spanning header
+  ---
+  duration_ms: 2959.3009
+  type: 'test'
+  ...
+# Subtest: merged multiline raster retains tokens but is not layout-certified
+ok 32 - merged multiline raster retains tokens but is not layout-certified
+  ---
+  duration_ms: 3055.3705
+  type: 'test'
+  ...
+# Subtest: skew-rotated must retain all authored page evidence
+ok 33 - skew-rotated must retain all authored page evidence
+  ---
+  duration_ms: 4712.3874
+  type: 'test'
+  ...
+# Subtest: blank-interspersed must retain all authored page evidence
+ok 34 - blank-interspersed must retain all authored page evidence
+  ---
+  duration_ms: 804.493
+  type: 'test'
+  ...
+# Subtest: columns must read entire left column before right
+ok 35 - columns must read entire left column before right
+  ---
+  duration_ms: 712.5092
+  type: 'test'
+  ...
+# Subtest: injection remains untrusted source text, not an executed extraction command
+ok 36 - injection remains untrusted source text, not an executed extraction command
+  ---
+  duration_ms: 715.7533
+  type: 'test'
+  ...
+# native: {"pages":[{"page":1,"method":"text","evidenceState":"extracted","text":"PRIVATE TEXT PAGE ALPHA 12345","nativeText":"PRIVATE TEXT PAGE ALPHA 12345","nativeRawText":"PRIVATE TEXT PAGE ALPHA 12345","nativeSpans":[{"text":"PRIVATE TEXT PAGE ALPHA 12345","transform":[22,0,0,22,30,200],"width":369.26999999999987,"height":22,"hasEOL":false}],"nativeColumnCut":null,"ocrOrientation":null,"ocrText":"","ocrPageText":"","ocrTableCells":[],"ocrConfidence":null,"warnings":["layout_unverified"]}],"reviewRequired":false,"indexingEligible":true,"extractorVersion":"pdf-evidence-v2"}
+# Subtest: extracts native text without OCR
+ok 37 - extracts native text without OCR
+  ---
+  duration_ms: 672.9569
+  type: 'test'
+  ...
+# mixed: {"pages":[{"page":1,"method":"text","evidenceState":"extracted","text":"PRIVATE TEXT PAGE ALPHA 12345","nativeText":"PRIVATE TEXT PAGE ALPHA 12345","nativeRawText":"PRIVATE TEXT PAGE ALPHA 12345","nativeSpans":[{"text":"PRIVATE TEXT PAGE ALPHA 12345","transform":[22,0,0,22,30,200],"width":369.26999999999987,"height":22,"hasEOL":false}],"nativeColumnCut":null,"ocrOrientation":null,"ocrText":"","ocrPageText":"","ocrTableCells":[],"ocrConfidence":null,"warnings":["layout_unverified"]},{"page":2,"method":"ocr","evidenceState":"review_required","text":"SCANNED PAGE BRAVO 67890","nativeText":"","nativeRawText":"","nativeSpans":[],"nativeColumnCut":null,"ocrOrientation":{"rotation":0,"sourceToOcr":[1,0,0,1,0,0],"viewportTransform":[2,0,0,-2,0,600],"projection":{"horizontal":253.07100315310055,"vertical":19.037370080579237,"ink":8563},"attempts":[{"rotation":0,"text":"SCANNED PAGE BRAVO 67890","confidence":94,"letters":21,"tokens":4,"words":[{"text":"SCANNED","bbox":{"x0":62,"y0":185,"x1":292,"y1":220},"confidence":91},{"text":"PAGE","bbox":{"x0":312,"y0":185,"x1":435,"y1":220},"confidence":96},{"text":"BRAVO","bbox":{"x0":455,"y0":185,"x1":613,"y1":220},"confidence":96},{"text":"67890","bbox":{"x0":631,"y0":185,"x1":760,"y1":220},"confidence":96}],"sourceToOcr":[1,0,0,1,0,0]},{"rotation":180,"text":"06829 ONVHE 3S9OYd AINNVOS","confidence":12,"letters":23,"tokens":4,"words":[{"text":"06829","bbox":{"x0":440,"y0":380,"x1":569,"y1":415},"confidence":22},{"text":"ONVHE","bbox":{"x0":587,"y0":380,"x1":745,"y1":415},"confidence":29},{"text":"3S9OYd","bbox":{"x0":765,"y0":380,"x1":888,"y1":415},"confidence":0},{"text":"AINNVOS","bbox":{"x0":908,"y0":380,"x1":1138,"y1":415},"confidence":0}],"sourceToOcr":[-1,0,0,-1,1200,600]}],"ambiguous":false},"ocrText":"SCANNED PAGE BRAVO 67890","ocrPageText":"SCANNED PAGE BRAVO 67890","ocrTableCells":[],"ocrConfidence":94,"warnings":["layout_unverified","raster_layout_review_required"]}],"reviewRequired":true,"indexingEligible":false,"extractorVersion":"pdf-evidence-v2"}
+# Subtest: OCR runs only on scanned page of a mixed PDF
+ok 38 - OCR runs only on scanned page of a mixed PDF
+  ---
+  duration_ms: 2370.5248
+  type: 'test'
+  ...
+# scan: {"pages":[{"page":1,"method":"ocr","evidenceState":"review_required","text":"SCANNED PAGE BRAVO 67890","nativeText":"","nativeRawText":"","nativeSpans":[],"nativeColumnCut":null,"ocrOrientation":{"rotation":0,"sourceToOcr":[1,0,0,1,0,0],"viewportTransform":[2,0,0,-2,0,600],"projection":{"horizontal":253.07100315310055,"vertical":19.037370080579237,"ink":8563},"attempts":[{"rotation":0,"text":"SCANNED PAGE BRAVO 67890","confidence":94,"letters":21,"tokens":4,"words":[{"text":"SCANNED","bbox":{"x0":62,"y0":185,"x1":292,"y1":220},"confidence":91},{"text":"PAGE","bbox":{"x0":312,"y0":185,"x1":435,"y1":220},"confidence":96},{"text":"BRAVO","bbox":{"x0":455,"y0":185,"x1":613,"y1":220},"confidence":96},{"text":"67890","bbox":{"x0":631,"y0":185,"x1":760,"y1":220},"confidence":96}],"sourceToOcr":[1,0,0,1,0,0]},{"rotation":180,"text":"06829 ONVHE 3S9OYd AINNVOS","confidence":12,"letters":23,"tokens":4,"words":[{"text":"06829","bbox":{"x0":440,"y0":380,"x1":569,"y1":415},"confidence":22},{"text":"ONVHE","bbox":{"x0":587,"y0":380,"x1":745,"y1":415},"confidence":29},{"text":"3S9OYd","bbox":{"x0":765,"y0":380,"x1":888,"y1":415},"confidence":0},{"text":"AINNVOS","bbox":{"x0":908,"y0":380,"x1":1138,"y1":415},"confidence":0}],"sourceToOcr":[-1,0,0,-1,1200,600]}],"ambiguous":false},"ocrText":"SCANNED PAGE BRAVO 67890","ocrPageText":"SCANNED PAGE BRAVO 67890","ocrTableCells":[],"ocrConfidence":94,"warnings":["layout_unverified","raster_layout_review_required"]}],"reviewRequired":true,"indexingEligible":false,"extractorVersion":"pdf-evidence-v2"}
+# Subtest: scanned-only PDF uses real OCR
+ok 39 - scanned-only PDF uses real OCR
+  ---
+  duration_ms: 1992.8085
+  type: 'test'
+  ...
+# Subtest: corrupted PDF fails, not empty success
+ok 40 - corrupted PDF fails, not empty success
+  ---
+  duration_ms: 559.077
+  type: 'test'
+  ...
+# Subtest: blank page fails after OCR, not empty success
+ok 41 - blank page fails after OCR, not empty success
+  ---
+  duration_ms: 600.9608
+  type: 'test'
+  ...
+# Subtest: page count is capped
+ok 42 - page count is capped
+  ---
+  duration_ms: 525.0947
+  type: 'test'
+  ...
+# Subtest: large raster dimensions are rejected before OCR
+ok 43 - large raster dimensions are rejected before OCR
+  ---
+  duration_ms: 557.7162
+  type: 'test'
+  ...
+# Subtest: timeout terminates local child
+ok 44 - timeout terminates local child
+  ---
+  duration_ms: 167.2713
+  type: 'test'
+  ...
+# Subtest: password-protected PDF fails without asking for a password
+ok 45 - password-protected PDF fails without asking for a password
+  ---
+  duration_ms: 532.0947
+  type: 'test'
+  ...
+# Subtest: same-page raster evidence survives native furniture
+ok 46 - same-page raster evidence survives native furniture
+  ---
+  duration_ms: 2882.4557
+  type: 'test'
+  ...
+# Subtest: same-page raster evidence survives native meaningful body
+ok 47 - same-page raster evidence survives native meaningful body
+  ---
+  duration_ms: 2311.0033
+  type: 'test'
+  ...
+# Subtest: real hard fixture retains C7 and T1 on mixed page
+ok 48 - real hard fixture retains C7 and T1 on mixed page
+  ---
+  duration_ms: 7636.128
+  type: 'test'
+  ...
+# Subtest: different synthetic scanned ruled grid retains cells without fixture-specific vocabulary
+ok 49 - different synthetic scanned ruled grid retains cells without fixture-specific vocabulary
+  ---
+  duration_ms: 1793.7453
+  type: 'test'
+  ...
+# Subtest: scanned page 3 preserves the Extra row with page and OCR provenance
+ok 50 - scanned page 3 preserves the Extra row with page and OCR provenance
+  ---
+  duration_ms: 7609.0667
+  type: 'test'
+  ...
+# (node:8240) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/platform-user-check-state.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: reports an active platform user
+ok 51 - reports an active platform user
+  ---
+  duration_ms: 1.3298
+  type: 'test'
+  ...
+# Subtest: reports a missing platform user
+ok 52 - reports a missing platform user
+  ---
+  duration_ms: 0.3311
+  type: 'test'
+  ...
+# Subtest: reports a non-active platform user
+ok 53 - reports a non-active platform user
+  ---
+  duration_ms: 0.2554
+  type: 'test'
+  ...
+# (node:6284) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Usabit/Desktop/Projetos/Project-RAG/src/lib/same-origin-request.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\C:\\Users\\Usabit\\Desktop\\Projetos\\Project-RAG\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: compares the browser origin with the external host header
+ok 54 - compares the browser origin with the external host header
+  ---
+  duration_ms: 2.5926
+  type: 'test'
+  ...
+# Subtest: rejects a cross-origin mutation
+ok 55 - rejects a cross-origin mutation
+  ---
+  duration_ms: 0.5459
+  type: 'test'
+  ...
+# Subtest: uses the forwarded host and protocol behind a trusted proxy
+ok 56 - uses the forwarded host and protocol behind a trusted proxy
+  ---
+  duration_ms: 0.3844
+  type: 'test'
+  ...
+1..56
+# tests 56
+# suites 0
+# pass 56
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 59737.2413

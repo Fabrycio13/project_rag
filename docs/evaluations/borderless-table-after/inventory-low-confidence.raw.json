@@ -1,0 +1,1386 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          450
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "reason": "ambiguous_borderless_association",
+        "markdown": null
+      },
+      "text": "FICTÍCIO — avaliação local\n\nItem Saldo Taxa Restrição\nCobre 7 4,25% Não vender\nPrata 28 0% Não exportar\nZinco -3 1,5% Não acumular\nItem\nSaldo\nTaxa\nRestrição\nCobre\n7\n4,25%\nNão vender\nPrata\n28\n0%\nNão exportar\nZinco\n-3\n1,5%\nNão acumular",
+      "nativeText": "",
+      "nativeRawText": "",
+      "nativeSpans": [],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 0,
+        "sourceToOcr": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "viewportTransform": [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          900
+        ],
+        "projection": {
+          "horizontal": 126.94038795142723,
+          "vertical": 34.475003942595805,
+          "ink": 12682
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "FICTÍCIO — avaliação local\n\nItem Saldo Taxa Restrição\nCobre 7 4,25% Não vender\nPrata 28 0% Não exportar\nZinco -3 1,5% Não acumular",
+            "confidence": 88,
+            "letters": 100,
+            "tokens": 18,
+            "words": [
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 48,
+                  "y0": 43,
+                  "x1": 172,
+                  "y1": 70
+                },
+                "confidence": 93
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 182,
+                  "y0": 61,
+                  "x1": 212,
+                  "y1": 63
+                },
+                "confidence": 93
+              },
+              {
+                "text": "avaliação",
+                "bbox": {
+                  "x0": 221,
+                  "y0": 48,
+                  "x1": 345,
+                  "y1": 76
+                },
+                "confidence": 95
+              },
+              {
+                "text": "local",
+                "bbox": {
+                  "x0": 357,
+                  "y0": 48,
+                  "x1": 414,
+                  "y1": 70
+                },
+                "confidence": 95
+              },
+              {
+                "text": "Item",
+                "bbox": {
+                  "x0": 48,
+                  "y0": 194,
+                  "x1": 101,
+                  "y1": 230
+                },
+                "confidence": 69
+              },
+              {
+                "text": "Saldo",
+                "bbox": {
+                  "x0": 342,
+                  "y0": 198,
+                  "x1": 415,
+                  "y1": 220
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Taxa",
+                "bbox": {
+                  "x0": 551,
+                  "y0": 198,
+                  "x1": 612,
+                  "y1": 220
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Restrição",
+                "bbox": {
+                  "x0": 792,
+                  "y0": 198,
+                  "x1": 915,
+                  "y1": 226
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Cobre",
+                "bbox": {
+                  "x0": 47,
+                  "y0": 288,
+                  "x1": 125,
+                  "y1": 310
+                },
+                "confidence": 96
+              },
+              {
+                "text": "7",
+                "bbox": {
+                  "x0": 341,
+                  "y0": 288,
+                  "x1": 382,
+                  "y1": 310
+                },
+                "confidence": 47
+              },
+              {
+                "text": "4,25%",
+                "bbox": {
+                  "x0": 550,
+                  "y0": 288,
+                  "x1": 633,
+                  "y1": 314
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Não",
+                "bbox": {
+                  "x0": 792,
+                  "y0": 288,
+                  "x1": 844,
+                  "y1": 310
+                },
+                "confidence": 96
+              },
+              {
+                "text": "vender",
+                "bbox": {
+                  "x0": 854,
+                  "y0": 288,
+                  "x1": 945,
+                  "y1": 310
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Prata",
+                "bbox": {
+                  "x0": 47,
+                  "y0": 378,
+                  "x1": 115,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "28",
+                "bbox": {
+                  "x0": 341,
+                  "y0": 378,
+                  "x1": 372,
+                  "y1": 400
+                },
+                "confidence": 97
+              },
+              {
+                "text": "0%",
+                "bbox": {
+                  "x0": 551,
+                  "y0": 378,
+                  "x1": 591,
+                  "y1": 400
+                },
+                "confidence": 92
+              },
+              {
+                "text": "Não",
+                "bbox": {
+                  "x0": 792,
+                  "y0": 378,
+                  "x1": 844,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "exportar",
+                "bbox": {
+                  "x0": 854,
+                  "y0": 379,
+                  "x1": 963,
+                  "y1": 406
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Zinco",
+                "bbox": {
+                  "x0": 46,
+                  "y0": 468,
+                  "x1": 117,
+                  "y1": 490
+                },
+                "confidence": 96
+              },
+              {
+                "text": "-3",
+                "bbox": {
+                  "x0": 341,
+                  "y0": 468,
+                  "x1": 365,
+                  "y1": 490
+                },
+                "confidence": 22
+              },
+              {
+                "text": "1,5%",
+                "bbox": {
+                  "x0": 553,
+                  "y0": 468,
+                  "x1": 616,
+                  "y1": 494
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Não",
+                "bbox": {
+                  "x0": 792,
+                  "y0": 468,
+                  "x1": 844,
+                  "y1": 490
+                },
+                "confidence": 96
+              },
+              {
+                "text": "acumular",
+                "bbox": {
+                  "x0": 854,
+                  "y0": 468,
+                  "x1": 977,
+                  "y1": 490
+                },
+                "confidence": 95
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 180,
+            "text": "Jenwnoe oe 9%S'L Er oUIZ\nJeupodxa cen %O0 87 eedq\nJ9puasA OBN REST V 21º 9190O\noBÓLISSy exe oples wuey\n|290] oBÍBI|ENE — OlO/1O14",
+            "confidence": 27,
+            "letters": 98,
+            "tokens": 23,
+            "words": [
+              {
+                "text": "Jenwnoe",
+                "bbox": {
+                  "x0": 223,
+                  "y0": 410,
+                  "x1": 346,
+                  "y1": 432
+                },
+                "confidence": 8
+              },
+              {
+                "text": "oe",
+                "bbox": {
+                  "x0": 356,
+                  "y0": 410,
+                  "x1": 408,
+                  "y1": 432
+                },
+                "confidence": 16
+              },
+              {
+                "text": "9%S'L",
+                "bbox": {
+                  "x0": 584,
+                  "y0": 406,
+                  "x1": 647,
+                  "y1": 432
+                },
+                "confidence": 14
+              },
+              {
+                "text": "Er",
+                "bbox": {
+                  "x0": 835,
+                  "y0": 410,
+                  "x1": 859,
+                  "y1": 432
+                },
+                "confidence": 4
+              },
+              {
+                "text": "oUIZ",
+                "bbox": {
+                  "x0": 1083,
+                  "y0": 410,
+                  "x1": 1154,
+                  "y1": 432
+                },
+                "confidence": 0
+              },
+              {
+                "text": "Jeupodxa",
+                "bbox": {
+                  "x0": 237,
+                  "y0": 494,
+                  "x1": 346,
+                  "y1": 521
+                },
+                "confidence": 0
+              },
+              {
+                "text": "cen",
+                "bbox": {
+                  "x0": 356,
+                  "y0": 500,
+                  "x1": 408,
+                  "y1": 522
+                },
+                "confidence": 36
+              },
+              {
+                "text": "%O0",
+                "bbox": {
+                  "x0": 609,
+                  "y0": 488,
+                  "x1": 649,
+                  "y1": 527
+                },
+                "confidence": 53
+              },
+              {
+                "text": "87",
+                "bbox": {
+                  "x0": 828,
+                  "y0": 500,
+                  "x1": 859,
+                  "y1": 522
+                },
+                "confidence": 77
+              },
+              {
+                "text": "eedq",
+                "bbox": {
+                  "x0": 1085,
+                  "y0": 500,
+                  "x1": 1153,
+                  "y1": 522
+                },
+                "confidence": 20
+              },
+              {
+                "text": "J9puasA",
+                "bbox": {
+                  "x0": 255,
+                  "y0": 590,
+                  "x1": 346,
+                  "y1": 612
+                },
+                "confidence": 0
+              },
+              {
+                "text": "OBN",
+                "bbox": {
+                  "x0": 356,
+                  "y0": 590,
+                  "x1": 408,
+                  "y1": 612
+                },
+                "confidence": 83
+              },
+              {
+                "text": "REST",
+                "bbox": {
+                  "x0": 567,
+                  "y0": 582,
+                  "x1": 624,
+                  "y1": 622
+                },
+                "confidence": 0
+              },
+              {
+                "text": "V",
+                "bbox": {
+                  "x0": 635,
+                  "y0": 586,
+                  "x1": 650,
+                  "y1": 612
+                },
+                "confidence": 42
+              },
+              {
+                "text": "21º",
+                "bbox": {
+                  "x0": 818,
+                  "y0": 590,
+                  "x1": 859,
+                  "y1": 612
+                },
+                "confidence": 30
+              },
+              {
+                "text": "9190O",
+                "bbox": {
+                  "x0": 1075,
+                  "y0": 590,
+                  "x1": 1153,
+                  "y1": 612
+                },
+                "confidence": 50
+              },
+              {
+                "text": "oBÓLISSy",
+                "bbox": {
+                  "x0": 285,
+                  "y0": 674,
+                  "x1": 408,
+                  "y1": 702
+                },
+                "confidence": 0
+              },
+              {
+                "text": "exe",
+                "bbox": {
+                  "x0": 588,
+                  "y0": 680,
+                  "x1": 649,
+                  "y1": 702
+                },
+                "confidence": 1
+              },
+              {
+                "text": "oples",
+                "bbox": {
+                  "x0": 785,
+                  "y0": 680,
+                  "x1": 858,
+                  "y1": 702
+                },
+                "confidence": 29
+              },
+              {
+                "text": "wuey",
+                "bbox": {
+                  "x0": 1099,
+                  "y0": 680,
+                  "x1": 1152,
+                  "y1": 702
+                },
+                "confidence": 22
+              },
+              {
+                "text": "|290]",
+                "bbox": {
+                  "x0": 786,
+                  "y0": 830,
+                  "x1": 843,
+                  "y1": 852
+                },
+                "confidence": 38
+              },
+              {
+                "text": "oBÍBI|ENE",
+                "bbox": {
+                  "x0": 855,
+                  "y0": 824,
+                  "x1": 979,
+                  "y1": 852
+                },
+                "confidence": 42
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 988,
+                  "y0": 837,
+                  "x1": 1018,
+                  "y1": 839
+                },
+                "confidence": 92
+              },
+              {
+                "text": "OlO/1O14",
+                "bbox": {
+                  "x0": 1028,
+                  "y0": 830,
+                  "x1": 1152,
+                  "y1": 857
+                },
+                "confidence": 0
+              }
+            ],
+            "sourceToOcr": [
+              -1,
+              0,
+              0,
+              -1,
+              1200,
+              900
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "FICTÍCIO — avaliação local\n\nItem Saldo Taxa Restrição\nCobre 7 4,25% Não vender\nPrata 28 0% Não exportar\nZinco -3 1,5% Não acumular\nItem\nSaldo\nTaxa\nRestrição\nCobre\n7\n4,25%\nNão vender\nPrata\n28\n0%\nNão exportar\nZinco\n-3\n1,5%\nNão acumular",
+      "ocrPageText": "FICTÍCIO — avaliação local\n\nItem Saldo Taxa Restrição\nCobre 7 4,25% Não vender\nPrata 28 0% Não exportar\nZinco -3 1,5% Não acumular",
+      "ocrTableCells": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 0,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Item",
+          "confidence": 69,
+          "bbox": {
+            "x": 48,
+            "y": 194,
+            "width": 53,
+            "height": 36
+          },
+          "words": [
+            {
+              "text": "Item",
+              "bbox": {
+                "x0": 48,
+                "y0": 194,
+                "x1": 101,
+                "y1": 230
+              },
+              "confidence": 69
+            }
+          ],
+          "header": true,
+          "headerText": "Item",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 0,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Saldo",
+          "confidence": 96,
+          "bbox": {
+            "x": 342,
+            "y": 198,
+            "width": 73,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Saldo",
+              "bbox": {
+                "x0": 342,
+                "y0": 198,
+                "x1": 415,
+                "y1": 220
+              },
+              "confidence": 96
+            }
+          ],
+          "header": true,
+          "headerText": "Saldo",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 0,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Taxa",
+          "confidence": 96,
+          "bbox": {
+            "x": 551,
+            "y": 198,
+            "width": 61,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Taxa",
+              "bbox": {
+                "x0": 551,
+                "y0": 198,
+                "x1": 612,
+                "y1": 220
+              },
+              "confidence": 96
+            }
+          ],
+          "header": true,
+          "headerText": "Taxa",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 0,
+          "column": 3,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Restrição",
+          "confidence": 96,
+          "bbox": {
+            "x": 792,
+            "y": 198,
+            "width": 123,
+            "height": 28
+          },
+          "words": [
+            {
+              "text": "Restrição",
+              "bbox": {
+                "x0": 792,
+                "y0": 198,
+                "x1": 915,
+                "y1": 226
+              },
+              "confidence": 96
+            }
+          ],
+          "header": true,
+          "headerText": "Restrição",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 1,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Cobre",
+          "confidence": 96,
+          "bbox": {
+            "x": 47,
+            "y": 288,
+            "width": 78,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Cobre",
+              "bbox": {
+                "x0": 47,
+                "y0": 288,
+                "x1": 125,
+                "y1": 310
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Item",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 1,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "7",
+          "confidence": 47,
+          "bbox": {
+            "x": 341,
+            "y": 288,
+            "width": 41,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "7",
+              "bbox": {
+                "x0": 341,
+                "y0": 288,
+                "x1": 382,
+                "y1": 310
+              },
+              "confidence": 47
+            }
+          ],
+          "header": false,
+          "headerText": "Saldo",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 1,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "4,25%",
+          "confidence": 96,
+          "bbox": {
+            "x": 550,
+            "y": 288,
+            "width": 83,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "4,25%",
+              "bbox": {
+                "x0": 550,
+                "y0": 288,
+                "x1": 633,
+                "y1": 314
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Taxa",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 1,
+          "column": 3,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Não vender",
+          "confidence": 96,
+          "bbox": {
+            "x": 792,
+            "y": 288,
+            "width": 153,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Não",
+              "bbox": {
+                "x0": 792,
+                "y0": 288,
+                "x1": 844,
+                "y1": 310
+              },
+              "confidence": 96
+            },
+            {
+              "text": "vender",
+              "bbox": {
+                "x0": 854,
+                "y0": 288,
+                "x1": 945,
+                "y1": 310
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Restrição",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 2,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Prata",
+          "confidence": 96,
+          "bbox": {
+            "x": 47,
+            "y": 378,
+            "width": 68,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Prata",
+              "bbox": {
+                "x0": 47,
+                "y0": 378,
+                "x1": 115,
+                "y1": 400
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Item",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 2,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "28",
+          "confidence": 97,
+          "bbox": {
+            "x": 341,
+            "y": 378,
+            "width": 31,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "28",
+              "bbox": {
+                "x0": 341,
+                "y0": 378,
+                "x1": 372,
+                "y1": 400
+              },
+              "confidence": 97
+            }
+          ],
+          "header": false,
+          "headerText": "Saldo",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 2,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "0%",
+          "confidence": 92,
+          "bbox": {
+            "x": 551,
+            "y": 378,
+            "width": 40,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "0%",
+              "bbox": {
+                "x0": 551,
+                "y0": 378,
+                "x1": 591,
+                "y1": 400
+              },
+              "confidence": 92
+            }
+          ],
+          "header": false,
+          "headerText": "Taxa",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 2,
+          "column": 3,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Não exportar",
+          "confidence": 96,
+          "bbox": {
+            "x": 792,
+            "y": 378,
+            "width": 171,
+            "height": 28
+          },
+          "words": [
+            {
+              "text": "Não",
+              "bbox": {
+                "x0": 792,
+                "y0": 378,
+                "x1": 844,
+                "y1": 400
+              },
+              "confidence": 96
+            },
+            {
+              "text": "exportar",
+              "bbox": {
+                "x0": 854,
+                "y0": 379,
+                "x1": 963,
+                "y1": 406
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Restrição",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 3,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Zinco",
+          "confidence": 96,
+          "bbox": {
+            "x": 46,
+            "y": 468,
+            "width": 71,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Zinco",
+              "bbox": {
+                "x0": 46,
+                "y0": 468,
+                "x1": 117,
+                "y1": 490
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Item",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 3,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-3",
+          "confidence": 22,
+          "bbox": {
+            "x": 341,
+            "y": 468,
+            "width": 24,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "-3",
+              "bbox": {
+                "x0": 341,
+                "y0": 468,
+                "x1": 365,
+                "y1": 490
+              },
+              "confidence": 22
+            }
+          ],
+          "header": false,
+          "headerText": "Saldo",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 3,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "1,5%",
+          "confidence": 96,
+          "bbox": {
+            "x": 553,
+            "y": 468,
+            "width": 63,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "1,5%",
+              "bbox": {
+                "x0": 553,
+                "y0": 468,
+                "x1": 616,
+                "y1": 494
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Taxa",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            900
+          ],
+          "row": 3,
+          "column": 3,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Não acumular",
+          "confidence": 95,
+          "bbox": {
+            "x": 792,
+            "y": 468,
+            "width": 185,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Não",
+              "bbox": {
+                "x0": 792,
+                "y0": 468,
+                "x1": 844,
+                "y1": 490
+              },
+              "confidence": 96
+            },
+            {
+              "text": "acumular",
+              "bbox": {
+                "x0": 854,
+                "y0": 468,
+                "x1": 977,
+                "y1": 490
+              },
+              "confidence": 95
+            }
+          ],
+          "header": false,
+          "headerText": "Restrição",
+          "associationMethod": "coordinate_gutters"
+        }
+      ],
+      "ocrConfidence": 88,
+      "warnings": [
+        "layout_unverified",
+        "raster_layout_review_required"
+      ]
+    }
+  ],
+  "reviewRequired": true,
+  "indexingEligible": false,
+  "extractorVersion": "pdf-evidence-v3-borderless"
+}

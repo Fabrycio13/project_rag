@@ -1,0 +1,87 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {pathToFileURL} from 'node:url';
+const root=new URL('../',import.meta.url);
+// Disposable PostgreSQL/WASM engine only. No project env, real users, uploads or network.
+test('real SQL roles, exclusive claims, activation, failure, review and stale completion',{skip:!process.env.PGLITE_MODULE},async()=>{
+ const {PGlite}=await import(pathToFileURL(process.env.PGLITE_MODULE).href);
+ const db=new PGlite();
+ await db.waitReady;
+ console.log('Disposable PostgreSQL ready');
+ try{
+ await db.exec(`create role anon; create role authenticated; create role service_role bypassrls;
+ create schema auth; create schema storage;
+ create function auth.jwt() returns jsonb language sql as $$select jsonb_build_object('sub',current_setting('test.sub',true))$$;
+ create table public.organizations(id uuid primary key, archived_at timestamptz, owner_clerk_user_id text);
+ create table public.agents(id uuid primary key,organization_id uuid references public.organizations);
+ create table public.platform_users(clerk_user_id text,role text,status text);
+ create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);
+ create table storage.objects(bucket_id text,name text,metadata jsonb);
+ alter table storage.objects enable row level security;
+ grant usage on schema public,auth,storage to authenticated;
+ grant select on public.organizations,public.agents,public.platform_users,storage.objects to authenticated;
+ grant insert,delete on storage.objects to authenticated;`);
+ for(const name of ['20261013000100_agent_documents.sql','20261013000200_document_extraction.sql','20261013000300_document_extraction_review.sql'])await db.exec(readFileSync(new URL('supabase/migrations/'+name,root),'utf8'));
+ const org='00000000-0000-4000-8000-000000000001',agent='00000000-0000-4000-8000-000000000002';
+ let doc='00000000-0000-4000-8000-000000000003';
+ await db.exec(`insert into organizations values('${org}',null,'creator');insert into agents values('${agent}','${org}');insert into platform_users values('creator','owner','active'),('other','admin','active');insert into agent_documents(id,organization_id,agent_id,filename,size_bytes,upload_state)values('${doc}','${org}','${agent}','synthetic.pdf',8,'stored');insert into agent_document_extractions(document_id,state,claim_token,lease_until,pages,page_count,ocr_page_count)values('${doc}','completed','00000000-0000-4000-8000-000000000004',now(),'[{"method":"native","text":"old private evidence"}]',1,0);`);
+ await db.exec(readFileSync(new URL('supabase/migrations/20261013000400_document_reprocessing.sql',root),'utf8'));
+ if(!process.env.AUTHORITY_RED)await db.exec(readFileSync(new URL('supabase/migrations/20261013000500_extraction_server_authority.sql',root),'utf8'));
+ await db.exec(`set role authenticated;select set_config('test.sub','creator',false)`);
+ const exposed=await db.query("select p.oid::regprocedure::text as signature from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname='public' and p.proname in ('claim_document_extraction','claim_document_extraction_run','finish_document_extraction') and has_function_privilege('authenticated',p.oid,'execute')");
+ assert.deepEqual(exposed.rows,[],'authenticated must not fabricate extraction claims/completion');
+ await assert.rejects(db.query('select public.claim_document_extraction_run($1,$2,true,$3,$4)',[doc,doc,'a'.repeat(64),'creator']),/permission denied/);
+ await assert.rejects(db.query('select public.finish_document_extraction($1,$2,$3,$4,$5,$6,$7,$8,$9)',[doc,doc,doc,'completed','[{"text":"fabricated"}]','fake','a'.repeat(64),null,'creator']),/permission denied/);
+ await assert.rejects(db.query('select public.claim_document_extraction($1,$2)',[doc,doc]),/permission denied/);
+ const q=async(sql,args=[])=> (await db.query(sql,args)).rows;
+ const active=async()=> (await q('select active_run_id,pages,state from agent_document_extractions'))[0];
+ const old=await active();assert.ok(old.active_run_id);
+ await db.exec('reset role;set role service_role');
+ let actor='creator';
+ const hash='a'.repeat(64);let seq=10;
+ const token=()=>`00000000-0000-4000-8000-${String(seq++).padStart(12,'0')}`;
+ const claim=async(t,reprocess=true)=> (await q('select public.claim_document_extraction_run($1,$2,$3,$4,$5) as id',[doc,t,reprocess,hash,actor]))[0].id;
+ const finish=async(id,t,state)=> (await q('select public.finish_document_extraction($1,$2,$3,$4,$5,$6,$7,$8,$9) as ok',[doc,id,t,state,state==='failed'?null:JSON.stringify([{method:'native',text:'new private evidence'}]),'test-v2',hash,state==='failed'?'processing_failed':null,actor]))[0].ok;
+ actor='other';assert.equal(await claim(token()),null,'service role cannot claim another owner tenant');actor='missing';assert.equal(await claim(token()),null);actor='creator';
+ assert.equal(await claim(token(),false),null,'baseline cannot overwrite completed');
+ assert.equal(await claim(token(),null),null,'missing explicit intent cannot overwrite completed');
+ const t=token(),t2=token();
+ const claims=await Promise.all([claim(t),claim(t2)]);
+ assert.equal(claims.filter(Boolean).length,1,'one claim wins');
+ const winner=claims[0]?t:t2,run=claims.find(Boolean);
+ assert.deepEqual(await active(),old,'claim preserves active evidence');
+ actor='other';assert.equal(await finish(run,winner,'completed'),false,'wrong actor cannot promote');actor='creator';
+ await db.exec("reset role;update platform_users set status='blocked' where clerk_user_id='creator';set role service_role");assert.equal(await finish(run,winner,'completed'),false,'revoked actor cannot promote');
+ await db.exec("reset role;update platform_users set status='active',role='member' where clerk_user_id='creator';set role service_role");assert.equal(await finish(run,winner,'completed'),false,'client identity does not imply owner role');
+ await db.exec("reset role;update platform_users set role='owner' where clerk_user_id='creator';update organizations set archived_at=now();set role service_role");assert.equal(await finish(run,winner,'completed'),false,'archived organization denied');
+ await db.exec("reset role;update organizations set archived_at=null;set role service_role");
+ assert.equal(await finish(run,winner,'review_required'),true);
+ assert.deepEqual(await active(),old,'review never replaces completed active');
+ assert.equal(await finish(run,winner,'completed'),false,'terminal candidate immutable');
+ const ft=token(),fr=await claim(ft);assert.equal(await finish(fr,ft,'failed'),true);assert.deepEqual(await active(),old);
+ const st=token(),sr=await claim(st);
+ await db.exec('reset role');await db.query("update agent_document_extraction_runs set lease_until=clock_timestamp()-interval '1 second' where id=$1",[sr]);await db.exec('set role service_role');
+ assert.equal(await finish(sr,st,'completed'),false,'expired actor fenced even before reclaim');
+ const nt=token(),nr=await claim(nt);assert.ok(nr);assert.equal(await finish(sr,st,'completed'),false);
+ assert.equal(await finish(nr,nt,'completed'),true);assert.equal((await active()).active_run_id,nr);
+ assert.equal((await q('select pages from agent_document_extraction_runs where id=$1',[old.active_run_id]))[0].pages[0].text,'old private evidence');
+ await db.exec("reset role;set role authenticated");
+ await assert.rejects(q("update agent_document_extractions set pages='[]'"),/permission denied/);
+ await assert.rejects(q("update agent_document_extraction_runs set pages='[]'"),/permission denied/);
+ assert.equal((await q("select has_function_privilege('authenticated','public.claim_document_extraction(uuid,uuid)','execute') as allowed"))[0].allowed,false,'old writer disabled');
+ await db.exec('reset role;set role service_role');
+ // Initial extraction, failed retry and review retry still function without reprocess intent.
+ doc='00000000-0000-4000-8000-000000000099';
+ await db.exec(`reset role;insert into agent_documents(id,organization_id,agent_id,filename,size_bytes,upload_state)values('${doc}','${org}','${agent}','baseline.pdf',8,'stored');set role service_role`);
+ for(const state of ['failed','review_required','completed']){
+  const bt=token(),br=await claim(bt,false);assert.ok(br,`baseline ${state} claim`);assert.equal(await finish(br,bt,state),true);
+  const snapshot=(await q('select state,active_run_id from agent_document_extractions where document_id=$1',[doc]))[0];assert.equal(snapshot.state,state);assert.equal(Boolean(snapshot.active_run_id),state==='completed');
+ }
+ await db.exec(`reset role;set role authenticated;select set_config('test.sub','other',false)`);
+ assert.equal((await q('select * from agent_document_extraction_runs')).length,0,'noncreator admin has no private history');
+ await db.exec('reset role;set role service_role');actor='other';assert.equal(await claim(token()),null);
+ await db.exec(`select set_config('test.sub','creator',false);reset role;update platform_users set status='blocked' where clerk_user_id='creator';set role authenticated`);
+ assert.equal((await q('select * from agent_document_extraction_runs')).length,0,'blocked creator denied');await db.exec('reset role;set role service_role');actor='creator';assert.equal(await claim(token()),null);
+ }catch(error){console.error(error);await db.exec('rollback');throw error;}finally{await db.close();}
+});

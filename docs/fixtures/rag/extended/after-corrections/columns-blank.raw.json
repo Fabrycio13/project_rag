@@ -1,0 +1,107 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          800
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "text",
+      "evidenceState": "extracted",
+      "ocrTableStructure": null,
+      "text": "FICTÍCIO TESTE — columns-blank 1. Solicitar aprovação. 2. Não exportar. 3. Guardar por 20 dias. 4. Excluir após o prazo.",
+      "nativeText": "FICTÍCIO TESTE — columns-blank 1. Solicitar aprovação. 2. Não exportar. 3. Guardar por 20 dias. 4. Excluir após o prazo.",
+      "nativeRawText": "FICTÍCIO TESTE — columns-blank 1. Solicitar aprovação.   3. Guardar por 20 dias. 2. Não exportar.   4. Excluir após o prazo.",
+      "nativeSpans": [
+        {
+          "text": "FICTÍCIO TESTE — columns-blank",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            30,
+            760
+          ],
+          "width": 220.93399999999997,
+          "height": 14,
+          "hasEOL": true
+        },
+        {
+          "text": "1. Solicitar aprovação.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            35,
+            690
+          ],
+          "width": 138.50200000000004,
+          "height": 14,
+          "hasEOL": false
+        },
+        {
+          "text": "3. Guardar por 20 dias.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            320,
+            690
+          ],
+          "width": 143.96200000000002,
+          "height": 14,
+          "hasEOL": true
+        },
+        {
+          "text": "2. Não exportar.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            35,
+            650
+          ],
+          "width": 100.38000000000001,
+          "height": 14,
+          "hasEOL": false
+        },
+        {
+          "text": "4. Excluir após o prazo.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            320,
+            650
+          ],
+          "width": 146.286,
+          "height": 14,
+          "hasEOL": false
+        }
+      ],
+      "nativeColumnCut": 246.75100000000003,
+      "ocrOrientation": null,
+      "ocrText": "",
+      "ocrPageText": "",
+      "ocrTableCells": [],
+      "ocrConfidence": null,
+      "warnings": [
+        "layout_unverified"
+      ]
+    }
+  ],
+  "reviewRequired": false,
+  "indexingEligible": true,
+  "extractorVersion": "pdf-evidence-v2"
+}

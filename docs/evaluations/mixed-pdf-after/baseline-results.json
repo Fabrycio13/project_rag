@@ -1,0 +1,218 @@
+{
+  "extractor": "src/lib/pdf-extraction.mjs -> scripts/pdf-extract.mjs",
+  "node": "v26.7.0",
+  "remote_uploads": false,
+  "measurements": [
+    {
+      "file": "facil.pdf",
+      "sha256": "273067c996adee07a30d133d584ba6e6e32745ab3c8b107f70d9292a20643335",
+      "status": "completed",
+      "elapsed_ms": 658,
+      "pages": [
+        {
+          "page": 1,
+          "method": "text",
+          "characters": 1903
+        }
+      ],
+      "element_literal_coverage": [
+        {
+          "source_id": "C1",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C2",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C3",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C4",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C5",
+          "page": 1,
+          "exact_normalized_text_present": false
+        },
+        {
+          "source_id": "C6",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C7",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "T1",
+          "page": 1,
+          "exact_normalized_text_present": true
+        }
+      ],
+      "matched_elements": 7,
+      "total_elements": 8
+    },
+    {
+      "file": "medio.pdf",
+      "sha256": "5f0a8af5b4ed543deb363788022906dbf293ddc3626941d1d3a93ec4518d9b02",
+      "status": "completed",
+      "elapsed_ms": 548,
+      "pages": [
+        {
+          "page": 1,
+          "method": "text",
+          "characters": 681
+        },
+        {
+          "page": 2,
+          "method": "text",
+          "characters": 516
+        },
+        {
+          "page": 3,
+          "method": "text",
+          "characters": 1022
+        }
+      ],
+      "element_literal_coverage": [
+        {
+          "source_id": "C1",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C2",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C3",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C4",
+          "page": 2,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C5a",
+          "page": 2,
+          "exact_normalized_text_present": false
+        },
+        {
+          "source_id": "C5b",
+          "page": 3,
+          "exact_normalized_text_present": false
+        },
+        {
+          "source_id": "C6",
+          "page": 3,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C7",
+          "page": 3,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "T1",
+          "page": 3,
+          "exact_normalized_text_present": true
+        }
+      ],
+      "matched_elements": 7,
+      "total_elements": 9
+    },
+    {
+      "file": "dificil.pdf",
+      "sha256": "9037ffe2ba637fb183799b873dda8dd0adc20c76eb6a030e853c69a67b797944",
+      "status": "completed",
+      "elapsed_ms": 4184,
+      "pages": [
+        {
+          "page": 1,
+          "method": "text",
+          "characters": 934
+        },
+        {
+          "page": 2,
+          "method": "text",
+          "characters": 267
+        },
+        {
+          "page": 3,
+          "method": "ocr",
+          "characters": 503
+        },
+        {
+          "page": 4,
+          "method": "ocr",
+          "characters": 506
+        }
+      ],
+      "element_literal_coverage": [
+        {
+          "source_id": "C1",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C2",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C3",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C4",
+          "page": 1,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C5a",
+          "page": 2,
+          "exact_normalized_text_present": false
+        },
+        {
+          "source_id": "C5b",
+          "page": 3,
+          "exact_normalized_text_present": false
+        },
+        {
+          "source_id": "C6",
+          "page": 3,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "C7",
+          "page": 4,
+          "exact_normalized_text_present": true
+        },
+        {
+          "source_id": "T1",
+          "page": 4,
+          "exact_normalized_text_present": true
+        }
+      ],
+      "matched_elements": 7,
+      "total_elements": 9
+    }
+  ],
+  "limitations": [
+    "Literal substring coverage is not semantic correctness.",
+    "No layout, table reconstruction, question answering or injection-resistance evaluation performed.",
+    "Peak RSS not measured."
+  ]
+}

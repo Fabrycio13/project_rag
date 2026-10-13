@@ -1,0 +1,1708 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          500
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "numeric_ocr_disagreement"
+      },
+      "text": "FICTÍCIO — sinais numéricos independentes\n\nMaterial Quantidade Variação\nNíquel -3 -0,75\nFerro 7 -12,5\nEstanho -125 -125,25\nBronze 3 0,75\nAlumínio 17 12,5\nTitânio 125 125,25\nMaterial\nQuantidade\nVariação\nNíquel\n-3\n-0,75\nFerro\n-17\n-12,5\nEstanho\n-125\n-125,25\nBronze\n3\n0,75\nAlumínio\n17\n12,5\nTitânio\n125\n125,25",
+      "nativeText": "",
+      "nativeRawText": "",
+      "nativeSpans": [],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 0,
+        "sourceToOcr": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "viewportTransform": [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          1000
+        ],
+        "projection": {
+          "horizontal": 127.3682662829256,
+          "vertical": 47.1024838891322,
+          "ink": 15983
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "FICTÍCIO — sinais numéricos independentes\n\nMaterial Quantidade Variação\nNíquel -3 -0,75\nFerro 7 -12,5\nEstanho -125 -125,25\nBronze 3 0,75\nAlumínio 17 12,5\nTitânio 125 125,25",
+            "confidence": 89,
+            "letters": 134,
+            "tokens": 24,
+            "words": [
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 48,
+                  "y0": 43,
+                  "x1": 172,
+                  "y1": 70
+                },
+                "confidence": 93
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 182,
+                  "y0": 61,
+                  "x1": 212,
+                  "y1": 63
+                },
+                "confidence": 93
+              },
+              {
+                "text": "sinais",
+                "bbox": {
+                  "x0": 221,
+                  "y0": 48,
+                  "x1": 295,
+                  "y1": 70
+                },
+                "confidence": 95
+              },
+              {
+                "text": "numéricos",
+                "bbox": {
+                  "x0": 307,
+                  "y0": 48,
+                  "x1": 442,
+                  "y1": 70
+                },
+                "confidence": 96
+              },
+              {
+                "text": "independentes",
+                "bbox": {
+                  "x0": 454,
+                  "y0": 48,
+                  "x1": 647,
+                  "y1": 76
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Material",
+                "bbox": {
+                  "x0": 47,
+                  "y0": 184,
+                  "x1": 149,
+                  "y1": 221
+                },
+                "confidence": 94
+              },
+              {
+                "text": "Quantidade",
+                "bbox": {
+                  "x0": 461,
+                  "y0": 184,
+                  "x1": 614,
+                  "y1": 221
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Variação",
+                "bbox": {
+                  "x0": 850,
+                  "y0": 188,
+                  "x1": 965,
+                  "y1": 216
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Níquel",
+                "bbox": {
+                  "x0": 47,
+                  "y0": 288,
+                  "x1": 129,
+                  "y1": 316
+                },
+                "confidence": 95
+              },
+              {
+                "text": "-3",
+                "bbox": {
+                  "x0": 461,
+                  "y0": 288,
+                  "x1": 485,
+                  "y1": 310
+                },
+                "confidence": 22
+              },
+              {
+                "text": "-0,75",
+                "bbox": {
+                  "x0": 851,
+                  "y0": 288,
+                  "x1": 917,
+                  "y1": 314
+                },
+                "confidence": 92
+              },
+              {
+                "text": "Ferro",
+                "bbox": {
+                  "x0": 48,
+                  "y0": 388,
+                  "x1": 115,
+                  "y1": 410
+                },
+                "confidence": 96
+              },
+              {
+                "text": "7",
+                "bbox": {
+                  "x0": 461,
+                  "y0": 388,
+                  "x1": 502,
+                  "y1": 410
+                },
+                "confidence": 47
+              },
+              {
+                "text": "-12,5",
+                "bbox": {
+                  "x0": 851,
+                  "y0": 388,
+                  "x1": 917,
+                  "y1": 414
+                },
+                "confidence": 88
+              },
+              {
+                "text": "Estanho",
+                "bbox": {
+                  "x0": 47,
+                  "y0": 488,
+                  "x1": 154,
+                  "y1": 510
+                },
+                "confidence": 96
+              },
+              {
+                "text": "-125",
+                "bbox": {
+                  "x0": 461,
+                  "y0": 488,
+                  "x1": 519,
+                  "y1": 510
+                },
+                "confidence": 88
+              },
+              {
+                "text": "-125,25",
+                "bbox": {
+                  "x0": 851,
+                  "y0": 488,
+                  "x1": 950,
+                  "y1": 514
+                },
+                "confidence": 91
+              },
+              {
+                "text": "Bronze",
+                "bbox": {
+                  "x0": 47,
+                  "y0": 588,
+                  "x1": 139,
+                  "y1": 610
+                },
+                "confidence": 96
+              },
+              {
+                "text": "3",
+                "bbox": {
+                  "x0": 461,
+                  "y0": 588,
+                  "x1": 475,
+                  "y1": 610
+                },
+                "confidence": 96
+              },
+              {
+                "text": "0,75",
+                "bbox": {
+                  "x0": 851,
+                  "y0": 588,
+                  "x1": 907,
+                  "y1": 614
+                },
+                "confidence": 95
+              },
+              {
+                "text": "Alumínio",
+                "bbox": {
+                  "x0": 45,
+                  "y0": 688,
+                  "x1": 160,
+                  "y1": 710
+                },
+                "confidence": 94
+              },
+              {
+                "text": "17",
+                "bbox": {
+                  "x0": 463,
+                  "y0": 688,
+                  "x1": 492,
+                  "y1": 710
+                },
+                "confidence": 85
+              },
+              {
+                "text": "12,5",
+                "bbox": {
+                  "x0": 853,
+                  "y0": 688,
+                  "x1": 907,
+                  "y1": 714
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Titânio",
+                "bbox": {
+                  "x0": 46,
+                  "y0": 788,
+                  "x1": 133,
+                  "y1": 810
+                },
+                "confidence": 96
+              },
+              {
+                "text": "125",
+                "bbox": {
+                  "x0": 463,
+                  "y0": 788,
+                  "x1": 509,
+                  "y1": 810
+                },
+                "confidence": 96
+              },
+              {
+                "text": "125,25",
+                "bbox": {
+                  "x0": 853,
+                  "y0": 788,
+                  "x1": 940,
+                  "y1": 814
+                },
+                "confidence": 96
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 180,
+            "text": "(TAL TAR Gcl oIluBenNL\nser Lt OIlUJUWWN|y\nSO £ Eyalfora|\n\nsT'ser gel oyuers;A\nser 21º o19]\nsL'o- g laenblN\nOBSELEA epepnueno |euslen\nsejuapusdepu! soouauwnu siIeuis — olo/1014",
+            "confidence": 25,
+            "letters": 135,
+            "tokens": 26,
+            "words": [
+              {
+                "text": "(TAL",
+                "bbox": {
+                  "x0": 260,
+                  "y0": 182,
+                  "x1": 308,
+                  "y1": 223
+                },
+                "confidence": 0
+              },
+              {
+                "text": "TAR",
+                "bbox": {
+                  "x0": 314,
+                  "y0": 190,
+                  "x1": 347,
+                  "y1": 212
+                },
+                "confidence": 0
+              },
+              {
+                "text": "Gcl",
+                "bbox": {
+                  "x0": 691,
+                  "y0": 190,
+                  "x1": 737,
+                  "y1": 212
+                },
+                "confidence": 19
+              },
+              {
+                "text": "oIluBenNL",
+                "bbox": {
+                  "x0": 1067,
+                  "y0": 190,
+                  "x1": 1154,
+                  "y1": 212
+                },
+                "confidence": 12
+              },
+              {
+                "text": "ser",
+                "bbox": {
+                  "x0": 293,
+                  "y0": 286,
+                  "x1": 347,
+                  "y1": 312
+                },
+                "confidence": 75
+              },
+              {
+                "text": "Lt",
+                "bbox": {
+                  "x0": 708,
+                  "y0": 290,
+                  "x1": 737,
+                  "y1": 312
+                },
+                "confidence": 26
+              },
+              {
+                "text": "OIlUJUWWN|y",
+                "bbox": {
+                  "x0": 1040,
+                  "y0": 290,
+                  "x1": 1155,
+                  "y1": 312
+                },
+                "confidence": 16
+              },
+              {
+                "text": "SO",
+                "bbox": {
+                  "x0": 293,
+                  "y0": 386,
+                  "x1": 349,
+                  "y1": 412
+                },
+                "confidence": 14
+              },
+              {
+                "text": "£",
+                "bbox": {
+                  "x0": 725,
+                  "y0": 390,
+                  "x1": 739,
+                  "y1": 412
+                },
+                "confidence": 76
+              },
+              {
+                "text": "Eyalfora|",
+                "bbox": {
+                  "x0": 1061,
+                  "y0": 390,
+                  "x1": 1153,
+                  "y1": 412
+                },
+                "confidence": 0
+              },
+              {
+                "text": "sT'ser",
+                "bbox": {
+                  "x0": 250,
+                  "y0": 486,
+                  "x1": 349,
+                  "y1": 512
+                },
+                "confidence": 0
+              },
+              {
+                "text": "gel",
+                "bbox": {
+                  "x0": 681,
+                  "y0": 490,
+                  "x1": 739,
+                  "y1": 512
+                },
+                "confidence": 0
+              },
+              {
+                "text": "oyuers;A",
+                "bbox": {
+                  "x0": 1046,
+                  "y0": 490,
+                  "x1": 1153,
+                  "y1": 512
+                },
+                "confidence": 0
+              },
+              {
+                "text": "ser",
+                "bbox": {
+                  "x0": 283,
+                  "y0": 586,
+                  "x1": 349,
+                  "y1": 612
+                },
+                "confidence": 54
+              },
+              {
+                "text": "21º",
+                "bbox": {
+                  "x0": 698,
+                  "y0": 590,
+                  "x1": 739,
+                  "y1": 612
+                },
+                "confidence": 53
+              },
+              {
+                "text": "o19]",
+                "bbox": {
+                  "x0": 1085,
+                  "y0": 590,
+                  "x1": 1152,
+                  "y1": 612
+                },
+                "confidence": 0
+              },
+              {
+                "text": "sL'o-",
+                "bbox": {
+                  "x0": 283,
+                  "y0": 686,
+                  "x1": 349,
+                  "y1": 712
+                },
+                "confidence": 35
+              },
+              {
+                "text": "g",
+                "bbox": {
+                  "x0": 715,
+                  "y0": 690,
+                  "x1": 739,
+                  "y1": 712
+                },
+                "confidence": 22
+              },
+              {
+                "text": "laenblN",
+                "bbox": {
+                  "x0": 1071,
+                  "y0": 684,
+                  "x1": 1153,
+                  "y1": 712
+                },
+                "confidence": 0
+              },
+              {
+                "text": "OBSELEA",
+                "bbox": {
+                  "x0": 235,
+                  "y0": 784,
+                  "x1": 350,
+                  "y1": 812
+                },
+                "confidence": 51
+              },
+              {
+                "text": "epepnueno",
+                "bbox": {
+                  "x0": 586,
+                  "y0": 789,
+                  "x1": 739,
+                  "y1": 812
+                },
+                "confidence": 38
+              },
+              {
+                "text": "|euslen",
+                "bbox": {
+                  "x0": 1051,
+                  "y0": 790,
+                  "x1": 1153,
+                  "y1": 812
+                },
+                "confidence": 0
+              },
+              {
+                "text": "sejuapusdepu!",
+                "bbox": {
+                  "x0": 553,
+                  "y0": 924,
+                  "x1": 746,
+                  "y1": 952
+                },
+                "confidence": 35
+              },
+              {
+                "text": "soouauwnu",
+                "bbox": {
+                  "x0": 758,
+                  "y0": 930,
+                  "x1": 893,
+                  "y1": 952
+                },
+                "confidence": 39
+              },
+              {
+                "text": "siIeuis",
+                "bbox": {
+                  "x0": 905,
+                  "y0": 930,
+                  "x1": 979,
+                  "y1": 952
+                },
+                "confidence": 21
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 988,
+                  "y0": 937,
+                  "x1": 1018,
+                  "y1": 939
+                },
+                "confidence": 92
+              },
+              {
+                "text": "olo/1014",
+                "bbox": {
+                  "x0": 1028,
+                  "y0": 930,
+                  "x1": 1152,
+                  "y1": 957
+                },
+                "confidence": 0
+              }
+            ],
+            "sourceToOcr": [
+              -1,
+              0,
+              0,
+              -1,
+              1200,
+              1000
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "FICTÍCIO — sinais numéricos independentes\n\nMaterial Quantidade Variação\nNíquel -3 -0,75\nFerro 7 -12,5\nEstanho -125 -125,25\nBronze 3 0,75\nAlumínio 17 12,5\nTitânio 125 125,25\nMaterial\nQuantidade\nVariação\nNíquel\n-3\n-0,75\nFerro\n-17\n-12,5\nEstanho\n-125\n-125,25\nBronze\n3\n0,75\nAlumínio\n17\n12,5\nTitânio\n125\n125,25",
+      "ocrPageText": "FICTÍCIO — sinais numéricos independentes\n\nMaterial Quantidade Variação\nNíquel -3 -0,75\nFerro 7 -12,5\nEstanho -125 -125,25\nBronze 3 0,75\nAlumínio 17 12,5\nTitânio 125 125,25",
+      "ocrTableCells": [
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 0,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Material",
+          "confidence": 94,
+          "bbox": {
+            "x": 47,
+            "y": 184,
+            "width": 102,
+            "height": 37
+          },
+          "words": [
+            {
+              "text": "Material",
+              "bbox": {
+                "x0": 47,
+                "y0": 184,
+                "x1": 149,
+                "y1": 221
+              },
+              "confidence": 94
+            }
+          ],
+          "header": true,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 0,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Quantidade",
+          "confidence": 96,
+          "bbox": {
+            "x": 461,
+            "y": 184,
+            "width": 153,
+            "height": 37
+          },
+          "words": [
+            {
+              "text": "Quantidade",
+              "bbox": {
+                "x0": 461,
+                "y0": 184,
+                "x1": 614,
+                "y1": 221
+              },
+              "confidence": 96
+            }
+          ],
+          "header": true,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 0,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Variação",
+          "confidence": 96,
+          "bbox": {
+            "x": 850,
+            "y": 188,
+            "width": 115,
+            "height": 28
+          },
+          "words": [
+            {
+              "text": "Variação",
+              "bbox": {
+                "x0": 850,
+                "y0": 188,
+                "x1": 965,
+                "y1": 216
+              },
+              "confidence": 96
+            }
+          ],
+          "header": true,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 1,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Níquel",
+          "confidence": 95,
+          "bbox": {
+            "x": 47,
+            "y": 288,
+            "width": 82,
+            "height": 28
+          },
+          "words": [
+            {
+              "text": "Níquel",
+              "bbox": {
+                "x0": 47,
+                "y0": 288,
+                "x1": 129,
+                "y1": 316
+              },
+              "confidence": 95
+            }
+          ],
+          "header": false,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 1,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-3",
+          "confidence": 22,
+          "bbox": {
+            "x": 461,
+            "y": 288,
+            "width": 24,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "-3",
+              "bbox": {
+                "x0": 461,
+                "y0": 288,
+                "x1": 485,
+                "y1": 310
+              },
+              "confidence": 22
+            }
+          ],
+          "header": false,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters",
+          "numericOcr": {
+            "originalText": "-3",
+            "originalConfidence": 22,
+            "originalBbox": {
+              "x": 461,
+              "y": 288,
+              "width": 24,
+              "height": 22
+            },
+            "rawText": "-3",
+            "text": "-3",
+            "confidence": 88,
+            "bbox": {
+              "x": 461,
+              "y": 288,
+              "width": 24,
+              "height": 22
+            },
+            "padding": 11,
+            "resizeScale": 2,
+            "psm": 7,
+            "disagreement": false
+          }
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 1,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-0,75",
+          "confidence": 92,
+          "bbox": {
+            "x": 851,
+            "y": 288,
+            "width": 66,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "-0,75",
+              "bbox": {
+                "x0": 851,
+                "y0": 288,
+                "x1": 917,
+                "y1": 314
+              },
+              "confidence": 92
+            }
+          ],
+          "header": false,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 2,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Ferro",
+          "confidence": 96,
+          "bbox": {
+            "x": 48,
+            "y": 388,
+            "width": 67,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Ferro",
+              "bbox": {
+                "x0": 48,
+                "y0": 388,
+                "x1": 115,
+                "y1": 410
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 2,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-17",
+          "confidence": 45,
+          "bbox": {
+            "x": 461,
+            "y": 388,
+            "width": 41,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "7",
+              "bbox": {
+                "x0": 461,
+                "y0": 388,
+                "x1": 502,
+                "y1": 410
+              },
+              "confidence": 47
+            }
+          ],
+          "header": false,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters",
+          "numericOcr": {
+            "originalText": "7",
+            "originalConfidence": 47,
+            "originalBbox": {
+              "x": 461,
+              "y": 388,
+              "width": 41,
+              "height": 22
+            },
+            "rawText": "- 17",
+            "text": "-17",
+            "confidence": 45,
+            "bbox": {
+              "x": 461,
+              "y": 388,
+              "width": 41,
+              "height": 22
+            },
+            "padding": 11,
+            "resizeScale": 2,
+            "psm": 7,
+            "disagreement": true
+          }
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 2,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-12,5",
+          "confidence": 88,
+          "bbox": {
+            "x": 851,
+            "y": 388,
+            "width": 66,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "-12,5",
+              "bbox": {
+                "x0": 851,
+                "y0": 388,
+                "x1": 917,
+                "y1": 414
+              },
+              "confidence": 88
+            }
+          ],
+          "header": false,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 3,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Estanho",
+          "confidence": 96,
+          "bbox": {
+            "x": 47,
+            "y": 488,
+            "width": 107,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Estanho",
+              "bbox": {
+                "x0": 47,
+                "y0": 488,
+                "x1": 154,
+                "y1": 510
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 3,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-125",
+          "confidence": 88,
+          "bbox": {
+            "x": 461,
+            "y": 488,
+            "width": 58,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "-125",
+              "bbox": {
+                "x0": 461,
+                "y0": 488,
+                "x1": 519,
+                "y1": 510
+              },
+              "confidence": 88
+            }
+          ],
+          "header": false,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 3,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "-125,25",
+          "confidence": 91,
+          "bbox": {
+            "x": 851,
+            "y": 488,
+            "width": 99,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "-125,25",
+              "bbox": {
+                "x0": 851,
+                "y0": 488,
+                "x1": 950,
+                "y1": 514
+              },
+              "confidence": 91
+            }
+          ],
+          "header": false,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 4,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Bronze",
+          "confidence": 96,
+          "bbox": {
+            "x": 47,
+            "y": 588,
+            "width": 92,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Bronze",
+              "bbox": {
+                "x0": 47,
+                "y0": 588,
+                "x1": 139,
+                "y1": 610
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 4,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "3",
+          "confidence": 96,
+          "bbox": {
+            "x": 461,
+            "y": 588,
+            "width": 14,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "3",
+              "bbox": {
+                "x0": 461,
+                "y0": 588,
+                "x1": 475,
+                "y1": 610
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 4,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "0,75",
+          "confidence": 95,
+          "bbox": {
+            "x": 851,
+            "y": 588,
+            "width": 56,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "0,75",
+              "bbox": {
+                "x0": 851,
+                "y0": 588,
+                "x1": 907,
+                "y1": 614
+              },
+              "confidence": 95
+            }
+          ],
+          "header": false,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 5,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Alumínio",
+          "confidence": 94,
+          "bbox": {
+            "x": 45,
+            "y": 688,
+            "width": 115,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Alumínio",
+              "bbox": {
+                "x0": 45,
+                "y0": 688,
+                "x1": 160,
+                "y1": 710
+              },
+              "confidence": 94
+            }
+          ],
+          "header": false,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 5,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "17",
+          "confidence": 85,
+          "bbox": {
+            "x": 463,
+            "y": 688,
+            "width": 29,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "17",
+              "bbox": {
+                "x0": 463,
+                "y0": 688,
+                "x1": 492,
+                "y1": 710
+              },
+              "confidence": 85
+            }
+          ],
+          "header": false,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 5,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "12,5",
+          "confidence": 96,
+          "bbox": {
+            "x": 853,
+            "y": 688,
+            "width": 54,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "12,5",
+              "bbox": {
+                "x0": 853,
+                "y0": 688,
+                "x1": 907,
+                "y1": 714
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 6,
+          "column": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "Titânio",
+          "confidence": 96,
+          "bbox": {
+            "x": 46,
+            "y": 788,
+            "width": 87,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "Titânio",
+              "bbox": {
+                "x0": 46,
+                "y0": 788,
+                "x1": 133,
+                "y1": 810
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Material",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 6,
+          "column": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "125",
+          "confidence": 96,
+          "bbox": {
+            "x": 463,
+            "y": 788,
+            "width": 46,
+            "height": 22
+          },
+          "words": [
+            {
+              "text": "125",
+              "bbox": {
+                "x0": 463,
+                "y0": 788,
+                "x1": 509,
+                "y1": 810
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Quantidade",
+          "associationMethod": "coordinate_gutters"
+        },
+        {
+          "page": 1,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1000
+          ],
+          "row": 6,
+          "column": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "text": "125,25",
+          "confidence": 96,
+          "bbox": {
+            "x": 853,
+            "y": 788,
+            "width": 87,
+            "height": 26
+          },
+          "words": [
+            {
+              "text": "125,25",
+              "bbox": {
+                "x0": 853,
+                "y0": 788,
+                "x1": 940,
+                "y1": 814
+              },
+              "confidence": 96
+            }
+          ],
+          "header": false,
+          "headerText": "Variação",
+          "associationMethod": "coordinate_gutters"
+        }
+      ],
+      "ocrConfidence": 89,
+      "warnings": [
+        "layout_unverified",
+        "numeric_ocr_disagreement",
+        "raster_layout_review_required"
+      ]
+    }
+  ],
+  "reviewRequired": true,
+  "indexingEligible": false,
+  "extractorVersion": "pdf-evidence-v4-numeric-crop"
+}

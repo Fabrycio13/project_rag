@@ -1,0 +1,49 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "ocr",
+      "text": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.\nSaúde\nNão ri dependentes.",
+      "nativeText": "",
+      "ocrText": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.\nSaúde\nNão ri dependentes.",
+      "ocrPageText": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.",
+      "ocrTableCells": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 27,
+            "y": 465,
+            "width": 517,
+            "height": 140
+          },
+          "row": 1,
+          "column": 0,
+          "text": "Saúde",
+          "confidence": 96,
+          "method": "ocr",
+          "scale": 2
+        },
+        {
+          "page": 1,
+          "bbox": {
+            "x": 552,
+            "y": 465,
+            "width": 612,
+            "height": 140
+          },
+          "row": 1,
+          "column": 1,
+          "text": "Não ri dependentes.",
+          "confidence": 51,
+          "method": "ocr",
+          "scale": 2
+        }
+      ],
+      "ocrConfidence": 94,
+      "warnings": [
+        "layout_unverified",
+        "table_cells_reading_order_unverified"
+      ]
+    }
+  ]
+}

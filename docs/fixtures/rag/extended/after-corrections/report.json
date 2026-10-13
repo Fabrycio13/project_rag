@@ -1,0 +1,328 @@
+{
+  "fixtureCount": 9,
+  "evidenceChecks": 29,
+  "evidencePasses": 29,
+  "evidenceFailures": 0,
+  "documentFailures": 0,
+  "reviewRequiredCount": 5,
+  "orderingPasses": 1,
+  "associationPasses": 1,
+  "results": [
+    {
+      "id": "pt-br",
+      "error": null,
+      "durationMs": 703,
+      "before": {
+        "status": "evidence_pass",
+        "allEvidence": true,
+        "durationMs": 574
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "12,5%",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Não há renovação automática",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Associação",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "ação",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "proteção",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": false,
+      "indexingEligible": true,
+      "remainingLimitations": null
+    },
+    {
+      "id": "same-page",
+      "error": null,
+      "durationMs": 3624,
+      "before": {
+        "status": "evidence_pass",
+        "allEvidence": true,
+        "durationMs": 2438
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Auditor não pode exportar",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": true,
+      "indexingEligible": false,
+      "remainingLimitations": "Cobertura e layout raster não certificados; revisão obrigatória"
+    },
+    {
+      "id": "borderless",
+      "error": null,
+      "durationMs": 3232,
+      "before": {
+        "status": "review_required",
+        "allEvidence": true,
+        "durationMs": 2280
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Avançado",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 987,65",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Essencial",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "2,5%",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": true,
+      "indexingEligible": false,
+      "remainingLimitations": "Associação sem bordas não certificada"
+    },
+    {
+      "id": "merged-multiline",
+      "error": null,
+      "durationMs": 3545,
+      "before": {
+        "status": "review_required",
+        "allEvidence": true,
+        "durationMs": 2039
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Não inclui dependentes",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Saúde",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 123,45",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": true,
+      "emptyPage": null,
+      "reviewRequired": true,
+      "indexingEligible": false,
+      "remainingLimitations": "Cobertura e layout raster não certificados; revisão obrigatória"
+    },
+    {
+      "id": "skew-rotated",
+      "error": null,
+      "durationMs": 4258,
+      "before": {
+        "status": "evidence_gap",
+        "allEvidence": false,
+        "durationMs": 2159
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "não automática",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "3,75%",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": true,
+      "indexingEligible": false,
+      "remainingLimitations": "Cobertura e layout raster não certificados; revisão obrigatória"
+    },
+    {
+      "id": "low-contrast-skew",
+      "error": null,
+      "durationMs": 4390,
+      "before": {
+        "status": "review_required",
+        "allEvidence": true,
+        "durationMs": 2221
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "45 dias",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "não reter indefinidamente",
+          "passed": true
+        },
+        {
+          "page": 2,
+          "text": "0,75%",
+          "passed": true
+        },
+        {
+          "page": 2,
+          "text": "não há multa",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": true,
+      "indexingEligible": false,
+      "remainingLimitations": "Cobertura e layout raster não certificados; revisão obrigatória"
+    },
+    {
+      "id": "columns-blank",
+      "error": null,
+      "durationMs": 1004,
+      "before": {
+        "status": "review_required",
+        "allEvidence": true,
+        "durationMs": 478
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "1. Solicitar aprovação.",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "2. Não exportar.",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "3. Guardar por 20 dias.",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "4. Excluir após o prazo.",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": true,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": false,
+      "indexingEligible": true,
+      "remainingLimitations": null
+    },
+    {
+      "id": "blank-interspersed",
+      "error": null,
+      "durationMs": 1015,
+      "before": {
+        "status": "failure",
+        "allEvidence": false,
+        "durationMs": 1388
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        },
+        {
+          "page": 3,
+          "text": "90 dias",
+          "passed": true
+        },
+        {
+          "page": 3,
+          "text": "não indefinida",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": true,
+      "reviewRequired": false,
+      "indexingEligible": true,
+      "remainingLimitations": null
+    },
+    {
+      "id": "injection",
+      "error": null,
+      "durationMs": 739,
+      "before": {
+        "status": "evidence_pass",
+        "allEvidence": true,
+        "durationMs": 614
+      },
+      "evidence": [
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        }
+      ],
+      "allEvidence": true,
+      "ordering": null,
+      "association": null,
+      "emptyPage": null,
+      "reviewRequired": false,
+      "indexingEligible": true,
+      "remainingLimitations": null
+    }
+  ]
+}

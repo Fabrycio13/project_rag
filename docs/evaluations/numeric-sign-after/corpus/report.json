@@ -1,0 +1,595 @@
+{
+  "fixtureCount": 12,
+  "evidenceChecks": 29,
+  "evidencePasses": 29,
+  "results": [
+    {
+      "id": "pt-br",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "12,5%",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Não há renovação automática",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Associação",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "ação",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "proteção",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": null,
+      "reviewRequired": false,
+      "indexingEligible": true
+    },
+    {
+      "id": "same-page",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Auditor não pode exportar",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "borderless",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Avançado",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 987,65",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Essencial",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "2,5%",
+          "passed": true
+        }
+      ],
+      "association": [
+        {
+          "row": 0,
+          "column": 0,
+          "expected": "Plano",
+          "actual": "Plano",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "expected": "Valor",
+          "actual": "Valor",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "expected": "Desconto",
+          "actual": "Desconto",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "expected": "Essencial",
+          "actual": "Essencial",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "expected": "R$ 234,56",
+          "actual": "R$ 234,56",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "expected": "2,5%",
+          "actual": "2,5%",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "expected": "Avançado",
+          "actual": "Avançado",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "expected": "R$ 987,65",
+          "actual": "R$ 987,65",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "expected": "0%",
+          "actual": "0%",
+          "passed": true
+        }
+      ],
+      "before": {
+        "cells": 0,
+        "associationPasses": 0,
+        "associationChecks": 9
+      },
+      "tableStructure": {
+        "state": "validated_rectangular",
+        "reason": "coordinate_rectangular_single_line",
+        "markdown": "| Plano | Valor | Desconto |\n| --- | --- | --- |\n| Essencial | R$ 234,56 | 2,5% |\n| Avançado | R$ 987,65 | 0% |"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "merged-multiline",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Não inclui dependentes",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "Saúde",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "R$ 123,45",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "spans_not_representable_in_markdown"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "skew-rotated",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "não automática",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "3,75%",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "low-contrast-skew",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "45 dias",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "não reter indefinidamente",
+          "passed": true
+        },
+        {
+          "page": 2,
+          "text": "0,75%",
+          "passed": true
+        },
+        {
+          "page": 2,
+          "text": "não há multa",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "columns-blank",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "1. Solicitar aprovação.",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "2. Não exportar.",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "3. Guardar por 20 dias.",
+          "passed": true
+        },
+        {
+          "page": 1,
+          "text": "4. Excluir após o prazo.",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": null,
+      "reviewRequired": false,
+      "indexingEligible": true
+    },
+    {
+      "id": "blank-interspersed",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        },
+        {
+          "page": 3,
+          "text": "90 dias",
+          "passed": true
+        },
+        {
+          "page": 3,
+          "text": "não indefinida",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": null,
+      "reviewRequired": false,
+      "indexingEligible": true
+    },
+    {
+      "id": "injection",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "R$ 2.345,67",
+          "passed": true
+        }
+      ],
+      "association": null,
+      "before": null,
+      "tableStructure": null,
+      "reviewRequired": false,
+      "indexingEligible": true
+    },
+    {
+      "id": "inventory",
+      "evidence": [],
+      "association": [
+        {
+          "row": 0,
+          "column": 0,
+          "expected": "Item",
+          "actual": "Item",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "expected": "Saldo",
+          "actual": "Saldo",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "expected": "Taxa",
+          "actual": "Taxa",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "expected": "Restrição",
+          "actual": "Restrição",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "expected": "Cobre",
+          "actual": "Cobre",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "expected": "17",
+          "actual": "17",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "expected": "4,25%",
+          "actual": "4,25%",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "expected": "Não vender",
+          "actual": "Não vender",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "expected": "Prata",
+          "actual": "Prata",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "expected": "28",
+          "actual": "28",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "expected": "0%",
+          "actual": "0%",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "expected": "Não exportar",
+          "actual": "Não exportar",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "expected": "Zinco",
+          "actual": "Zinco",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "expected": "3",
+          "actual": "3",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "expected": "1,5%",
+          "actual": "1,5%",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "expected": "Não acumular",
+          "actual": "Não acumular",
+          "passed": true
+        }
+      ],
+      "before": null,
+      "tableStructure": {
+        "state": "validated_rectangular",
+        "reason": "coordinate_rectangular_single_line",
+        "markdown": "| Item | Saldo | Taxa | Restrição |\n| --- | --- | --- | --- |\n| Cobre | 17 | 4,25% | Não vender |\n| Prata | 28 | 0% | Não exportar |\n| Zinco | 3 | 1,5% | Não acumular |"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "prose-columns",
+      "evidence": [],
+      "association": null,
+      "before": null,
+      "tableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    },
+    {
+      "id": "inventory-low-confidence",
+      "evidence": [],
+      "association": [
+        {
+          "row": 0,
+          "column": 0,
+          "expected": "Item",
+          "actual": "Item",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "expected": "Saldo",
+          "actual": "Saldo",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "expected": "Taxa",
+          "actual": "Taxa",
+          "passed": true
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "expected": "Restrição",
+          "actual": "Restrição",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "expected": "Cobre",
+          "actual": "Cobre",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "expected": "-17",
+          "actual": "-17",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "expected": "4,25%",
+          "actual": "4,25%",
+          "passed": true
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "expected": "Não vender",
+          "actual": "Não vender",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "expected": "Prata",
+          "actual": "Prata",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "expected": "28",
+          "actual": "28",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "expected": "0%",
+          "actual": "0%",
+          "passed": true
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "expected": "Não exportar",
+          "actual": "Não exportar",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "expected": "Zinco",
+          "actual": "Zinco",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "expected": "-3",
+          "actual": "-3",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "expected": "1,5%",
+          "actual": "1,5%",
+          "passed": true
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "expected": "Não acumular",
+          "actual": "Não acumular",
+          "passed": true
+        }
+      ],
+      "before": null,
+      "tableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "numeric_ocr_disagreement"
+      },
+      "reviewRequired": true,
+      "indexingEligible": false
+    }
+  ]
+}

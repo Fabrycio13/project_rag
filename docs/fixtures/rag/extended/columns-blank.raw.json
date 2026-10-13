@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "text",
+      "text": "FICTÍCIO TESTE — columns-blank 1. Solicitar aprovação.   3. Guardar por 20 dias. 2. Não exportar.   4. Excluir após o prazo.",
+      "nativeText": "FICTÍCIO TESTE — columns-blank 1. Solicitar aprovação.   3. Guardar por 20 dias. 2. Não exportar.   4. Excluir após o prazo.",
+      "ocrText": "",
+      "ocrPageText": "",
+      "ocrTableCells": [],
+      "ocrConfidence": null,
+      "warnings": [
+        "layout_unverified"
+      ]
+    }
+  ]
+}

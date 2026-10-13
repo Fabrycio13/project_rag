@@ -1,0 +1,175 @@
+{
+  "native_text_unchanged": true,
+  "other_pages_text_unchanged": true,
+  "page_ocr_raw_unchanged": true,
+  "before_characters": 503,
+  "after_characters": 590,
+  "cells": [
+    {
+      "page": 3,
+      "bbox": {
+        "x": 83,
+        "y": 186,
+        "width": 249,
+        "height": 36
+      },
+      "row": 0,
+      "column": 0,
+      "text": "Plano",
+      "confidence": 96,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 340,
+        "y": 186,
+        "width": 250,
+        "height": 36
+      },
+      "row": 0,
+      "column": 1,
+      "text": "Limite mensal",
+      "confidence": 95,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 598,
+        "y": 186,
+        "width": 249,
+        "height": 36
+      },
+      "row": 0,
+      "column": 2,
+      "text": "Resposta",
+      "confidence": 96,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 855,
+        "y": 186,
+        "width": 250,
+        "height": 36
+      },
+      "row": 0,
+      "column": 3,
+      "text": "Custo adicional",
+      "confidence": 96,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 83,
+        "y": 234,
+        "width": 249,
+        "height": 36
+      },
+      "row": 2,
+      "column": 0,
+      "text": "Extra",
+      "confidence": 96,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 340,
+        "y": 234,
+        "width": 250,
+        "height": 36
+      },
+      "row": 2,
+      "column": 1,
+      "text": "40 unidades",
+      "confidence": 96,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 598,
+        "y": 234,
+        "width": 249,
+        "height": 36
+      },
+      "row": 2,
+      "column": 2,
+      "text": "4 horas uteis",
+      "confidence": 95,
+      "method": "ocr",
+      "scale": 2
+    },
+    {
+      "page": 3,
+      "bbox": {
+        "x": 855,
+        "y": 234,
+        "width": 250,
+        "height": 36
+      },
+      "row": 2,
+      "column": 3,
+      "text": "R$ 200,00",
+      "confidence": 82,
+      "method": "ocr",
+      "scale": 2
+    }
+  ],
+  "hashes": [
+    {
+      "path": "docs/fixtures/rag/facil.pdf",
+      "sha256": "273067c996adee07a30d133d584ba6e6e32745ab3c8b107f70d9292a20643335"
+    },
+    {
+      "path": "docs/fixtures/rag/medio.pdf",
+      "sha256": "5f0a8af5b4ed543deb363788022906dbf293ddc3626941d1d3a93ec4518d9b02"
+    },
+    {
+      "path": "docs/fixtures/rag/dificil.pdf",
+      "sha256": "9037ffe2ba637fb183799b873dda8dd0adc20c76eb6a030e853c69a67b797944"
+    },
+    {
+      "path": "docs/fixtures/rag/canonical.md",
+      "sha256": "0982514a363dcf88fa43a8aa86b5905dc016079971cccf38e35cc839af87edd9"
+    },
+    {
+      "path": "docs/fixtures/rag/gold.json",
+      "sha256": "1528a3280ab58faa476d162cbb38a8263cfa80bc64bbc21aa415a0f57b098649"
+    },
+    {
+      "path": "docs/fixtures/rag/manifest.json",
+      "sha256": "1ac02e8476019c6ad364cd020d1ac4f3f7b345d1793c08124647da035be2fff7"
+    },
+    {
+      "path": "docs/evaluations/mixed-pdf-after/dificil.raw.json",
+      "sha256": "2f139c4c347d8ee1dc9f6e1920d6270977d9ce83eb89d8c1bd4b89cae1fe18fb"
+    },
+    {
+      "path": "docs/evaluations/scanned-table-after/dificil.raw.json",
+      "sha256": "df6efa0520471081be9aa0a683f0d1c669e7b485f0ab3633a3bf945e722844ff"
+    },
+    {
+      "path": "docs/evaluations/scanned-table-probes-original.json",
+      "sha256": "5e99c39196cab4449fd8c0a966c538808371594ba6be306b9a1c61275187625b"
+    },
+    {
+      "path": "docs/evaluations/scanned-table-probes-threshold160.json",
+      "sha256": "48b04bf236ab7d1f6ba19d77d92ea51bc35f0658b105e90ecfaffd62deef39af"
+    },
+    {
+      "path": "docs/evaluations/scanned-table-probes.json",
+      "sha256": "48b04bf236ab7d1f6ba19d77d92ea51bc35f0658b105e90ecfaffd62deef39af"
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          800
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "spans_not_representable_in_markdown"
+      },
+      "text": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.\nBenefícios — categoria única\nSaúde\nReembolso de R$ 123,45\nNão inclui dependentes.",
+      "nativeText": "",
+      "nativeRawText": "",
+      "nativeSpans": [],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 0,
+        "sourceToOcr": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "viewportTransform": [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          1600
+        ],
+        "projection": {
+          "horizontal": 634.8457357411049,
+          "vertical": 47.595029501162166,
+          "ink": 27965
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.",
+            "confidence": 94,
+            "letters": 94,
+            "tokens": 15,
+            "words": [
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 43,
+                  "y0": 238,
+                  "x1": 167,
+                  "y1": 265
+                },
+                "confidence": 95
+              },
+              {
+                "text": "TESTE",
+                "bbox": {
+                  "x0": 177,
+                  "y0": 243,
+                  "x1": 271,
+                  "y1": 265
+                },
+                "confidence": 93
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 281,
+                  "y0": 256,
+                  "x1": 311,
+                  "y1": 258
+                },
+                "confidence": 92
+              },
+              {
+                "text": "merged-multiline",
+                "bbox": {
+                  "x0": 322,
+                  "y0": 243,
+                  "x1": 540,
+                  "y1": 271
+                },
+                "confidence": 90
+              },
+              {
+                "text": "Benefícios",
+                "bbox": {
+                  "x0": 42,
+                  "y0": 378,
+                  "x1": 179,
+                  "y1": 400
+                },
+                "confidence": 92
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 189,
+                  "y0": 391,
+                  "x1": 218,
+                  "y1": 393
+                },
+                "confidence": 92
+              },
+              {
+                "text": "categoria",
+                "bbox": {
+                  "x0": 228,
+                  "y0": 378,
+                  "x1": 349,
+                  "y1": 406
+                },
+                "confidence": 96
+              },
+              {
+                "text": "única",
+                "bbox": {
+                  "x0": 360,
+                  "y0": 378,
+                  "x1": 429,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Saúde",
+                "bbox": {
+                  "x0": 41,
+                  "y0": 483,
+                  "x1": 125,
+                  "y1": 505
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Reembolso",
+                "bbox": {
+                  "x0": 577,
+                  "y0": 483,
+                  "x1": 725,
+                  "y1": 505
+                },
+                "confidence": 96
+              },
+              {
+                "text": "de",
+                "bbox": {
+                  "x0": 736,
+                  "y0": 483,
+                  "x1": 767,
+                  "y1": 505
+                },
+                "confidence": 95
+              },
+              {
+                "text": "R$",
+                "bbox": {
+                  "x0": 779,
+                  "y0": 481,
+                  "x1": 814,
+                  "y1": 507
+                },
+                "confidence": 95
+              },
+              {
+                "text": "123,45",
+                "bbox": {
+                  "x0": 827,
+                  "y0": 483,
+                  "x1": 914,
+                  "y1": 509
+                },
+                "confidence": 95
+              },
+              {
+                "text": "Não",
+                "bbox": {
+                  "x0": 577,
+                  "y0": 543,
+                  "x1": 629,
+                  "y1": 565
+                },
+                "confidence": 96
+              },
+              {
+                "text": "inclui",
+                "bbox": {
+                  "x0": 640,
+                  "y0": 543,
+                  "x1": 705,
+                  "y1": 565
+                },
+                "confidence": 95
+              },
+              {
+                "text": "dependentes.",
+                "bbox": {
+                  "x0": 716,
+                  "y0": 543,
+                  "x1": 894,
+                  "y1": 571
+                },
+                "confidence": 96
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 180,
+            "text": "'souapuadeap Injoul oeN\nSh Eco) $y op osjoquasay 9PNes\neoun evobajeo — solo1jauag\nsaunnw-pabiaw — 31831 Ol9/1914",
+            "confidence": 35,
+            "letters": 89,
+            "tokens": 16,
+            "words": [
+              {
+                "text": "'souapuadeap",
+                "bbox": {
+                  "x0": 306,
+                  "y0": 1029,
+                  "x1": 484,
+                  "y1": 1057
+                },
+                "confidence": 57
+              },
+              {
+                "text": "Injoul",
+                "bbox": {
+                  "x0": 495,
+                  "y0": 1035,
+                  "x1": 560,
+                  "y1": 1057
+                },
+                "confidence": 65
+              },
+              {
+                "text": "oeN",
+                "bbox": {
+                  "x0": 571,
+                  "y0": 1035,
+                  "x1": 623,
+                  "y1": 1057
+                },
+                "confidence": 41
+              },
+              {
+                "text": "Sh",
+                "bbox": {
+                  "x0": 286,
+                  "y0": 1095,
+                  "x1": 318,
+                  "y1": 1117
+                },
+                "confidence": 3
+              },
+              {
+                "text": "Eco)",
+                "bbox": {
+                  "x0": 332,
+                  "y0": 1087,
+                  "x1": 373,
+                  "y1": 1127
+                },
+                "confidence": 3
+              },
+              {
+                "text": "$y",
+                "bbox": {
+                  "x0": 386,
+                  "y0": 1093,
+                  "x1": 421,
+                  "y1": 1119
+                },
+                "confidence": 47
+              },
+              {
+                "text": "op",
+                "bbox": {
+                  "x0": 433,
+                  "y0": 1095,
+                  "x1": 464,
+                  "y1": 1117
+                },
+                "confidence": 48
+              },
+              {
+                "text": "osjoquasay",
+                "bbox": {
+                  "x0": 475,
+                  "y0": 1095,
+                  "x1": 623,
+                  "y1": 1117
+                },
+                "confidence": 29
+              },
+              {
+                "text": "9PNes",
+                "bbox": {
+                  "x0": 1075,
+                  "y0": 1095,
+                  "x1": 1159,
+                  "y1": 1117
+                },
+                "confidence": 0
+              },
+              {
+                "text": "eoun",
+                "bbox": {
+                  "x0": 771,
+                  "y0": 1200,
+                  "x1": 840,
+                  "y1": 1222
+                },
+                "confidence": 41
+              },
+              {
+                "text": "evobajeo",
+                "bbox": {
+                  "x0": 851,
+                  "y0": 1194,
+                  "x1": 972,
+                  "y1": 1222
+                },
+                "confidence": 0
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 982,
+                  "y0": 1207,
+                  "x1": 1011,
+                  "y1": 1209
+                },
+                "confidence": 92
+              },
+              {
+                "text": "solo1jauag",
+                "bbox": {
+                  "x0": 1021,
+                  "y0": 1200,
+                  "x1": 1158,
+                  "y1": 1222
+                },
+                "confidence": 0
+              },
+              {
+                "text": "saunnw-pabiaw",
+                "bbox": {
+                  "x0": 660,
+                  "y0": 1329,
+                  "x1": 878,
+                  "y1": 1357
+                },
+                "confidence": 23
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 889,
+                  "y0": 1342,
+                  "x1": 919,
+                  "y1": 1344
+                },
+                "confidence": 87
+              },
+              {
+                "text": "31831",
+                "bbox": {
+                  "x0": 929,
+                  "y0": 1335,
+                  "x1": 1023,
+                  "y1": 1357
+                },
+                "confidence": 52
+              },
+              {
+                "text": "Ol9/1914",
+                "bbox": {
+                  "x0": 1033,
+                  "y0": 1335,
+                  "x1": 1157,
+                  "y1": 1362
+                },
+                "confidence": 14
+              }
+            ],
+            "sourceToOcr": [
+              -1,
+              0,
+              0,
+              -1,
+              1200,
+              1600
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.\nBenefícios — categoria única\nSaúde\nReembolso de R$ 123,45\nNão inclui dependentes.",
+      "ocrPageText": "FICTÍCIO TESTE — merged-multiline\n\nBenefícios — categoria única\n\nSaúde Reembolso de R$ 123,45\nNão inclui dependentes.",
+      "ocrTableCells": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 29,
+            "y": 355,
+            "width": 1135,
+            "height": 100
+          },
+          "row": 0,
+          "column": 0,
+          "columnSpan": 2,
+          "rowSpan": 1,
+          "text": "Benefícios — categoria única",
+          "confidence": 94,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1600
+          ]
+        },
+        {
+          "page": 1,
+          "bbox": {
+            "x": 27,
+            "y": 465,
+            "width": 517,
+            "height": 140
+          },
+          "row": 1,
+          "column": 0,
+          "columnSpan": 1,
+          "rowSpan": 1,
+          "text": "Saúde",
+          "confidence": 96,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1600
+          ]
+        },
+        {
+          "page": 1,
+          "bbox": {
+            "x": 552,
+            "y": 465,
+            "width": 612,
+            "height": 140
+          },
+          "row": 1,
+          "column": 1,
+          "columnSpan": 1,
+          "rowSpan": 1,
+          "text": "Reembolso de R$ 123,45\nNão inclui dependentes.",
+          "confidence": 95,
+          "method": "ocr",
+          "scale": 2,
+          "coordinateFrame": "oriented_raster_pixels",
+          "sourceToOcr": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "viewportTransform": [
+            2,
+            0,
+            0,
+            -2,
+            0,
+            1600
+          ]
+        }
+      ],
+      "ocrConfidence": 94,
+      "warnings": [
+        "layout_unverified",
+        "table_cells_reading_order_unverified",
+        "raster_layout_review_required"
+      ]
+    }
+  ],
+  "reviewRequired": true,
+  "indexingEligible": false,
+  "extractorVersion": "pdf-evidence-v4-numeric-crop"
+}

@@ -1,0 +1,567 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "pageGeometry": {
+        "view": [
+          0,
+          0,
+          600,
+          800
+        ],
+        "rotation": 0,
+        "userUnit": 1
+      },
+      "method": "ocr",
+      "evidenceState": "review_required",
+      "ocrTableStructure": {
+        "state": "review_required",
+        "markdown": null,
+        "reason": "no_validated_table_structure"
+      },
+      "text": "NATIVO: pagamento confirmado; cláusula na imagem.\n\nFICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+      "nativeText": "NATIVO: pagamento confirmado; cláusula na imagem.",
+      "nativeRawText": "NATIVO: pagamento confirmado; cláusula na imagem.",
+      "nativeSpans": [
+        {
+          "text": "NATIVO: pagamento confirmado; cláusula na imagem.",
+          "transform": [
+            14,
+            0,
+            0,
+            14,
+            30,
+            760
+          ],
+          "width": 339.2479999999999,
+          "height": 14,
+          "hasEOL": false
+        }
+      ],
+      "nativeColumnCut": null,
+      "ocrOrientation": {
+        "rotation": 0,
+        "sourceToOcr": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "viewportTransform": [
+          2,
+          0,
+          0,
+          -2,
+          0,
+          1600
+        ],
+        "projection": {
+          "horizontal": 222.98190727478325,
+          "vertical": 30.988943334589774,
+          "ink": 15918
+        },
+        "attempts": [
+          {
+            "rotation": 0,
+            "text": "FICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+            "confidence": 95,
+            "letters": 127,
+            "tokens": 21,
+            "words": [
+              {
+                "text": "FICTÍCIO",
+                "bbox": {
+                  "x0": 43,
+                  "y0": 238,
+                  "x1": 167,
+                  "y1": 265
+                },
+                "confidence": 96
+              },
+              {
+                "text": "TESTE",
+                "bbox": {
+                  "x0": 177,
+                  "y0": 243,
+                  "x1": 271,
+                  "y1": 265
+                },
+                "confidence": 93
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 281,
+                  "y0": 256,
+                  "x1": 311,
+                  "y1": 258
+                },
+                "confidence": 93
+              },
+              {
+                "text": "same-page",
+                "bbox": {
+                  "x0": 321,
+                  "y0": 249,
+                  "x1": 468,
+                  "y1": 271
+                },
+                "confidence": 91
+              },
+              {
+                "text": "Associação",
+                "bbox": {
+                  "x0": 40,
+                  "y0": 378,
+                  "x1": 192,
+                  "y1": 406
+                },
+                "confidence": 96
+              },
+              {
+                "text": "fictícia:",
+                "bbox": {
+                  "x0": 202,
+                  "y0": 378,
+                  "x1": 292,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "ação",
+                "bbox": {
+                  "x0": 305,
+                  "y0": 379,
+                  "x1": 367,
+                  "y1": 406
+                },
+                "confidence": 96
+              },
+              {
+                "text": "e",
+                "bbox": {
+                  "x0": 378,
+                  "y0": 384,
+                  "x1": 392,
+                  "y1": 400
+                },
+                "confidence": 96
+              },
+              {
+                "text": "proteção.",
+                "bbox": {
+                  "x0": 404,
+                  "y0": 379,
+                  "x1": 524,
+                  "y1": 406
+                },
+                "confidence": 95
+              },
+              {
+                "text": "Mensalidade:",
+                "bbox": {
+                  "x0": 42,
+                  "y0": 463,
+                  "x1": 216,
+                  "y1": 485
+                },
+                "confidence": 95
+              },
+              {
+                "text": "R$",
+                "bbox": {
+                  "x0": 229,
+                  "y0": 461,
+                  "x1": 264,
+                  "y1": 487
+                },
+                "confidence": 96
+              },
+              {
+                "text": "2.345,67.",
+                "bbox": {
+                  "x0": 275,
+                  "y0": 463,
+                  "x1": 396,
+                  "y1": 489
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Desconto:",
+                "bbox": {
+                  "x0": 409,
+                  "y0": 463,
+                  "x1": 539,
+                  "y1": 485
+                },
+                "confidence": 96
+              },
+              {
+                "text": "12,5%.",
+                "bbox": {
+                  "x0": 554,
+                  "y0": 463,
+                  "x1": 641,
+                  "y1": 489
+                },
+                "confidence": 94
+              },
+              {
+                "text": "Não",
+                "bbox": {
+                  "x0": 42,
+                  "y0": 548,
+                  "x1": 94,
+                  "y1": 570
+                },
+                "confidence": 96
+              },
+              {
+                "text": "há",
+                "bbox": {
+                  "x0": 105,
+                  "y0": 548,
+                  "x1": 135,
+                  "y1": 570
+                },
+                "confidence": 96
+              },
+              {
+                "text": "renovação",
+                "bbox": {
+                  "x0": 147,
+                  "y0": 549,
+                  "x1": 284,
+                  "y1": 576
+                },
+                "confidence": 95
+              },
+              {
+                "text": "automática.",
+                "bbox": {
+                  "x0": 295,
+                  "y0": 548,
+                  "x1": 446,
+                  "y1": 570
+                },
+                "confidence": 96
+              },
+              {
+                "text": "Auditor",
+                "bbox": {
+                  "x0": 455,
+                  "y0": 548,
+                  "x1": 550,
+                  "y1": 570
+                },
+                "confidence": 96
+              },
+              {
+                "text": "não",
+                "bbox": {
+                  "x0": 561,
+                  "y0": 549,
+                  "x1": 607,
+                  "y1": 570
+                },
+                "confidence": 96
+              },
+              {
+                "text": "pode",
+                "bbox": {
+                  "x0": 619,
+                  "y0": 548,
+                  "x1": 682,
+                  "y1": 576
+                },
+                "confidence": 96
+              },
+              {
+                "text": "exportar.",
+                "bbox": {
+                  "x0": 693,
+                  "y0": 549,
+                  "x1": 806,
+                  "y1": 576
+                },
+                "confidence": 96
+              }
+            ],
+            "sourceToOcr": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "rotation": 180,
+            "text": "YIeupodxa apod oeu JoNpny 'Bonewone ogóerouas ey oe\n“%G'T)L :ouocosag /9'GrEeZ $y :epepilesuam\n\n\"oBÍS)OId a oBdEe :elonol oBóBidc OSSY\n\nabed-awes — 31831 OlO/1O14",
+            "confidence": 34,
+            "letters": 122,
+            "tokens": 22,
+            "words": [
+              {
+                "text": "YIeupodxa",
+                "bbox": {
+                  "x0": 394,
+                  "y0": 1024,
+                  "x1": 507,
+                  "y1": 1051
+                },
+                "confidence": 0
+              },
+              {
+                "text": "apod",
+                "bbox": {
+                  "x0": 518,
+                  "y0": 1024,
+                  "x1": 581,
+                  "y1": 1052
+                },
+                "confidence": 90
+              },
+              {
+                "text": "oeu",
+                "bbox": {
+                  "x0": 593,
+                  "y0": 1030,
+                  "x1": 639,
+                  "y1": 1051
+                },
+                "confidence": 77
+              },
+              {
+                "text": "JoNpny",
+                "bbox": {
+                  "x0": 650,
+                  "y0": 1030,
+                  "x1": 745,
+                  "y1": 1052
+                },
+                "confidence": 34
+              },
+              {
+                "text": "'Bonewone",
+                "bbox": {
+                  "x0": 754,
+                  "y0": 1030,
+                  "x1": 905,
+                  "y1": 1052
+                },
+                "confidence": 20
+              },
+              {
+                "text": "ogóerouas",
+                "bbox": {
+                  "x0": 916,
+                  "y0": 1024,
+                  "x1": 1053,
+                  "y1": 1051
+                },
+                "confidence": 31
+              },
+              {
+                "text": "ey",
+                "bbox": {
+                  "x0": 1065,
+                  "y0": 1030,
+                  "x1": 1095,
+                  "y1": 1052
+                },
+                "confidence": 93
+              },
+              {
+                "text": "oe",
+                "bbox": {
+                  "x0": 1106,
+                  "y0": 1030,
+                  "x1": 1158,
+                  "y1": 1052
+                },
+                "confidence": 5
+              },
+              {
+                "text": "“%G'T)L",
+                "bbox": {
+                  "x0": 559,
+                  "y0": 1111,
+                  "x1": 646,
+                  "y1": 1137
+                },
+                "confidence": 30
+              },
+              {
+                "text": ":ouocosag",
+                "bbox": {
+                  "x0": 661,
+                  "y0": 1115,
+                  "x1": 791,
+                  "y1": 1137
+                },
+                "confidence": 36
+              },
+              {
+                "text": "/9'GrEeZ",
+                "bbox": {
+                  "x0": 804,
+                  "y0": 1111,
+                  "x1": 925,
+                  "y1": 1137
+                },
+                "confidence": 0
+              },
+              {
+                "text": "$y",
+                "bbox": {
+                  "x0": 936,
+                  "y0": 1113,
+                  "x1": 971,
+                  "y1": 1139
+                },
+                "confidence": 55
+              },
+              {
+                "text": ":epepilesuam",
+                "bbox": {
+                  "x0": 984,
+                  "y0": 1115,
+                  "x1": 1158,
+                  "y1": 1137
+                },
+                "confidence": 6
+              },
+              {
+                "text": "\"oBÍS)OId",
+                "bbox": {
+                  "x0": 676,
+                  "y0": 1194,
+                  "x1": 796,
+                  "y1": 1221
+                },
+                "confidence": 21
+              },
+              {
+                "text": "a",
+                "bbox": {
+                  "x0": 808,
+                  "y0": 1200,
+                  "x1": 822,
+                  "y1": 1216
+                },
+                "confidence": 69
+              },
+              {
+                "text": "oBdEe",
+                "bbox": {
+                  "x0": 833,
+                  "y0": 1194,
+                  "x1": 895,
+                  "y1": 1221
+                },
+                "confidence": 33
+              },
+              {
+                "text": ":elonol",
+                "bbox": {
+                  "x0": 908,
+                  "y0": 1200,
+                  "x1": 998,
+                  "y1": 1222
+                },
+                "confidence": 3
+              },
+              {
+                "text": "oBóBidc",
+                "bbox": {
+                  "x0": 1014,
+                  "y0": 1190,
+                  "x1": 1093,
+                  "y1": 1226
+                },
+                "confidence": 0
+              },
+              {
+                "text": "OSSY",
+                "bbox": {
+                  "x0": 1101,
+                  "y0": 1200,
+                  "x1": 1160,
+                  "y1": 1222
+                },
+                "confidence": 39
+              },
+              {
+                "text": "abed-awes",
+                "bbox": {
+                  "x0": 732,
+                  "y0": 1329,
+                  "x1": 879,
+                  "y1": 1351
+                },
+                "confidence": 29
+              },
+              {
+                "text": "—",
+                "bbox": {
+                  "x0": 889,
+                  "y0": 1342,
+                  "x1": 919,
+                  "y1": 1344
+                },
+                "confidence": 91
+              },
+              {
+                "text": "31831",
+                "bbox": {
+                  "x0": 929,
+                  "y0": 1335,
+                  "x1": 1023,
+                  "y1": 1357
+                },
+                "confidence": 7
+              },
+              {
+                "text": "OlO/1O14",
+                "bbox": {
+                  "x0": 1033,
+                  "y0": 1335,
+                  "x1": 1157,
+                  "y1": 1362
+                },
+                "confidence": 18
+              }
+            ],
+            "sourceToOcr": [
+              -1,
+              0,
+              0,
+              -1,
+              1200,
+              1600
+            ]
+          }
+        ],
+        "ambiguous": false
+      },
+      "ocrText": "FICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+      "ocrPageText": "FICTÍCIO TESTE — same-page\n\nAssociação fictícia: ação e proteção.\n\nMensalidade: R$ 2.345,67. Desconto: 12,5%.\n\nNão há renovação automática. Auditor não pode exportar.",
+      "ocrTableCells": [],
+      "ocrConfidence": 95,
+      "warnings": [
+        "layout_unverified",
+        "mixed_reading_order_unverified",
+        "raster_layout_review_required"
+      ]
+    }
+  ],
+  "reviewRequired": true,
+  "indexingEligible": false,
+  "extractorVersion": "pdf-evidence-v2"
+}

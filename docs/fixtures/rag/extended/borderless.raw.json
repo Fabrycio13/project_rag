@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "method": "ocr",
+      "text": "FICTÍCIO TESTE — borderless\n\nPlano Valor Desconto\nEssencial R$ 234,56 2,5%\nAvançado R$ 987,65 0%\nNão acumular descontos.",
+      "nativeText": "",
+      "ocrText": "FICTÍCIO TESTE — borderless\n\nPlano Valor Desconto\nEssencial R$ 234,56 2,5%\nAvançado R$ 987,65 0%\nNão acumular descontos.",
+      "ocrPageText": "FICTÍCIO TESTE — borderless\n\nPlano Valor Desconto\nEssencial R$ 234,56 2,5%\nAvançado R$ 987,65 0%\nNão acumular descontos.",
+      "ocrTableCells": [],
+      "ocrConfidence": 94,
+      "warnings": [
+        "layout_unverified"
+      ]
+    }
+  ]
+}

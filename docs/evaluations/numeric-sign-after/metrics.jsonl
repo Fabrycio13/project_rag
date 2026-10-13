@@ -1,0 +1,122 @@
+{
+  "id": "negative",
+  "passes": 16,
+  "total": 16,
+  "numeric": [
+    {
+      "row": 1,
+      "column": 1,
+      "selected": "-17",
+      "originalText": "7",
+      "originalConfidence": 47,
+      "originalBbox": {
+        "x": 341,
+        "y": 288,
+        "width": 41,
+        "height": 22
+      },
+      "rawText": "- 17",
+      "text": "-17",
+      "confidence": 45,
+      "bbox": {
+        "x": 341,
+        "y": 288,
+        "width": 41,
+        "height": 22
+      },
+      "padding": 11,
+      "resizeScale": 2,
+      "psm": 7,
+      "disagreement": true
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "selected": "-3",
+      "originalText": "-3",
+      "originalConfidence": 22,
+      "originalBbox": {
+        "x": 341,
+        "y": 468,
+        "width": 24,
+        "height": 22
+      },
+      "rawText": "-3",
+      "text": "-3",
+      "confidence": 88,
+      "bbox": {
+        "x": 341,
+        "y": 468,
+        "width": 24,
+        "height": 22
+      },
+      "padding": 11,
+      "resizeScale": 2,
+      "psm": 7,
+      "disagreement": false
+    }
+  ]
+}
+{
+  "id": "independent",
+  "passes": 21,
+  "total": 21,
+  "numeric": [
+    {
+      "row": 1,
+      "column": 1,
+      "selected": "-3",
+      "originalText": "-3",
+      "originalConfidence": 22,
+      "originalBbox": {
+        "x": 461,
+        "y": 288,
+        "width": 24,
+        "height": 22
+      },
+      "rawText": "-3",
+      "text": "-3",
+      "confidence": 88,
+      "bbox": {
+        "x": 461,
+        "y": 288,
+        "width": 24,
+        "height": 22
+      },
+      "padding": 11,
+      "resizeScale": 2,
+      "psm": 7,
+      "disagreement": false
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "selected": "-17",
+      "originalText": "7",
+      "originalConfidence": 47,
+      "originalBbox": {
+        "x": 461,
+        "y": 388,
+        "width": 41,
+        "height": 22
+      },
+      "rawText": "- 17",
+      "text": "-17",
+      "confidence": 45,
+      "bbox": {
+        "x": 461,
+        "y": 388,
+        "width": 41,
+        "height": 22
+      },
+      "padding": 11,
+      "resizeScale": 2,
+      "psm": 7,
+      "disagreement": true
+    }
+  ]
+}
+{
+  "id": "historical",
+  "numeric": []
+}

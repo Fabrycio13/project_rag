@@ -1,0 +1,100 @@
+{
+  "synthetic": true,
+  "authored": true,
+  "cases": [
+    {
+      "id": "inventory",
+      "rows": [
+        [
+          "Item",
+          "Saldo",
+          "Taxa",
+          "Restrição"
+        ],
+        [
+          "Cobre",
+          "17",
+          "4,25%",
+          "Não vender"
+        ],
+        [
+          "Prata",
+          "28",
+          "0%",
+          "Não exportar"
+        ],
+        [
+          "Zinco",
+          "3",
+          "1,5%",
+          "Não acumular"
+        ]
+      ],
+      "xs": [
+        45,
+        340,
+        550,
+        790
+      ],
+      "sha256": "498ffbe2e6c7ff352d231fdac22f6939eecb67999339ba1759944770c8017aa0"
+    },
+    {
+      "id": "prose-columns",
+      "rows": [
+        [
+          "Leia o contrato.",
+          "Guarde por 20 dias."
+        ],
+        [
+          "Não exporte dados.",
+          "Não elimine provas."
+        ],
+        [
+          "Peça autorização.",
+          "Registre a decisão."
+        ]
+      ],
+      "xs": [
+        45,
+        650
+      ],
+      "sha256": "6af0a04222142ea7658e3530729d1f14e70e20b2753db8dd30e4bc674322e758"
+    },
+    {
+      "id": "inventory-low-confidence",
+      "rows": [
+        [
+          "Item",
+          "Saldo",
+          "Taxa",
+          "Restrição"
+        ],
+        [
+          "Cobre",
+          "-17",
+          "4,25%",
+          "Não vender"
+        ],
+        [
+          "Prata",
+          "28",
+          "0%",
+          "Não exportar"
+        ],
+        [
+          "Zinco",
+          "-3",
+          "1,5%",
+          "Não acumular"
+        ]
+      ],
+      "xs": [
+        45,
+        340,
+        550,
+        790
+      ],
+      "sha256": "2225d439a5c2ebe61b914fbfce4b2482143266c4e81d3dabbb0b91f5bcfe8ed0"
+    }
+  ]
+}
