@@ -7,3 +7,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+<!-- project-memory:begin v1 -->
+## Project Memory
+
+Portable memory lives in `memory/` (see `memory/README.md`).
+
+Before non-trivial work, inspect the project and populate only verified context; do not invent facts.
+<!-- project-memory:end -->

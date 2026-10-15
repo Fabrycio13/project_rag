@@ -1,0 +1,3614 @@
+{
+  "meta": {
+    "scannedAt": "2026-10-15T18:08:21.270Z",
+    "projectRoot": "C:/Users/Usabit/Desktop/Projetos/Project-RAG",
+    "projectName": "web",
+    "totalFiles": 284,
+    "totalSourceFiles": 95,
+    "totalLines": 3518,
+    "scanDurationMs": 5291
+  },
+  "project": {
+    "name": "web",
+    "version": "0.1.0",
+    "framework": "next",
+    "language": "typescript",
+    "cssFramework": "tailwind",
+    "cssFrameworkVersion": "4",
+    "uiLibrary": "none",
+    "bundler": "none",
+    "stateManagement": "none",
+    "dataFetching": "native",
+    "authentication": "supabase",
+    "dependencies": {
+      "@clerk/nextjs": "^7.9.11",
+      "@napi-rs/canvas": "^1.0.11",
+      "@supabase/supabase-js": "^2.117.2",
+      "@tesseract.js-data/por": "^1.0.0",
+      "next": "16.3.8",
+      "pdfjs-dist": "^6.4.299",
+      "react": "19.2.8",
+      "react-dom": "19.2.8",
+      "tesseract.js": "^7.0.0"
+    },
+    "devDependencies": {
+      "@tailwindcss/postcss": "^4",
+      "@types/node": "^20",
+      "@types/react": "^19",
+      "@types/react-dom": "^19",
+      "eslint": "^9",
+      "eslint-config-next": "16.3.8",
+      "pdf-lib": "^1.17.1",
+      "tailwindcss": "^4",
+      "typescript": "^5"
+    },
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "eslint"
+    }
+  },
+  "tokens": {
+    "cssVariables": [
+      {
+        "name": "--background",
+        "value": "#ffffff",
+        "scope": ":root",
+        "file": "src/app/globals.css",
+        "line": 4,
+        "category": "color"
+      },
+      {
+        "name": "--foreground",
+        "value": "#171717",
+        "scope": ":root",
+        "file": "src/app/globals.css",
+        "line": 5,
+        "category": "color"
+      },
+      {
+        "name": "--color-background",
+        "value": "var(--background)",
+        "scope": "@theme inline",
+        "file": "src/app/globals.css",
+        "line": 9,
+        "category": "color"
+      },
+      {
+        "name": "--color-foreground",
+        "value": "var(--foreground)",
+        "scope": "@theme inline",
+        "file": "src/app/globals.css",
+        "line": 10,
+        "category": "color"
+      },
+      {
+        "name": "--font-sans",
+        "value": "var(--font-geist-sans)",
+        "scope": "@theme inline",
+        "file": "src/app/globals.css",
+        "line": 11,
+        "category": "typography"
+      },
+      {
+        "name": "--font-mono",
+        "value": "var(--font-geist-mono)",
+        "scope": "@theme inline",
+        "file": "src/app/globals.css",
+        "line": 12,
+        "category": "typography"
+      },
+      {
+        "name": "--background",
+        "value": "#0a0a0a",
+        "scope": ":root",
+        "file": "src/app/globals.css",
+        "line": 17,
+        "category": "color"
+      },
+      {
+        "name": "--foreground",
+        "value": "#ededed",
+        "scope": ":root",
+        "file": "src/app/globals.css",
+        "line": 18,
+        "category": "color"
+      },
+      {
+        "name": "--reference-bg-main",
+        "value": "#10100c",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 1
+      },
+      {
+        "name": "--reference-bg-card",
+        "value": "#28282c",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 2
+      },
+      {
+        "name": "--reference-bg-sidebar",
+        "value": "#10100c",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 3
+      },
+      {
+        "name": "--reference-bg-input",
+        "value": "#1e2235",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 4
+      },
+      {
+        "name": "--reference-primary",
+        "value": "#0864c8",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 5
+      },
+      {
+        "name": "--reference-primary-hover",
+        "value": "#0864c8",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 6
+      },
+      {
+        "name": "--reference-secondary",
+        "value": "#18508c",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 7
+      },
+      {
+        "name": "--reference-text-main",
+        "value": "#f8fafc",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 8
+      },
+      {
+        "name": "--reference-text-muted",
+        "value": "#94a3b8",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 9
+      },
+      {
+        "name": "--reference-text-dim",
+        "value": "#64748b",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 10
+      },
+      {
+        "name": "--reference-border",
+        "value": "#48484c",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 11
+      },
+      {
+        "name": "--reference-glass",
+        "value": "rgba(15, 23, 42, 0.78)",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 12
+      },
+      {
+        "name": "--reference-success",
+        "value": "#22c55e",
+        "category": "color",
+        "scope": "[data-design-reference=\"dark\"]",
+        "file": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "line": 13
+      }
+    ],
+    "colors": {
+      "all": [
+        {
+          "value": "#10100c",
+          "normalizedHex": "#10100c",
+          "format": "hex",
+          "count": 4683,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #1)",
+              "line": 1,
+              "context": "Sat: 14% | Lum: 6%"
+            }
+          ]
+        },
+        {
+          "value": "#28282c",
+          "normalizedHex": "#28282c",
+          "format": "hex",
+          "count": 5844,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #2)",
+              "line": 2,
+              "context": "Sat: 5% | Lum: 16%"
+            }
+          ]
+        },
+        {
+          "value": "#606068",
+          "normalizedHex": "#606068",
+          "format": "hex",
+          "count": 2410,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #3)",
+              "line": 3,
+              "context": "Sat: 4% | Lum: 38%"
+            }
+          ]
+        },
+        {
+          "value": "#48484c",
+          "normalizedHex": "#48484c",
+          "format": "hex",
+          "count": 4586,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #4)",
+              "line": 4,
+              "context": "Sat: 3% | Lum: 28%"
+            }
+          ]
+        },
+        {
+          "value": "#747c88",
+          "normalizedHex": "#747c88",
+          "format": "hex",
+          "count": 1060,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #5)",
+              "line": 5,
+              "context": "Sat: 8% | Lum: 48%"
+            }
+          ]
+        },
+        {
+          "value": "#181818",
+          "normalizedHex": "#181818",
+          "format": "hex",
+          "count": 2514,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #6)",
+              "line": 6,
+              "context": "Sat: 0% | Lum: 9%"
+            }
+          ]
+        },
+        {
+          "value": "#a4a4a4",
+          "normalizedHex": "#a4a4a4",
+          "format": "hex",
+          "count": 627,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #7)",
+              "line": 7,
+              "context": "Sat: 0% | Lum: 64%"
+            }
+          ]
+        },
+        {
+          "value": "#303038",
+          "normalizedHex": "#303038",
+          "format": "hex",
+          "count": 2154,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #8)",
+              "line": 8,
+              "context": "Sat: 8% | Lum: 19%"
+            }
+          ]
+        },
+        {
+          "value": "#3c3c40",
+          "normalizedHex": "#3c3c40",
+          "format": "hex",
+          "count": 1808,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #9)",
+              "line": 9,
+              "context": "Sat: 3% | Lum: 24%"
+            }
+          ]
+        },
+        {
+          "value": "#54545c",
+          "normalizedHex": "#54545c",
+          "format": "hex",
+          "count": 1673,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #10)",
+              "line": 10,
+              "context": "Sat: 5% | Lum: 33%"
+            }
+          ]
+        },
+        {
+          "value": "#80807c",
+          "normalizedHex": "#80807c",
+          "format": "hex",
+          "count": 281,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #11)",
+              "line": 11,
+              "context": "Sat: 2% | Lum: 50%"
+            }
+          ]
+        },
+        {
+          "value": "#687080",
+          "normalizedHex": "#687080",
+          "format": "hex",
+          "count": 503,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #12)",
+              "line": 12,
+              "context": "Sat: 10% | Lum: 44%"
+            }
+          ]
+        },
+        {
+          "value": "#38302c",
+          "normalizedHex": "#38302c",
+          "format": "hex",
+          "count": 858,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #13)",
+              "line": 13,
+              "context": "Sat: 12% | Lum: 20%"
+            }
+          ]
+        },
+        {
+          "value": "#28201c",
+          "normalizedHex": "#28201c",
+          "format": "hex",
+          "count": 398,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #14)",
+              "line": 14,
+              "context": "Sat: 18% | Lum: 13%"
+            }
+          ]
+        },
+        {
+          "value": "#443434",
+          "normalizedHex": "#443434",
+          "format": "hex",
+          "count": 294,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #15)",
+              "line": 15,
+              "context": "Sat: 13% | Lum: 22%"
+            }
+          ]
+        },
+        {
+          "value": "#6c6c70",
+          "normalizedHex": "#6c6c70",
+          "format": "hex",
+          "count": 355,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #16)",
+              "line": 16,
+              "context": "Sat: 2% | Lum: 43%"
+            }
+          ]
+        },
+        {
+          "value": "#546070",
+          "normalizedHex": "#546070",
+          "format": "hex",
+          "count": 52,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #17)",
+              "line": 17,
+              "context": "Sat: 14% | Lum: 37%"
+            }
+          ]
+        },
+        {
+          "value": "#4c403c",
+          "normalizedHex": "#4c403c",
+          "format": "hex",
+          "count": 242,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #18)",
+              "line": 18,
+              "context": "Sat: 12% | Lum: 26%"
+            }
+          ]
+        },
+        {
+          "value": "#1c2028",
+          "normalizedHex": "#1c2028",
+          "format": "hex",
+          "count": 50,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #19)",
+              "line": 19,
+              "context": "Sat: 18% | Lum: 12%"
+            }
+          ]
+        },
+        {
+          "value": "#989ca0",
+          "normalizedHex": "#989ca0",
+          "format": "hex",
+          "count": 60,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #20)",
+              "line": 20,
+              "context": "Sat: 4% | Lum: 61%"
+            }
+          ]
+        },
+        {
+          "value": "#584c4c",
+          "normalizedHex": "#584c4c",
+          "format": "hex",
+          "count": 263,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #21)",
+              "line": 21,
+              "context": "Sat: 7% | Lum: 31%"
+            }
+          ]
+        },
+        {
+          "value": "#0864c8",
+          "normalizedHex": "#0864c8",
+          "format": "hex",
+          "count": 140,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #22)",
+              "line": 22,
+              "context": "Sat: 92% | Lum: 33%"
+            }
+          ]
+        },
+        {
+          "value": "#281c0c",
+          "normalizedHex": "#281c0c",
+          "format": "hex",
+          "count": 47,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #23)",
+              "line": 23,
+              "context": "Sat: 54% | Lum: 12%"
+            }
+          ]
+        },
+        {
+          "value": "#1464b0",
+          "normalizedHex": "#1464b0",
+          "format": "hex",
+          "count": 15,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #24)",
+              "line": 24,
+              "context": "Sat: 80% | Lum: 33%"
+            }
+          ]
+        },
+        {
+          "value": "#6c6458",
+          "normalizedHex": "#6c6458",
+          "format": "hex",
+          "count": 153,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #25)",
+              "line": 25,
+              "context": "Sat: 10% | Lum: 40%"
+            }
+          ]
+        },
+        {
+          "value": "#442c20",
+          "normalizedHex": "#442c20",
+          "format": "hex",
+          "count": 95,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #26)",
+              "line": 26,
+              "context": "Sat: 36% | Lum: 20%"
+            }
+          ]
+        },
+        {
+          "value": "#80644c",
+          "normalizedHex": "#80644c",
+          "format": "hex",
+          "count": 38,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #27)",
+              "line": 27,
+              "context": "Sat: 25% | Lum: 41%"
+            }
+          ]
+        },
+        {
+          "value": "#645850",
+          "normalizedHex": "#645850",
+          "format": "hex",
+          "count": 37,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #28)",
+              "line": 28,
+              "context": "Sat: 11% | Lum: 36%"
+            }
+          ]
+        },
+        {
+          "value": "#644c44",
+          "normalizedHex": "#644c44",
+          "format": "hex",
+          "count": 17,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #29)",
+              "line": 29,
+              "context": "Sat: 19% | Lum: 32%"
+            }
+          ]
+        },
+        {
+          "value": "#80746c",
+          "normalizedHex": "#80746c",
+          "format": "hex",
+          "count": 22,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #30)",
+              "line": 30,
+              "context": "Sat: 8% | Lum: 47%"
+            }
+          ]
+        },
+        {
+          "value": "#183044",
+          "normalizedHex": "#183044",
+          "format": "hex",
+          "count": 20,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #31)",
+              "line": 31,
+              "context": "Sat: 48% | Lum: 17%"
+            }
+          ]
+        },
+        {
+          "value": "#342820",
+          "normalizedHex": "#342820",
+          "format": "hex",
+          "count": 19,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #32)",
+              "line": 32,
+              "context": "Sat: 24% | Lum: 17%"
+            }
+          ]
+        },
+        {
+          "value": "#b8b8bc",
+          "normalizedHex": "#b8b8bc",
+          "format": "hex",
+          "count": 34,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #33)",
+              "line": 33,
+              "context": "Sat: 3% | Lum: 72%"
+            }
+          ]
+        },
+        {
+          "value": "#5c687c",
+          "normalizedHex": "#5c687c",
+          "format": "hex",
+          "count": 15,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #34)",
+              "line": 34,
+              "context": "Sat: 15% | Lum: 40%"
+            }
+          ]
+        },
+        {
+          "value": "#8c8c94",
+          "normalizedHex": "#8c8c94",
+          "format": "hex",
+          "count": 19,
+          "locations": [
+            {
+              "file": "Apple Vision Pro _ HR Software Design.jpg (Pixel Cluster #35)",
+              "line": 35,
+              "context": "Sat: 4% | Lum: 55%"
+            }
+          ]
+        },
+        {
+          "value": "#36435a",
+          "normalizedHex": "#36435a",
+          "format": "hex",
+          "count": 2,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            },
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#ffffff",
+          "normalizedHex": "#ffffff",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "src/app/globals.css",
+              "line": 4,
+              "context": "--background: #ffffff;"
+            }
+          ]
+        },
+        {
+          "value": "#171717",
+          "normalizedHex": "#171717",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "src/app/globals.css",
+              "line": 5,
+              "context": "--foreground: #171717;"
+            }
+          ]
+        },
+        {
+          "value": "#0a0a0a",
+          "normalizedHex": "#0a0a0a",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "src/app/globals.css",
+              "line": 17,
+              "context": "--background: #0a0a0a;"
+            }
+          ]
+        },
+        {
+          "value": "#ededed",
+          "normalizedHex": "#ededed",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "src/app/globals.css",
+              "line": 18,
+              "context": "--foreground: #ededed;"
+            }
+          ]
+        },
+        {
+          "value": "rgb(0,0,0)",
+          "normalizedHex": "",
+          "format": "rgb",
+          "count": 1,
+          "locations": [
+            {
+              "file": "tests/pdf-coordinate-layout.test.mjs",
+              "line": 33,
+              "context": "pdf.addPage([300,300]).drawRectangle({x:40,y:40,width:180,height:180,color:rgb(0"
+            }
+          ]
+        },
+        {
+          "value": "#10151f",
+          "normalizedHex": "#10151f",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#e3eaf5",
+          "normalizedHex": "#e3eaf5",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#192336",
+          "normalizedHex": "#192336",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#aebdd2",
+          "normalizedHex": "#aebdd2",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#57421d",
+          "normalizedHex": "#57421d",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#ffdf93",
+          "normalizedHex": "#ffdf93",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#10151ff5",
+          "normalizedHex": "#10151ff5",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#7dd7ef",
+          "normalizedHex": "#7dd7ef",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#192231",
+          "normalizedHex": "#192231",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#0c121c",
+          "normalizedHex": "#0c121c",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#496276",
+          "normalizedHex": "#496276",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#e5b654",
+          "normalizedHex": "#e5b654",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#ffda8b",
+          "normalizedHex": "#ffda8b",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#526078",
+          "normalizedHex": "#526078",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/evaluations/structured-markdown-pilot/generate.mjs",
+              "line": 73,
+              "context": "const html=`<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\""
+            }
+          ]
+        },
+        {
+          "value": "#bbbbbb",
+          "normalizedHex": "#bbbbbb",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/fixtures/rag/extended/generate.mjs",
+              "line": 21,
+              "context": "ctx.fillStyle=kind==='contrast'?'#bbbbbb':'black';ctx.font='30px Arial';"
+            }
+          ]
+        },
+        {
+          "value": "#d0d0d0",
+          "normalizedHex": "#d0d0d0",
+          "format": "hex",
+          "count": 1,
+          "locations": [
+            {
+              "file": "docs/fixtures/rag/extended/generate.mjs",
+              "line": 57,
+              "context": "const c=createCanvas(1200,1400),ctx=c.getContext('2d');ctx.fillStyle='white';ctx"
+            }
+          ]
+        }
+      ],
+      "byScope": {
+        ":root": [
+          {
+            "variable": "--background",
+            "value": "#ffffff"
+          },
+          {
+            "variable": "--foreground",
+            "value": "#171717"
+          },
+          {
+            "variable": "--background",
+            "value": "#0a0a0a"
+          },
+          {
+            "variable": "--foreground",
+            "value": "#ededed"
+          }
+        ],
+        "@theme inline": [
+          {
+            "variable": "--color-background",
+            "value": "var(--background)"
+          },
+          {
+            "variable": "--color-foreground",
+            "value": "var(--foreground)"
+          }
+        ],
+        "[data-design-reference=\"dark\"]": [
+          {
+            "variable": "--reference-bg-main",
+            "value": "#10100c"
+          },
+          {
+            "variable": "--reference-bg-card",
+            "value": "#28282c"
+          },
+          {
+            "variable": "--reference-bg-sidebar",
+            "value": "#10100c"
+          },
+          {
+            "variable": "--reference-bg-input",
+            "value": "#1e2235"
+          },
+          {
+            "variable": "--reference-primary",
+            "value": "#0864c8"
+          },
+          {
+            "variable": "--reference-primary-hover",
+            "value": "#0864c8"
+          },
+          {
+            "variable": "--reference-secondary",
+            "value": "#18508c"
+          },
+          {
+            "variable": "--reference-text-main",
+            "value": "#f8fafc"
+          },
+          {
+            "variable": "--reference-text-muted",
+            "value": "#94a3b8"
+          },
+          {
+            "variable": "--reference-text-dim",
+            "value": "#64748b"
+          },
+          {
+            "variable": "--reference-border",
+            "value": "#48484c"
+          },
+          {
+            "variable": "--reference-glass",
+            "value": "rgba(15, 23, 42, 0.78)"
+          },
+          {
+            "variable": "--reference-success",
+            "value": "#22c55e"
+          }
+        ]
+      },
+      "palette": {
+        "primary": [],
+        "secondary": [],
+        "neutral": [],
+        "success": [],
+        "warning": [],
+        "error": [],
+        "info": [],
+        "other": [
+          {
+            "variable": "--background",
+            "value": "#ffffff",
+            "scope": ":root"
+          },
+          {
+            "variable": "--foreground",
+            "value": "#171717",
+            "scope": ":root"
+          },
+          {
+            "variable": "--color-background",
+            "value": "var(--background)",
+            "scope": "@theme inline"
+          },
+          {
+            "variable": "--color-foreground",
+            "value": "var(--foreground)",
+            "scope": "@theme inline"
+          },
+          {
+            "variable": "--background",
+            "value": "#0a0a0a",
+            "scope": ":root"
+          },
+          {
+            "variable": "--foreground",
+            "value": "#ededed",
+            "scope": ":root"
+          }
+        ]
+      }
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "value": "Arial, Helvetica, sans-serif",
+          "count": 1,
+          "locations": [
+            {
+              "file": "src/app/globals.css",
+              "line": 25
+            }
+          ]
+        }
+      ],
+      "fontSizes": [],
+      "fontWeights": [],
+      "lineHeights": [],
+      "letterSpacings": [],
+      "fontFaces": []
+    },
+    "spacing": [],
+    "borderRadius": [],
+    "shadows": [],
+    "gradients": [],
+    "zIndices": [],
+    "transitions": [],
+    "animations": {
+      "keyframes": [],
+      "usages": []
+    },
+    "breakpoints": [
+      {
+        "query": "(prefers-color-scheme: dark)",
+        "count": 1
+      }
+    ]
+  },
+  "tailwind": {
+    "detected": true,
+    "version": "4",
+    "configFile": null,
+    "themeExtensions": {},
+    "themeBlock": null,
+    "classUsage": {
+      "layout": {
+        "items-center": 28,
+        "flex": 23,
+        "justify-center": 12,
+        "inline-flex": 10,
+        "justify-between": 8,
+        "gap-3": 7,
+        "gap-4": 5,
+        "flex-col": 4,
+        "flex-row": 3,
+        "flex-wrap": 2,
+        "flex-1": 2,
+        "space-y-2": 2,
+        "block": 2,
+        "inline-block": 1,
+        "space-y-6": 1,
+        "items-end": 1,
+        "overflow-hidden": 1,
+        "space-y-4": 1,
+        "space-y-3": 1,
+        "grid": 1
+      },
+      "colors": {
+        "text-zinc-400": 26,
+        "text-white": 20,
+        "border-zinc-200": 19,
+        "border-zinc-800": 19,
+        "bg-zinc-50": 18,
+        "text-blue-600": 17,
+        "text-blue-400": 14,
+        "text-zinc-600": 14,
+        "bg-white": 13,
+        "bg-black": 12,
+        "bg-zinc-950": 12,
+        "text-zinc-950": 12,
+        "text-zinc-500": 12,
+        "shadow-sm": 10,
+        "bg-blue-600": 9,
+        "bg-blue-700": 8,
+        "text-red-300": 7,
+        "text-red-700": 5,
+        "border-red-500/30": 4,
+        "bg-red-500/5": 4,
+        "border-zinc-300": 4,
+        "outline-none": 4,
+        "border-zinc-700": 4,
+        "text-zinc-200": 4,
+        "text-red-800": 3,
+        "text-zinc-700": 3,
+        "ring-4": 3,
+        "bg-zinc-900": 3,
+        "ring-blue-500/10": 2,
+        "border-amber-500/30": 2,
+        "bg-amber-500/5": 2,
+        "text-amber-800": 2,
+        "text-amber-200": 2,
+        "border-blue-500": 2,
+        "ring-blue-500/20": 2,
+        "bg-zinc-100": 2,
+        "text-zinc-900": 2,
+        "text-amber-700": 1,
+        "text-amber-300": 1,
+        "text-emerald-700": 1,
+        "text-emerald-300": 1,
+        "border-black/10": 1,
+        "border-white/15": 1,
+        "text-zinc-50": 1,
+        "border-emerald-500/30": 1,
+        "bg-emerald-500/5": 1,
+        "text-emerald-800": 1,
+        "text-emerald-200": 1,
+        "bg-transparent": 1,
+        "ring-2": 1
+      },
+      "typography": {
+        "text-sm": 74,
+        "font-semibold": 29,
+        "font-medium": 25,
+        "text-2xl": 11,
+        "leading-6": 8,
+        "tracking-tight": 7,
+        "text-xs": 7,
+        "underline": 6,
+        "break-words": 5,
+        "text-base": 4,
+        "text-3xl": 3,
+        "text-xl": 3,
+        "antialiased": 1,
+        "leading-5": 1,
+        "truncate": 1,
+        "text-lg": 1
+      },
+      "spacing": {
+        "mt-2": 26,
+        "px-5": 18,
+        "mt-3": 12,
+        "p-4": 11,
+        "px-4": 10,
+        "mt-5": 9,
+        "mt-6": 9,
+        "p-7": 5,
+        "py-10": 5,
+        "mx-auto": 5,
+        "mb-5": 4,
+        "p-6": 4,
+        "px-6": 4,
+        "px-8": 4,
+        "mt-4": 4,
+        "p-8": 3,
+        "py-8": 3,
+        "mt-8": 3,
+        "mt-1": 3,
+        "p-9": 2,
+        "px-3": 2,
+        "py-4": 2,
+        "py-1": 2,
+        "px-2.5": 2,
+        "p-3": 2,
+        "py-3": 2,
+        "ml-3": 1,
+        "mr-3": 1,
+        "py-12": 1,
+        "p-5": 1,
+        "px-3.5": 1,
+        "py-1.5": 1,
+        "mb-4": 1,
+        "ml-4": 1,
+        "pt-6": 1,
+        "py-2": 1
+      },
+      "sizing": {
+        "min-h-screen": 14,
+        "h-10": 8,
+        "w-full": 7,
+        "h-11": 5,
+        "max-w-lg": 4,
+        "min-w-0": 4,
+        "max-w-2xl": 3,
+        "max-w-xl": 2,
+        "max-w-3xl": 2,
+        "max-w-4xl": 2,
+        "min-h-full": 1,
+        "h-full": 1,
+        "max-w-full": 1
+      },
+      "effects": {
+        "transition": 8,
+        "opacity-50": 8,
+        "opacity-60": 2
+      },
+      "borders": {
+        "border": 30,
+        "rounded-xl": 27,
+        "rounded-2xl": 11,
+        "rounded-full": 2,
+        "rounded": 2,
+        "divide-y": 1,
+        "divide-zinc-200": 1,
+        "divide-zinc-800": 1,
+        "rounded-lg": 1
+      },
+      "responsive": {
+        "sm": 22
+      },
+      "states": {
+        "dark": 130,
+        "hover": 22,
+        "focus": 12,
+        "disabled": 11
+      },
+      "other": {
+        "hover:bg-zinc-900": 6,
+        "shrink-0": 2,
+        "sheet": 2,
+        "placeholder:text-zinc-500": 1,
+        "cursor-not-allowed": 1,
+        "text-center": 1,
+        "hover:text-red-300": 1,
+        "hover:text-white": 1,
+        "badge": 1,
+        "metrics": 1,
+        "pdf": 1,
+        "panel": 1,
+        "meta": 1,
+        "flag": 1
+      }
+    },
+    "hardcodedValues": []
+  },
+  "components": [
+    {
+      "name": "RootLayout",
+      "file": "src/app/layout.tsx",
+      "type": "layout",
+      "exportType": "default",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "@clerk/nextjs",
+        "next/font/google"
+      ],
+      "usedIn": [],
+      "lines": 34,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "layout-wrapper",
+        "headings": [],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "SignOutButton",
+      "file": "src/app/sign-out-button.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "@clerk/nextjs"
+      ],
+      "usedIn": [
+        "src/app/page.tsx",
+        "src/app/accept-invitation/page.tsx",
+        "src/app/organizations/organization-shell.tsx",
+        "src/app/admin/invitations/page.tsx"
+      ],
+      "lines": 17,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "button-control",
+        "headings": [],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "OrganizationForm",
+      "file": "src/app/organizations/organization-form.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "react",
+        "next/navigation"
+      ],
+      "usedIn": [
+        "src/app/organizations/page.tsx"
+      ],
+      "lines": 30,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "form-control",
+        "headings": [],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": true,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "OrganizationShell",
+      "file": "src/app/organizations/organization-shell.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "next/link",
+        "@/app/sign-out-button"
+      ],
+      "usedIn": [
+        "src/app/organizations/page.tsx",
+        "src/app/organizations/[id]/page.tsx",
+        "src/app/organizations/[id]/agents/loading.tsx",
+        "src/app/organizations/[id]/agents/page.tsx",
+        "src/app/organizations/[id]/agents/[agentId]/page.tsx"
+      ],
+      "lines": 11,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [
+          "Organizações indisponíveis"
+        ],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "OrganizationNotice",
+      "file": "src/app/organizations/organization-shell.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "next/link",
+        "@/app/sign-out-button"
+      ],
+      "usedIn": [
+        "src/app/organizations/page.tsx",
+        "src/app/organizations/[id]/page.tsx"
+      ],
+      "lines": 11,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [
+          "Organizações indisponíveis"
+        ],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "InvitationManager",
+      "file": "src/app/admin/invitations/invitation-manager.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "react",
+        "next/navigation"
+      ],
+      "usedIn": [
+        "src/app/admin/invitations/page.tsx"
+      ],
+      "lines": 215,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "form-control",
+        "headings": [
+          "Convidar administrador",
+          "Convites"
+        ],
+        "buttons": [],
+        "inputs": [
+          "nome@empresa.com"
+        ],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": true,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "SignInPage",
+      "file": "src/app/sign-in/[[...sign-in]]/page.tsx",
+      "type": "page",
+      "exportType": "default",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "@clerk/nextjs"
+      ],
+      "usedIn": [],
+      "lines": 10,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "SignUpPage",
+      "file": "src/app/sign-up/[[...sign-up]]/page.tsx",
+      "type": "page",
+      "exportType": "default",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "@clerk/nextjs"
+      ],
+      "usedIn": [],
+      "lines": 10,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "AgentForm",
+      "file": "src/app/organizations/[id]/agents/agent-form.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "react",
+        "next/navigation"
+      ],
+      "usedIn": [
+        "src/app/organizations/[id]/agents/page.tsx"
+      ],
+      "lines": 43,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "form-control",
+        "headings": [
+          "Criar agente"
+        ],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": true,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "AgentsError",
+      "file": "src/app/organizations/[id]/agents/error.tsx",
+      "type": "page",
+      "exportType": "default",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "next/link"
+      ],
+      "usedIn": [],
+      "lines": 6,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [
+          "Agentes indisponíveis"
+        ],
+        "buttons": [
+          "Tentar novamente"
+        ],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "LoadingAgents",
+      "file": "src/app/organizations/[id]/agents/loading.tsx",
+      "type": "page",
+      "exportType": "default",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "../../organization-shell"
+      ],
+      "usedIn": [],
+      "lines": 5,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": false,
+        "hasModal": false
+      }
+    },
+    {
+      "name": "DocumentManager",
+      "file": "src/app/organizations/[id]/agents/[agentId]/document-manager.tsx",
+      "type": "page",
+      "exportType": "named",
+      "props": [],
+      "variants": [],
+      "imports": [
+        "react",
+        "@/lib/documents"
+      ],
+      "usedIn": [
+        "src/app/organizations/[id]/agents/[agentId]/page.tsx",
+        "tests/document-reprocessing-ui.test.mjs"
+      ],
+      "lines": 64,
+      "hasForwardRef": false,
+      "uiBlueprint": {
+        "widgetKind": "card-panel",
+        "headings": [
+          "Documentos privados"
+        ],
+        "buttons": [],
+        "inputs": [],
+        "tableHeaders": [],
+        "hasSvgOrCanvas": false,
+        "hasForm": true,
+        "hasModal": false
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "layout",
+      "file": "src/app/layout.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "ClerkProvider",
+        "Geist",
+        "Geist_Mono"
+      ],
+      "internalComponents": [
+        "RootLayout"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 34,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "min-h-full",
+        "flex",
+        "flex-col"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "SignOutButton"
+      ],
+      "internalComponents": [
+        "Home"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Entre para continuar",
+        "Sua conta não tem acesso à plataforma",
+        "Bem-vindo à plataforma",
+        "Sua conta está pronta"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 107,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "flex",
+        "min-h-screen",
+        "items-center",
+        "justify-center",
+        "bg-zinc-50",
+        "px-5",
+        "dark:bg-black",
+        "w-full",
+        "max-w-lg",
+        "rounded-2xl",
+        "border",
+        "border-zinc-200",
+        "bg-white",
+        "p-7",
+        "shadow-sm",
+        "dark:border-zinc-800",
+        "dark:bg-zinc-950",
+        "text-sm",
+        "font-medium",
+        "text-blue-600",
+        "dark:text-blue-400",
+        "mt-2",
+        "text-2xl",
+        "font-semibold",
+        "text-zinc-950",
+        "dark:text-white",
+        "mt-5",
+        "inline-flex",
+        "h-10",
+        "rounded-xl",
+        "bg-blue-600",
+        "px-4",
+        "text-white",
+        "hover:bg-blue-700",
+        "border-red-500/30",
+        "bg-red-500/5",
+        "p-4",
+        "text-red-800",
+        "dark:text-red-300",
+        "ml-3",
+        "text-amber-700",
+        "dark:text-amber-300",
+        "leading-6",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "max-w-2xl",
+        "sm:p-9",
+        "mb-5",
+        "justify-between",
+        "gap-4",
+        "tracking-tight",
+        "sm:text-3xl",
+        "mt-6",
+        "mr-3",
+        "h-11",
+        "transition",
+        "mt-3",
+        "text-emerald-700",
+        "dark:text-emerald-300"
+      ]
+    },
+    {
+      "name": "sign-out-button",
+      "file": "src/app/sign-out-button.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "SignOutButton"
+      ],
+      "internalComponents": [
+        "SignOutButton"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 17,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "inline-flex",
+        "h-10",
+        "items-center",
+        "justify-center",
+        "rounded-xl",
+        "border",
+        "border-zinc-300",
+        "bg-white",
+        "px-4",
+        "text-sm",
+        "font-medium",
+        "text-zinc-700",
+        "transition",
+        "hover:bg-zinc-50",
+        "focus:outline-none",
+        "focus:ring-4",
+        "focus:ring-blue-500/10",
+        "dark:border-zinc-700",
+        "dark:bg-zinc-950",
+        "dark:text-zinc-200",
+        "dark:hover:bg-zinc-900"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/accept-invitation/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "SignOutButton"
+      ],
+      "internalComponents": [
+        "InvitationMessage",
+        "AcceptInvitationPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Não foi possível concluir o acesso"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 127,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "flex",
+        "min-h-screen",
+        "items-center",
+        "justify-center",
+        "bg-zinc-50",
+        "px-5",
+        "py-10",
+        "dark:bg-black",
+        "w-full",
+        "max-w-lg",
+        "rounded-2xl",
+        "border",
+        "border-zinc-200",
+        "bg-white",
+        "p-6",
+        "shadow-sm",
+        "dark:border-zinc-800",
+        "dark:bg-zinc-950",
+        "sm:p-8",
+        "text-sm",
+        "font-medium",
+        "text-blue-600",
+        "dark:text-blue-400",
+        "mt-2",
+        "text-2xl",
+        "font-semibold",
+        "text-zinc-950",
+        "dark:text-white",
+        "mt-3",
+        "leading-6",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "mt-6",
+        "flex-wrap",
+        "gap-3",
+        "inline-flex",
+        "h-10",
+        "rounded-xl",
+        "border-zinc-300",
+        "px-4",
+        "text-zinc-700",
+        "transition",
+        "hover:bg-zinc-50",
+        "dark:border-zinc-700",
+        "dark:text-zinc-200",
+        "dark:hover:bg-zinc-900"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/account-check/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [],
+      "internalComponents": [
+        "AccountCheckPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Verificação da conta"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 46,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "flex",
+        "min-h-screen",
+        "items-center",
+        "justify-center",
+        "bg-zinc-50",
+        "px-6",
+        "py-12",
+        "dark:bg-black",
+        "w-full",
+        "max-w-xl",
+        "rounded-2xl",
+        "border",
+        "border-black/10",
+        "bg-white",
+        "p-8",
+        "shadow-sm",
+        "dark:border-white/15",
+        "dark:bg-zinc-950",
+        "text-sm",
+        "font-medium",
+        "text-zinc-500",
+        "dark:text-zinc-400",
+        "mt-2",
+        "text-2xl",
+        "font-semibold",
+        "text-zinc-950",
+        "dark:text-zinc-50",
+        "mt-5",
+        "rounded-xl",
+        "border-red-500/30",
+        "bg-red-500/5",
+        "p-4",
+        "text-red-700",
+        "dark:text-red-300",
+        "border-amber-500/30",
+        "bg-amber-500/5",
+        "text-amber-800",
+        "dark:text-amber-200",
+        "border-emerald-500/30",
+        "bg-emerald-500/5",
+        "text-emerald-800",
+        "dark:text-emerald-200"
+      ]
+    },
+    {
+      "name": "organization-form",
+      "file": "src/app/organizations/organization-form.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [],
+      "internalComponents": [
+        "OrganizationForm"
+      ],
+      "hooksUsed": [
+        "useRouter",
+        "useRef",
+        "useState"
+      ],
+      "states": [
+        "pending",
+        "error"
+      ],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [
+          "Nome da organização"
+        ],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": true,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 30,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "mt-6",
+        "rounded-xl",
+        "border",
+        "border-zinc-200",
+        "p-4",
+        "dark:border-zinc-800",
+        "text-sm",
+        "font-medium",
+        "mt-2",
+        "flex",
+        "flex-col",
+        "gap-3",
+        "sm:flex-row",
+        "h-10",
+        "min-w-0",
+        "flex-1",
+        "border-zinc-300",
+        "bg-transparent",
+        "px-3",
+        "outline-none",
+        "focus:border-blue-500",
+        "focus:ring-2",
+        "focus:ring-blue-500/20",
+        "disabled:opacity-50",
+        "dark:border-zinc-700",
+        "bg-blue-600",
+        "px-4",
+        "font-semibold",
+        "text-white",
+        "hover:bg-blue-700",
+        "text-xs",
+        "text-zinc-500",
+        "dark:text-zinc-400",
+        "text-red-700",
+        "dark:text-red-300"
+      ]
+    },
+    {
+      "name": "organization-shell",
+      "file": "src/app/organizations/organization-shell.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "SignOutButton"
+      ],
+      "internalComponents": [
+        "OrganizationShell",
+        "OrganizationNotice"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Organizações indisponíveis"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 11,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "min-h-screen",
+        "bg-zinc-50",
+        "px-5",
+        "py-8",
+        "text-zinc-950",
+        "dark:bg-black",
+        "dark:text-white",
+        "sm:px-8",
+        "mx-auto",
+        "max-w-3xl",
+        "mb-5",
+        "flex",
+        "items-center",
+        "justify-between",
+        "gap-4",
+        "text-sm",
+        "text-zinc-500",
+        "hover:underline",
+        "dark:text-zinc-400",
+        "rounded-2xl",
+        "border",
+        "border-zinc-200",
+        "bg-white",
+        "p-6",
+        "shadow-sm",
+        "dark:border-zinc-800",
+        "dark:bg-zinc-950",
+        "sm:p-8",
+        "text-xl",
+        "font-semibold",
+        "mt-3",
+        "leading-6",
+        "text-zinc-600",
+        "mt-5",
+        "inline-block",
+        "text-blue-600",
+        "dark:text-blue-400"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/organizations/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "ORGANIZATION_READINESS_MESSAGE",
+        "OrganizationShell",
+        "OrganizationNotice",
+        "OrganizationForm"
+      ],
+      "internalComponents": [
+        "OrganizationsPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Organizações",
+        "Suas organizações"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [
+          "nenhuma organização."
+        ],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 18,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "text-2xl",
+        "font-semibold",
+        "tracking-tight",
+        "mt-2",
+        "text-sm",
+        "leading-6",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "mt-8",
+        "text-base",
+        "mt-3",
+        "space-y-2",
+        "flex",
+        "items-center",
+        "justify-between",
+        "gap-4",
+        "rounded-xl",
+        "border",
+        "border-zinc-200",
+        "p-4",
+        "transition",
+        "hover:bg-zinc-50",
+        "dark:border-zinc-800",
+        "dark:hover:bg-zinc-900",
+        "min-w-0",
+        "break-words",
+        "font-medium",
+        "shrink-0",
+        "text-blue-600",
+        "dark:text-blue-400",
+        "bg-zinc-50",
+        "text-zinc-500",
+        "dark:bg-zinc-900"
+      ]
+    },
+    {
+      "name": "invitation-manager",
+      "file": "src/app/admin/invitations/invitation-manager.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [],
+      "internalComponents": [
+        "InvitationManager"
+      ],
+      "hooksUsed": [
+        "useRouter",
+        "useState"
+      ],
+      "states": [
+        "email",
+        "busy",
+        "busyInvitation",
+        "notice"
+      ],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Convidar administrador",
+        "Convites"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [
+        "nome@empresa.com"
+      ],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [
+          "Nenhum convite enviado ainda"
+        ],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": true,
+        "hasTable": false,
+        "hasForm": true,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 215,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "space-y-6",
+        "rounded-2xl",
+        "border",
+        "border-zinc-200",
+        "bg-white",
+        "p-5",
+        "shadow-sm",
+        "dark:border-zinc-800",
+        "dark:bg-zinc-950",
+        "sm:p-7",
+        "max-w-2xl",
+        "text-sm",
+        "font-medium",
+        "text-blue-600",
+        "dark:text-blue-400",
+        "mt-2",
+        "text-2xl",
+        "font-semibold",
+        "tracking-tight",
+        "text-zinc-950",
+        "dark:text-white",
+        "sm:text-3xl",
+        "leading-6",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "mt-6",
+        "flex",
+        "flex-col",
+        "gap-3",
+        "sm:flex-row",
+        "sm:items-end",
+        "flex-1",
+        "text-zinc-800",
+        "dark:text-zinc-200",
+        "h-11",
+        "w-full",
+        "rounded-xl",
+        "border-zinc-300",
+        "px-3.5",
+        "outline-none",
+        "transition",
+        "placeholder:text-zinc-400",
+        "focus:border-blue-500",
+        "focus:ring-4",
+        "focus:ring-blue-500/10",
+        "disabled:opacity-60",
+        "dark:border-zinc-700",
+        "dark:bg-zinc-900",
+        "dark:placeholder:text-zinc-500",
+        "inline-flex",
+        "items-center",
+        "justify-center",
+        "bg-blue-600",
+        "px-5",
+        "text-white",
+        "hover:bg-blue-700",
+        "focus:outline-none",
+        "focus:ring-blue-500/20",
+        "disabled:cursor-not-allowed",
+        "mt-3",
+        "text-xs",
+        "leading-5",
+        "text-zinc-500",
+        "overflow-hidden",
+        "justify-between",
+        "gap-4",
+        "border-b",
+        "py-4",
+        "sm:px-6",
+        "text-base",
+        "mt-1",
+        "rounded-full",
+        "bg-zinc-100",
+        "px-3",
+        "py-1",
+        "dark:text-zinc-300",
+        "py-10",
+        "text-center",
+        "text-zinc-700",
+        "divide-y",
+        "divide-zinc-200",
+        "dark:divide-zinc-800",
+        "sm:items-center",
+        "sm:justify-between",
+        "min-w-0",
+        "truncate",
+        "text-zinc-900",
+        "dark:text-zinc-100",
+        "rounded-lg",
+        "px-2.5",
+        "py-1.5",
+        "hover:bg-zinc-100",
+        "hover:text-red-700",
+        "disabled:opacity-50",
+        "dark:hover:bg-zinc-900",
+        "dark:hover:text-red-300"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/admin/invitations/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "SignOutButton",
+        "InvitationManager"
+      ],
+      "internalComponents": [
+        "AdminInvitationsPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Acesso restrito"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 71,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "min-h-screen",
+        "bg-zinc-50",
+        "px-5",
+        "py-10",
+        "dark:bg-black",
+        "sm:px-8",
+        "mx-auto",
+        "max-w-4xl",
+        "rounded-xl",
+        "border",
+        "border-red-500/30",
+        "bg-red-500/5",
+        "p-4",
+        "text-sm",
+        "text-red-800",
+        "dark:text-red-300",
+        "max-w-xl",
+        "rounded-2xl",
+        "border-zinc-200",
+        "bg-white",
+        "p-6",
+        "shadow-sm",
+        "dark:border-zinc-800",
+        "dark:bg-zinc-950",
+        "text-xl",
+        "font-semibold",
+        "text-zinc-950",
+        "dark:text-white",
+        "mt-2",
+        "leading-6",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "mt-5",
+        "inline-flex",
+        "font-medium",
+        "text-blue-600",
+        "hover:underline",
+        "dark:text-blue-400",
+        "py-8",
+        "sm:py-10",
+        "mb-5",
+        "flex",
+        "items-center",
+        "justify-between",
+        "gap-4",
+        "text-zinc-500",
+        "transition",
+        "hover:text-zinc-900",
+        "dark:hover:text-white"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/organizations/[id]/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "ORGANIZATION_READINESS_MESSAGE",
+        "OrganizationShell",
+        "OrganizationNotice"
+      ],
+      "internalComponents": [
+        "OrganizationPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 20,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "text-sm",
+        "font-medium",
+        "text-blue-600",
+        "dark:text-blue-400",
+        "mt-2",
+        "break-words",
+        "text-2xl",
+        "font-semibold",
+        "tracking-tight",
+        "mt-6",
+        "flex",
+        "items-center",
+        "justify-between",
+        "rounded-xl",
+        "border",
+        "border-zinc-200",
+        "px-4",
+        "py-3",
+        "hover:bg-zinc-50",
+        "dark:border-zinc-800",
+        "dark:hover:bg-zinc-900",
+        "inline-flex",
+        "h-10",
+        "bg-blue-600",
+        "text-white",
+        "hover:bg-blue-700"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/sign-in/[[...sign-in]]/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "SignIn"
+      ],
+      "internalComponents": [
+        "SignInPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 10,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "flex",
+        "min-h-screen",
+        "items-center",
+        "justify-center"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/sign-up/[[...sign-up]]/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "SignUp"
+      ],
+      "internalComponents": [
+        "SignUpPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 10,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "flex",
+        "min-h-screen",
+        "items-center",
+        "justify-center"
+      ]
+    },
+    {
+      "name": "agent-form",
+      "file": "src/app/organizations/[id]/agents/agent-form.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [],
+      "internalComponents": [
+        "AgentForm"
+      ],
+      "hooksUsed": [
+        "useRouter",
+        "useRef",
+        "useState"
+      ],
+      "states": [
+        "pending",
+        "error"
+      ],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Criar agente"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [
+          "Nome",
+          "Instruções"
+        ],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": true,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 43,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "mt-6",
+        "rounded-xl",
+        "border",
+        "border-zinc-200",
+        "p-4",
+        "dark:border-zinc-800",
+        "mb-4",
+        "text-base",
+        "font-semibold",
+        "text-sm",
+        "font-medium",
+        "mt-4",
+        "block",
+        "mt-2",
+        "text-xs",
+        "text-zinc-500",
+        "dark:text-zinc-400",
+        "text-red-700",
+        "dark:text-red-300",
+        "mt-3",
+        "h-10",
+        "bg-blue-600",
+        "px-4",
+        "text-white",
+        "hover:bg-blue-700",
+        "disabled:opacity-50"
+      ]
+    },
+    {
+      "name": "error",
+      "file": "src/app/organizations/[id]/agents/error.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link"
+      ],
+      "internalComponents": [
+        "AgentsError"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Agentes indisponíveis"
+      ],
+      "uiButtons": [
+        "Tentar novamente"
+      ],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 6,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "min-h-screen",
+        "bg-zinc-50",
+        "px-5",
+        "py-8",
+        "text-zinc-950",
+        "dark:bg-black",
+        "dark:text-white",
+        "mx-auto",
+        "max-w-3xl",
+        "rounded-2xl",
+        "border",
+        "border-zinc-200",
+        "bg-white",
+        "p-6",
+        "dark:border-zinc-800",
+        "dark:bg-zinc-950",
+        "text-xl",
+        "font-semibold",
+        "mt-3",
+        "text-sm",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "mt-5",
+        "h-10",
+        "rounded-xl",
+        "bg-blue-600",
+        "px-4",
+        "text-white",
+        "hover:bg-blue-700",
+        "ml-4",
+        "text-blue-600",
+        "hover:underline",
+        "dark:text-blue-400"
+      ]
+    },
+    {
+      "name": "loading",
+      "file": "src/app/organizations/[id]/agents/loading.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "OrganizationShell"
+      ],
+      "internalComponents": [
+        "LoadingAgents"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 5,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "text-sm",
+        "text-zinc-500",
+        "dark:text-zinc-400"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/organizations/[id]/agents/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "AGENT_READINESS_MESSAGE",
+        "OrganizationShell",
+        "AgentForm"
+      ],
+      "internalComponents": [
+        "AgentsPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Agentes",
+        "Agentes da organização"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [
+          "Nenhum agente nesta organização. Crie o primeiro aci"
+        ],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 32,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "text-sm",
+        "text-blue-600",
+        "hover:underline",
+        "dark:text-blue-400",
+        "mt-3",
+        "text-2xl",
+        "font-semibold",
+        "tracking-tight",
+        "mt-4",
+        "text-red-700",
+        "dark:text-red-300",
+        "mt-8",
+        "text-base",
+        "space-y-2",
+        "flex",
+        "items-center",
+        "justify-between",
+        "gap-3",
+        "rounded-xl",
+        "border",
+        "border-zinc-200",
+        "px-4",
+        "py-3",
+        "hover:bg-zinc-50",
+        "dark:border-zinc-800",
+        "dark:hover:bg-zinc-900",
+        "min-w-0",
+        "break-words",
+        "font-medium",
+        "shrink-0",
+        "text-zinc-500",
+        "dark:text-zinc-400"
+      ]
+    },
+    {
+      "name": "document-manager",
+      "file": "src/app/organizations/[id]/agents/[agentId]/document-manager.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "DOCUMENT_MAX_BYTES"
+      ],
+      "internalComponents": [
+        "DocumentManager"
+      ],
+      "hooksUsed": [
+        "useState",
+        "useRef",
+        "useCallback",
+        "useEffect"
+      ],
+      "states": [
+        "documents",
+        "processingAvailable",
+        "loading",
+        "error",
+        "message",
+        "pending"
+      ],
+      "cssVarsUsed": [],
+      "tabsOrSections": [
+        "Documentos privados"
+      ],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [
+          "nenhum documento é enviado a um provedor de IA. A ex",
+          "Nenhum documento listado."
+        ],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": true,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 64,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "mt-8",
+        "space-y-4",
+        "border-t",
+        "border-zinc-200",
+        "pt-6",
+        "dark:border-zinc-800",
+        "text-lg",
+        "font-semibold",
+        "text-sm",
+        "text-zinc-600",
+        "dark:text-zinc-400",
+        "flex",
+        "flex-wrap",
+        "items-center",
+        "gap-3",
+        "block",
+        "mt-2",
+        "max-w-full",
+        "rounded",
+        "bg-blue-600",
+        "px-4",
+        "py-2",
+        "text-white",
+        "disabled:opacity-50",
+        "text-red-600",
+        "text-blue-600",
+        "space-y-3",
+        "border",
+        "p-3",
+        "break-words",
+        "font-medium"
+      ]
+    },
+    {
+      "name": "page",
+      "file": "src/app/organizations/[id]/agents/[agentId]/page.tsx",
+      "route": null,
+      "layout": null,
+      "componentsUsed": [
+        "Link",
+        "AGENT_READINESS_MESSAGE",
+        "OrganizationShell",
+        "DocumentManager"
+      ],
+      "internalComponents": [
+        "AgentPage"
+      ],
+      "hooksUsed": [],
+      "states": [],
+      "cssVarsUsed": [],
+      "tabsOrSections": [],
+      "uiButtons": [],
+      "uiPlaceholders": [],
+      "uiBlueprint": {
+        "hasSidebar": true,
+        "tableHeaders": [],
+        "formLabels": [],
+        "kpiLabels": [],
+        "chartTypes": [],
+        "emptyStates": [],
+        "kanbanStages": [],
+        "modals": [],
+        "hasCalendar": false,
+        "hasSearch": false,
+        "hasTable": false,
+        "hasForm": false,
+        "hasCardsGrid": false
+      },
+      "colorsUsed": [],
+      "assetsReferenced": [],
+      "lines": 32,
+      "inlineStyles": 0,
+      "tailwindClasses": [
+        "text-sm",
+        "text-blue-600",
+        "hover:underline",
+        "dark:text-blue-400",
+        "mt-6",
+        "font-medium",
+        "mt-2",
+        "break-words",
+        "text-2xl",
+        "font-semibold",
+        "tracking-tight",
+        "mt-4",
+        "text-zinc-600",
+        "dark:text-zinc-400"
+      ]
+    }
+  ],
+  "assets": {
+    "images": [
+      {
+        "path": "docs/evaluations/table-p3-scale2.png",
+        "filename": "table-p3-scale2.png",
+        "extension": ".png",
+        "sizeKB": 91.6,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/evaluations/table-p3-scale3.png",
+        "filename": "table-p3-scale3.png",
+        "extension": ".png",
+        "sizeKB": 123,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+        "filename": "Apple Vision Pro _ HR Software Design.jpg",
+        "extension": ".jpg",
+        "sizeKB": 38.5,
+        "referencedIn": []
+      },
+      {
+        "path": "src/app/favicon.ico",
+        "filename": "favicon.ico",
+        "extension": ".ico",
+        "sizeKB": 25.3,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/evaluations/structured-markdown-pilot/page-1.png",
+        "filename": "page-1.png",
+        "extension": ".png",
+        "sizeKB": 40.5,
+        "referencedIn": [
+          "docs/evaluations/structured-markdown-pilot/generate.mjs"
+        ]
+      },
+      {
+        "path": "docs/evaluations/structured-markdown-pilot/page-2.png",
+        "filename": "page-2.png",
+        "extension": ".png",
+        "sizeKB": 34.7,
+        "referencedIn": [
+          "docs/evaluations/structured-markdown-pilot/generate.mjs"
+        ]
+      },
+      {
+        "path": "docs/evaluations/structured-markdown-pilot/page-3.png",
+        "filename": "page-3.png",
+        "extension": ".png",
+        "sizeKB": 56.5,
+        "referencedIn": [
+          "docs/evaluations/structured-markdown-pilot/generate.mjs"
+        ]
+      },
+      {
+        "path": "tests/fixtures/numeric-signs/source.png",
+        "filename": "source.png",
+        "extension": ".png",
+        "sizeKB": 51.2,
+        "referencedIn": [
+          "tests/fixtures/generate-numeric-signs.mjs"
+        ]
+      },
+      {
+        "path": "docs/fixtures/rag/borderless-extra/inventory-low-confidence.png",
+        "filename": "inventory-low-confidence.png",
+        "extension": ".png",
+        "sizeKB": 45,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/borderless-extra/inventory.png",
+        "filename": "inventory.png",
+        "extension": ".png",
+        "sizeKB": 44.9,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/borderless-extra/prose-columns.png",
+        "filename": "prose-columns.png",
+        "extension": ".png",
+        "sizeKB": 40,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/extended/borderless.preview.png",
+        "filename": "borderless.preview.png",
+        "extension": ".png",
+        "sizeKB": 47.5,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/extended/low-contrast-skew.preview.png",
+        "filename": "low-contrast-skew.preview.png",
+        "extension": ".png",
+        "sizeKB": 55.7,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/extended/merged-multiline.preview.png",
+        "filename": "merged-multiline.preview.png",
+        "extension": ".png",
+        "sizeKB": 41.1,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/extended/same-page.preview.png",
+        "filename": "same-page.preview.png",
+        "extension": ".png",
+        "sizeKB": 49.6,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/extended/skew-rotated.preview.png",
+        "filename": "skew-rotated.preview.png",
+        "extension": ".png",
+        "sizeKB": 39.1,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/contact-sheet.png",
+        "filename": "contact-sheet.png",
+        "extension": ".png",
+        "sizeKB": 183.8,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/dificil-1.png",
+        "filename": "dificil-1.png",
+        "extension": ".png",
+        "sizeKB": 36.4,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/dificil-2.png",
+        "filename": "dificil-2.png",
+        "extension": ".png",
+        "sizeKB": 17.9,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/dificil-3.png",
+        "filename": "dificil-3.png",
+        "extension": ".png",
+        "sizeKB": 36.8,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/dificil-4.png",
+        "filename": "dificil-4.png",
+        "extension": ".png",
+        "sizeKB": 29.3,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/facil-1.png",
+        "filename": "facil-1.png",
+        "extension": ".png",
+        "sizeKB": 77.7,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/medio-1.png",
+        "filename": "medio-1.png",
+        "extension": ".png",
+        "sizeKB": 31.1,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/medio-2.png",
+        "filename": "medio-2.png",
+        "extension": ".png",
+        "sizeKB": 26.9,
+        "referencedIn": []
+      },
+      {
+        "path": "docs/fixtures/rag/preview/medio-3.png",
+        "filename": "medio-3.png",
+        "extension": ".png",
+        "sizeKB": 44.7,
+        "referencedIn": []
+      }
+    ],
+    "svgs": [
+      {
+        "path": "public/file.svg",
+        "filename": "file.svg",
+        "sizeKB": 0.4,
+        "referencedIn": []
+      },
+      {
+        "path": "public/globe.svg",
+        "filename": "globe.svg",
+        "sizeKB": 1,
+        "referencedIn": []
+      },
+      {
+        "path": "public/next.svg",
+        "filename": "next.svg",
+        "sizeKB": 1.3,
+        "referencedIn": []
+      },
+      {
+        "path": "public/vercel.svg",
+        "filename": "vercel.svg",
+        "sizeKB": 0.1,
+        "referencedIn": []
+      },
+      {
+        "path": "public/window.svg",
+        "filename": "window.svg",
+        "sizeKB": 0.4,
+        "referencedIn": []
+      }
+    ],
+    "fonts": [],
+    "videos": [],
+    "documents": [
+      {
+        "path": "AGENTS.md",
+        "filename": "AGENTS.md",
+        "extension": ".md",
+        "sizeKB": 0.9
+      },
+      {
+        "path": "CLAUDE.md",
+        "filename": "CLAUDE.md",
+        "extension": ".md",
+        "sizeKB": 0
+      },
+      {
+        "path": "README.md",
+        "filename": "README.md",
+        "extension": ".md",
+        "sizeKB": 1.4
+      },
+      {
+        "path": "memory/context.md",
+        "filename": "context.md",
+        "extension": ".md",
+        "sizeKB": 0.4
+      },
+      {
+        "path": "memory/index.md",
+        "filename": "index.md",
+        "extension": ".md",
+        "sizeKB": 0.2
+      },
+      {
+        "path": "memory/README.md",
+        "filename": "README.md",
+        "extension": ".md",
+        "sizeKB": 0.3
+      },
+      {
+        "path": "docs/evaluations/borderless-table-extraction-fix.md",
+        "filename": "borderless-table-extraction-fix.md",
+        "extension": ".md",
+        "sizeKB": 11.5
+      },
+      {
+        "path": "docs/evaluations/extended-pdf-baseline.md",
+        "filename": "extended-pdf-baseline.md",
+        "extension": ".md",
+        "sizeKB": 2.8
+      },
+      {
+        "path": "docs/evaluations/extended-pdf-corrections.md",
+        "filename": "extended-pdf-corrections.md",
+        "extension": ".md",
+        "sizeKB": 5.5
+      },
+      {
+        "path": "docs/evaluations/mixed-pdf-extraction-fix.md",
+        "filename": "mixed-pdf-extraction-fix.md",
+        "extension": ".md",
+        "sizeKB": 10.5
+      },
+      {
+        "path": "docs/evaluations/scanned-table-extraction-fix.md",
+        "filename": "scanned-table-extraction-fix.md",
+        "extension": ".md",
+        "sizeKB": 8.3
+      },
+      {
+        "path": "memory/architecture/index.md",
+        "filename": "index.md",
+        "extension": ".md",
+        "sizeKB": 0.2
+      },
+      {
+        "path": "docs/security/2026-10-13-pdf-extraction-ocr.md",
+        "filename": "2026-10-13-pdf-extraction-ocr.md",
+        "extension": ".md",
+        "sizeKB": 5.3
+      },
+      {
+        "path": "docs/security/2026-10-13-private-agent-pdfs.md",
+        "filename": "2026-10-13-private-agent-pdfs.md",
+        "extension": ".md",
+        "sizeKB": 4
+      },
+      {
+        "path": "docs/security/document-reprocessing.md",
+        "filename": "document-reprocessing.md",
+        "extension": ".md",
+        "sizeKB": 14.1
+      },
+      {
+        "path": "memory/packages/catalog.md",
+        "filename": "catalog.md",
+        "extension": ".md",
+        "sizeKB": 2.1
+      },
+      {
+        "path": "docs/evaluations/structured-markdown-pilot/medio.derived.md",
+        "filename": "medio.derived.md",
+        "extension": ".md",
+        "sizeKB": 4.3
+      },
+      {
+        "path": "docs/evaluations/structured-markdown-pilot/REPORT.md",
+        "filename": "REPORT.md",
+        "extension": ".md",
+        "sizeKB": 1.7
+      },
+      {
+        "path": "docs/evaluations/structured-markdown-pilot/VISUAL-VERIFICATION.md",
+        "filename": "VISUAL-VERIFICATION.md",
+        "extension": ".md",
+        "sizeKB": 1.5
+      },
+      {
+        "path": "docs/fixtures/rag/canonical.md",
+        "filename": "canonical.md",
+        "extension": ".md",
+        "sizeKB": 1.8
+      },
+      {
+        "path": "docs/fixtures/rag/README.md",
+        "filename": "README.md",
+        "extension": ".md",
+        "sizeKB": 4.9
+      },
+      {
+        "path": "docs/fixtures/rag/extended/canonical.md",
+        "filename": "canonical.md",
+        "extension": ".md",
+        "sizeKB": 2.2
+      },
+      {
+        "path": "docs/fixtures/rag/extended/test-output.txt",
+        "filename": "test-output.txt",
+        "extension": ".txt",
+        "sizeKB": 12.3
+      },
+      {
+        "path": "docs/fixtures/rag/extended/after-corrections/test-output.txt",
+        "filename": "test-output.txt",
+        "extension": ".txt",
+        "sizeKB": 15.2
+      }
+    ]
+  },
+  "patterns": {
+    "topImports": [
+      {
+        "module": "@/lib",
+        "count": 50
+      },
+      {
+        "module": "node:fs",
+        "count": 37
+      },
+      {
+        "module": "node:assert",
+        "count": 30
+      },
+      {
+        "module": "node:test",
+        "count": 26
+      },
+      {
+        "module": "next",
+        "count": 22
+      },
+      {
+        "module": "@napi-rs/canvas",
+        "count": 13
+      },
+      {
+        "module": "@clerk/nextjs",
+        "count": 11
+      },
+      {
+        "module": "node:crypto",
+        "count": 11
+      },
+      {
+        "module": "node:path",
+        "count": 9
+      },
+      {
+        "module": "pdf-lib",
+        "count": 7
+      },
+      {
+        "module": "node:module",
+        "count": 5
+      },
+      {
+        "module": "@supabase/supabase-js",
+        "count": 5
+      },
+      {
+        "module": "react",
+        "count": 4
+      },
+      {
+        "module": "@/app",
+        "count": 3
+      },
+      {
+        "module": "node:child_process",
+        "count": 3
+      },
+      {
+        "module": "node:url",
+        "count": 3
+      },
+      {
+        "module": "node:perf_hooks",
+        "count": 3
+      },
+      {
+        "module": "eslint-config-next",
+        "count": 2
+      },
+      {
+        "module": "tesseract.js",
+        "count": 2
+      },
+      {
+        "module": "eslint",
+        "count": 1
+      },
+      {
+        "module": "pdfjs-dist",
+        "count": 1
+      }
+    ],
+    "topHooks": [
+      {
+        "hook": "useState",
+        "count": 11
+      },
+      {
+        "hook": "useRouter",
+        "count": 3
+      },
+      {
+        "hook": "useRef",
+        "count": 3
+      },
+      {
+        "hook": "useCallback",
+        "count": 1
+      },
+      {
+        "hook": "useEffect",
+        "count": 1
+      }
+    ],
+    "formHandling": "native",
+    "folderConvention": "mixed",
+    "routerType": "next-router"
+  },
+  "appShell": {
+    "brandTitle": "web",
+    "hasFloatingSidebar": false,
+    "hasOrgSwitcher": false,
+    "hasAiAssistantBtn": false,
+    "sidebarRadius": "12px",
+    "cardRadius": "16px",
+    "navItems": [],
+    "adminNavItems": [],
+    "dashboardTitle": "Dashboard",
+    "dashboardSubtitle": "Visão geral",
+    "headerActions": [],
+    "hasLiveStatusBadge": false,
+    "liveStatusLabel": "Tempo real",
+    "hasPlanetOrbs": false,
+    "kpiCards": [],
+    "charts": [],
+    "hasCalendarWidget": false,
+    "hasRankingWidget": false
+  },
+  "referenceVisualDesign": {
+    "source": "docs/Issues/Apple Vision Pro _ HR Software Design.jpg",
+    "sourceMode": "dark screenshot",
+    "extractedPixelColors": 35,
+    "visualOnly": true,
+    "applicationContentCopied": false,
+    "observedPatterns": [
+      "compact floating navigation",
+      "layered translucent main surface",
+      "modular rounded cards",
+      "thin low-contrast borders",
+      "sparse blue accents",
+      "compact grouped controls"
+    ],
+    "note": "Dark reference colors are pixel-derived. Existing application CSS tokens remain the source for current light/dark behavior; no light palette was inferred from this dark-only image."
+  }
+}

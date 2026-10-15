@@ -1,8 +1,36 @@
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
-  --background: #ffffff;
+  color-scheme: light;
+  --background: #f6f7fb;
   --foreground: #171717;
+  --surface: rgba(255, 255, 255, 0.76);
+  --surface-strong: #ffffff;
+  --glass-surface: rgba(255, 255, 255, 0.76);
+  --border: rgba(15, 23, 42, 0.09);
+  --muted: #64748b;
+  --primary: #0864c8;
+  --primary-hover: #0759b2;
+  --primary-soft: rgba(8, 100, 200, 0.09);
+  --ambient-glow: rgba(8, 100, 200, 0.12);
+  --card-shadow: 0 18px 48px rgba(15, 23, 42, 0.06);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #10100c;
+  --foreground: #f8fafc;
+  --surface: rgba(30, 34, 53, 0.74);
+  --surface-strong: #28282c;
+  --glass-surface: rgba(40, 40, 44, 0.78);
+  --border: rgba(72, 72, 76, 0.86);
+  --muted: #94a3b8;
+  --primary: #0864c8;
+  --primary-hover: #0b75df;
+  --primary-soft: rgba(8, 100, 200, 0.19);
+  --ambient-glow: rgba(8, 100, 200, 0.18);
+  --card-shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
 }
 
 @theme inline {
@@ -12,11 +40,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark"] .theme-label-light {
+  display: none;
+}
+
+[data-theme="light"] .theme-label-dark {
+  display: none;
 }
 
 body {

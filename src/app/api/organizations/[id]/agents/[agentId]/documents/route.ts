@@ -6,6 +6,7 @@ import { isUuid } from '@/lib/agents';
 import { isSameOriginRequest } from '@/lib/same-origin-request';
 import { DOCUMENT_BUCKET, DOCUMENT_ERROR, DOCUMENT_MAX_BYTES, validatePdf } from '@/lib/documents';
 import { coordinateUpload } from '@/lib/document-upload';
+import { observeUploadStep } from '@/lib/document-upload-diagnostics';
 
 type Context = { params: Promise<{ id: string; agentId: string }> };
 const reply = (error: string, status: number) => Response.json({ error }, { status, headers: { 'Cache-Control': 'no-store' } });
@@ -24,7 +25,7 @@ async function handle(request: Request, context: Context) {
   if (!agent.data) return reply('Agente não encontrado.',404);
   const db = access.supabase;
   if (request.method === 'GET') {
-   const { data,error } = await db.from('agent_documents').select('id, filename, size_bytes, upload_state, created_at, extraction:agent_document_extractions(state, lease_until, page_count, ocr_page_count, extractor_version, active_run_id), versions:agent_document_extraction_runs!document_id(id, version, state, lease_until, page_count, ocr_page_count, extractor_version, extractor_hash, source_hash, created_at)').eq('organization_id',id).eq('agent_id',agentId).order('created_at',{ascending:false});
+   const { data,error } = await db.from('agent_documents').select('id, filename, size_bytes, upload_state, created_at, extraction:agent_document_extractions(state, lease_until, page_count, ocr_page_count, extractor_version, active_run_id), versions:agent_document_extraction_runs!document_id(id, version, state, lease_until, page_count, ocr_page_count, extractor_version, extractor_hash, source_hash, review_decision_id, created_at)').eq('organization_id',id).eq('agent_id',agentId).order('created_at',{ascending:false});
    if(error){
     // Keep private upload/list usable while the separate extraction migration is pending.
     const fallback=await db.from('agent_documents').select('id, filename, size_bytes, upload_state, created_at').eq('organization_id',id).eq('agent_id',agentId).order('created_at',{ascending:false});
@@ -52,14 +53,14 @@ async function handle(request: Request, context: Context) {
   const storage = db.storage.from(DOCUMENT_BUCKET);
   const update = async (state:string) => {
    const {data,error} = await db.from('agent_documents').update({upload_state:state}).eq('id',documentId).eq('organization_id',id).eq('agent_id',agentId).eq('upload_state','pending').select('id, upload_state').single();
-   return !error && data?.upload_state===state;
+   return { success:!error && data?.upload_state===state, error };
   };
   const success = await coordinateUpload({
-   reserve:async()=>{const {data,error}=await db.from('agent_documents').insert({id:documentId,organization_id:id,agent_id:agentId,filename:metadata.name,size_bytes:metadata.size}).select('id').single();return !error && data?.id===documentId;},
-   upload:async()=>{const {error}=await storage.upload(path,await file.arrayBuffer(),{contentType:'application/pdf',upsert:false});return !error;},
-   finalize:()=>update('stored'),
-   remove:async()=>{const {error}=await storage.remove([path]);return !error;},
-   fail:()=>update('failed'),
+   reserve:()=>observeUploadStep('reserve',async()=>{const {data,error}=await db.from('agent_documents').insert({id:documentId,organization_id:id,agent_id:agentId,filename:metadata.name,size_bytes:metadata.size}).select('id').single();return {success:!error && data?.id===documentId,error};}),
+   upload:()=>observeUploadStep('upload',async()=>{const {error}=await storage.upload(path,await file.arrayBuffer(),{contentType:'application/pdf',upsert:false});return {success:!error,error};}),
+   finalize:()=>observeUploadStep('finalize',()=>update('stored')),
+   remove:()=>observeUploadStep('remove',async()=>{const {error}=await storage.remove([path]);return {success:!error,error};}),
+   fail:()=>observeUploadStep('fail',()=>update('failed')),
   });
   return success ? Response.json({id:documentId},{status:201}) : reply(DOCUMENT_ERROR,503);
  } catch { return reply(DOCUMENT_ERROR,503); }

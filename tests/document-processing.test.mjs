@@ -7,7 +7,7 @@ test('review-required pages survive persistence and are exposed without source t
  assert.ok(route.includes("result.reviewRequired?'review_required':'completed'"));
  assert.ok(route.includes('extractor_version:result.extractorVersion'));
  assert.ok(route.includes('reviewRequired:result.reviewRequired'));
- assert.ok(route.includes('indexingEligible:result.indexingEligible'));
+ assert.ok(route.includes('indexingEligible:false'),'extraction does not grant future indexing without human approval');
  const listing=read('src/app/api/organizations/[id]/agents/[agentId]/documents/route.ts');
  assert.ok(listing.includes('extractor_version'));
  const ui=read('src/app/organizations/[id]/agents/[agentId]/document-manager.tsx');

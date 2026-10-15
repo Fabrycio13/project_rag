@@ -1,0 +1,12 @@
+{
+  "owner": "memory-packs",
+  "schemaVersion": 1,
+  "catalog": {
+    "fingerprint": "b7238a78e0dcd209bc006fff23ea7b16a225aa3bcb18c378925a75d4ee98d565",
+    "collectedAt": "2026-10-15T17:42:58.706Z",
+    "sources": [
+      "package-lock.json",
+      "package.json"
+    ]
+  }
+}

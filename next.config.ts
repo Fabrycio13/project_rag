@@ -4,6 +4,11 @@ const nextConfig: NextConfig = {
   // The PDF subprocess is not traversed by Next's import tracer.
   // Include its local-only runtime closure for this route, not for every page.
   outputFileTracingIncludes: {
+    '/api/organizations/*/agents/*/documents/*/review/*': [
+      './scripts/pdf-review-render.mjs',
+      './node_modules/pdfjs-dist/**/*',
+      './node_modules/@napi-rs/canvas*/**/*',
+    ],
     '/api/organizations/*/agents/*/documents/*/process': [
       './scripts/{pdf-extract,pdf-native-layout,ocr-table-cells,ocr-borderless-table,ocr-borderless-numeric,ocr-orientation}.mjs',
       './package-lock.json',

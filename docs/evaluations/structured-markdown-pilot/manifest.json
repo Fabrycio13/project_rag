@@ -1,0 +1,60 @@
+{
+  "source": {
+    "path": "docs/fixtures/rag/medio.pdf",
+    "sha256": "5f0a8af5b4ed543deb363788022906dbf293ddc3626941d1d3a93ec4518d9b02"
+  },
+  "goldSha256": "1528a3280ab58faa476d162cbb38a8263cfa80bc64bbc21aa415a0f57b098649",
+  "canonicalSha256": "0982514a363dcf88fa43a8aa86b5905dc016079971cccf38e35cc839af87edd9",
+  "artifacts": [
+    {
+      "name": "medio.raw.json",
+      "bytes": 14763,
+      "sha256": "d89eb2f42087a9cd547dd10c461ddf28f6402b52f85b3e93f4fc2d3911ace56a"
+    },
+    {
+      "name": "medio.blocks.json",
+      "bytes": 22274,
+      "sha256": "f887d561e9ca1d88eb6c2e347778daed1d609c825991b44f43d7a1e504285106"
+    },
+    {
+      "name": "medio.derived.md",
+      "bytes": 4453,
+      "sha256": "267844cf0a79a142dafd406237179ea53dd3b3807f6a9b507d31e6b9990e92fa"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 6254,
+      "sha256": "65213cb589202ea61a4f676031ae6073908e92ff19345fe698b90ab307ba2c3a"
+    },
+    {
+      "name": "REPORT.md",
+      "bytes": 1786,
+      "sha256": "9caac9c02778ce408855b6021fd69a8bf7692d18ae4410ea7421b4f2020267a3"
+    },
+    {
+      "name": "review.html",
+      "bytes": 213040,
+      "sha256": "cec8384431f7cabc1c64f9632e9542f34b97a078ad3de2d55ab9bc69493eec6c"
+    },
+    {
+      "name": "page-1.png",
+      "bytes": 41475,
+      "sha256": "e820dd761415e9789c0fdac2d6f9a7c973686c2fa185fcdc7deb64a7eaf99f92"
+    },
+    {
+      "name": "page-2.png",
+      "bytes": 35492,
+      "sha256": "26bd929b617a0fbda64abee42de03dba3c7407b287789f02faff75113e1a97e1"
+    },
+    {
+      "name": "page-3.png",
+      "bytes": 57828,
+      "sha256": "b6f2a7ed1fed5ddcba86b7845af5ac63efbcfef7fbedff1393fae2a166a6a21e"
+    },
+    {
+      "name": "generate.mjs",
+      "bytes": 14737,
+      "sha256": "22afdb50144e02327b77328721b2693dbd30030f165fc3ebc5c58d5ac1e21d30"
+    }
+  ]
+}

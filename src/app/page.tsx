@@ -3,6 +3,8 @@ import { auth, clerkClient } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { getAdminInvitationReference } from "@/lib/admin-invitation-acceptance";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+import { DASHBOARD_UNAVAILABLE_MESSAGE, getDashboardData } from "@/lib/dashboard-data";
+import { DashboardView } from "./dashboard-view";
 import { SignOutButton } from "./sign-out-button";
 
 export default async function Home() {
@@ -25,6 +27,7 @@ export default async function Home() {
   const { data: platformUser, error } = await supabase
     .from("platform_users")
     .select("role, status")
+    .eq("clerk_user_id", userId)
     .maybeSingle();
 
   if (error) {
@@ -40,7 +43,10 @@ export default async function Home() {
     );
   }
 
-  if (!platformUser || platformUser.status !== "active") {
+  const isOwner = platformUser?.role === "owner";
+  const isAdministrator = platformUser?.role === "admin";
+
+  if (!platformUser || platformUser.status !== "active" || (!isOwner && !isAdministrator)) {
     const clerk = await clerkClient();
     const user = await clerk.users.getUser(userId);
     if (getAdminInvitationReference(user.publicMetadata)) {
@@ -63,44 +69,20 @@ export default async function Home() {
     );
   }
 
-  if (platformUser.role === "owner") {
+  let dashboardData;
+  try {
+    dashboardData = await getDashboardData(supabase, userId, isOwner ? "owner" : "admin");
+  } catch {
     return (
       <main className="flex min-h-screen items-center justify-center bg-zinc-50 px-5 dark:bg-black">
-        <section className="w-full max-w-2xl rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-9">
-          <div className="mb-5 flex items-center justify-between gap-4">
-            <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Área do owner</p>
-            <SignOutButton />
-          </div>
-          <h1 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 dark:text-white sm:text-3xl">Bem-vindo à plataforma</h1>
-          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-            Crie e acesse suas organizações. Os convites de administradores podem ser retomados depois.
-          </p>
-          <Link className="mt-6 mr-3 inline-flex h-11 items-center rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700" href="/organizations">
-            Minhas organizações
-          </Link>
-          <Link className="mt-3 inline-flex h-11 items-center rounded-xl border border-zinc-200 px-5 text-sm font-semibold dark:border-zinc-800" href="/admin/invitations">
-            Gerenciar convites
-          </Link>
+        <section aria-labelledby="dashboard-unavailable-title" className="w-full max-w-lg rounded-2xl border border-red-500/30 bg-white p-7 shadow-sm dark:bg-zinc-950">
+          <h1 className="text-xl font-semibold text-zinc-950 dark:text-white" id="dashboard-unavailable-title">Dashboard indisponível</h1>
+          <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">{DASHBOARD_UNAVAILABLE_MESSAGE}</p>
+          <div className="mt-5"><SignOutButton /></div>
         </section>
       </main>
     );
   }
 
-  return (
-    <main className="flex min-h-screen items-center justify-center bg-zinc-50 px-5 dark:bg-black">
-      <section className="w-full max-w-2xl rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:p-9">
-        <p className="text-sm font-medium text-emerald-700 dark:text-emerald-300">Acesso ativo · administrador</p>
-        <div className="mt-3">
-          <SignOutButton />
-        </div>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 dark:text-white sm:text-3xl">Sua conta está pronta</h1>
-        <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-          Crie organizações e acesse as que você criou.
-        </p>
-        <Link className="mt-6 inline-flex h-11 items-center rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white hover:bg-blue-700" href="/organizations">
-          Minhas organizações
-        </Link>
-      </section>
-    </main>
-  );
+  return <DashboardView data={dashboardData} isOwner={isOwner} />;
 }

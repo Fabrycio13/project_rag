@@ -17,7 +17,7 @@ function harness({review=false,fail=false,busy=false,denied=false,missingSecret=
  };
  const privileged={async rpc(name,args){calls.push({privileged:true,name,args});return {data:name==='claim_document_extraction_run'?(busy?null:run):true};}};
  const deps={
-  '@/lib/supabase/service':{createServiceRoleSupabaseClient:()=>{if(missingSecret)throw Error('missing');return privileged;}},
+  '@/lib/supabase/service':{createServiceRoleSupabaseClient:()=>{if(missingSecret)throw Object.assign(Error('private exception must never be logged'),{reason:'missing_private_key'});return privileged;}},
   '@/lib/organization-access':{getOrganizationAccess:async()=>denied?{error:'denied',status:401}:{supabase:db,userId:'creator'}},
   '@/lib/organization-data':{findOrganization:async()=>({data:{id:ids.id}})},
   '@/lib/agent-data':{findAgent:async()=>({data:{id:ids.agentId}})},
@@ -33,7 +33,7 @@ function harness({review=false,fail=false,busy=false,denied=false,missingSecret=
 }
 test('reprocess route contract authenticates, scopes, claims before download and returns candidate identity only',async()=>{
  const h=harness();const response=await h.post('{"action":"reprocess"}');assert.equal(response.status,200);
- const body=await response.json();assert.equal(body.runId,run);assert.equal(body.promoted,true);assert.ok(!JSON.stringify(body).includes('PRIVATE'));
+ const body=await response.json();assert.equal(body.indexingEligible,false,'machine completion alone is not human approval');assert.equal(body.runId,run);assert.equal(body.promoted,true);assert.ok(!JSON.stringify(body).includes('PRIVATE'));
  const claim=h.calls.find(c=>c.name==='claim_document_extraction_run');assert.equal(claim.privileged,true);assert.equal(claim.args.actor,'creator');assert.equal(claim.args.reprocess,true);assert.match(claim.args.extractor_hash,/^[a-f0-9]{64}$/);
  assert.ok(h.calls.indexOf(claim)<h.calls.findIndex(c=>c.download));
  const lookup=h.calls.find(c=>c.table==='agent_documents');assert.deepEqual(lookup.filters,[['id',ids.documentId],['organization_id',ids.id],['agent_id',ids.agentId]]);
@@ -51,4 +51,4 @@ test('denied, cross-origin, busy and oversized/client-role actions never downloa
  }
 });
 
-test('missing server secret fails closed without claim or download',async()=>{const h=harness({missingSecret:true});const r=await h.post('{}');assert.equal(r.status,400);const h2=harness({missingSecret:true});const r2=await h2.post('{"action":"reprocess"}');assert.equal(r2.status,503);assert.match(await r2.text(),/configura/i);assert.ok(!h2.calls.some(c=>c.name||c.download));});
+test('missing server secret fails closed without claim or download',async()=>{const h=harness({missingSecret:true});const r=await h.post('{}');assert.equal(r.status,400);const h2=harness({missingSecret:true});const events=[];const previous=console.error;let r2;try{console.error=(...args)=>events.push(args);r2=await h2.post('{"action":"reprocess"}');}finally{console.error=previous;}assert.deepEqual(events,[['[document-extraction]',{stage:'service_client',reason:'missing_private_key'}]]);assert.equal(r2.status,503);assert.deepEqual(await r2.json(),{error:'A extração está temporariamente indisponível. Entre em contato com o administrador.'});assert.ok(!h2.calls.some(c=>c.name||c.download));});

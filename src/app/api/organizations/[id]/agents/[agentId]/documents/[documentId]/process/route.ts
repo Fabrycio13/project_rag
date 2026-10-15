@@ -37,7 +37,13 @@ export async function POST(request:Request,context:Context){
   if(body){try{const parsed=JSON.parse(body);if(Object.keys(parsed).length!==1||!['extract','reprocess'].includes(parsed.action))return reply('Ação inválida.',400);action=parsed.action;}catch{return reply('Ação inválida.',400);}}
   // Clerk-derived identity only. RLS authorization above precedes privileged mutation.
   let privileged:ReturnType<typeof createServiceRoleSupabaseClient>;
-  try{privileged=createServiceRoleSupabaseClient();}catch{return reply('A extração está indisponível: falta a configuração segura do servidor. Peça ao administrador para configurar a chave privada do Supabase e aplicar a migração 005.',503);}
+  try{privileged=createServiceRoleSupabaseClient();}catch(cause){
+   const allowed=['missing_url','invalid_url','missing_private_key','invalid_private_key','client_initialization_failed'];
+   const candidate=cause&&typeof cause==='object'&&'reason' in cause?cause.reason:null;
+   const reason=typeof candidate==='string'&&allowed.includes(candidate)?candidate:'client_initialization_failed';
+   console.error('[document-extraction]',{stage:'service_client',reason});
+   return reply('A extração está temporariamente indisponível. Entre em contato com o administrador.',503);
+  }
   const hash=createHash('sha256');
   for(const file of ['package-lock.json','src/lib/pdf-extraction.mjs','scripts/pdf-extract.mjs','scripts/pdf-native-layout.mjs','scripts/ocr-table-cells.mjs','scripts/ocr-borderless-table.mjs','scripts/ocr-borderless-numeric.mjs','scripts/ocr-orientation.mjs']){
    hash.update(file+'\0');hash.update(await readFile(path.join(/* turbopackIgnore: true */ process.cwd(),file)));hash.update('\0');
@@ -63,7 +69,7 @@ export async function POST(request:Request,context:Context){
    if(confirmed.error||confirmed.data?.state!==state)return reply(failure,503);
    const active=await db.from('agent_document_extractions').select('active_run_id').eq('document_id',documentId).single();
    if(active.error||(state==='completed'&&active.data?.active_run_id!==run))return reply(failure,503);
-   return Response.json({runId:run,promoted:active.data?.active_run_id===run,state,reviewRequired:result.reviewRequired,indexingEligible:result.indexingEligible,pageCount:result.pages.length,ocrPageCount:result.pages.filter(p=>p.method==='ocr').length},{headers:{'Cache-Control':'no-store'}});
+   return Response.json({runId:run,promoted:active.data?.active_run_id===run,state,reviewRequired:result.reviewRequired,indexingEligible:false,pageCount:result.pages.length,ocrPageCount:result.pages.filter(p=>p.method==='ocr').length},{headers:{'Cache-Control':'no-store'}});
   }catch(cause){
    const codes=['processing_failed','processing_timeout','processing_busy','invalid_pdf','invalid_or_encrypted_pdf','page_limit','page_dimensions','text_limit','no_useful_text','storage_failed'];
    const code=cause instanceof Error&&codes.includes(cause.message)?cause.message:'processing_failed';
